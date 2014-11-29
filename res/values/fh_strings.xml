@@ -580,4 +580,18 @@
     <!-- Notification importance -->
     <string name="tuner_full_importance_settings">Power notification controls</string>
 
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">Advanced options</string>
+    <string name="sound_title">Sound</string>
+    <string name="attention">Attention</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">Camera Shutter Sound</string>
+    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
+    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="camera_toggle">Advanced Settings</string>
 </resources>
