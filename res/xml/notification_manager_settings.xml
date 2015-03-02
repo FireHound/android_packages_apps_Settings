@@ -61,4 +61,16 @@
             android:summary="@string/block_notifications_summary"
             android:fragment="com.android.settings.cyanogenmod.SpamList" />
 
+    <!-- Force Expanded Notifications -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
+    <!-- FC Ignore -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary" />
+
 </PreferenceScreen>

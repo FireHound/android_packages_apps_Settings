@@ -53,6 +53,10 @@
     <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="status_bar_date_string_edittext_summary">Enter string</string>
 
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
     <!-- NFC PreferenceCategory title -->
     <string name="nfc_title_category">NFC</string>
 
