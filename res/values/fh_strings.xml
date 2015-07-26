@@ -58,6 +58,10 @@
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
+    <!-- Headset Switch -->
+    <string name="show_headset_icon_title">Headsets Icon</string>
+    <string name="show_headset_icon_summary">Shows headsets icon when headsets are connected.</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
