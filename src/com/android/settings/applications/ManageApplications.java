@@ -302,6 +302,7 @@ public class ManageApplications extends InstrumentedFragment
             lv.setSaveEnabled(true);
             lv.setItemsCanFocus(true);
             lv.setTextFilterEnabled(true);
+            lv.setFastScrollEnabled(true);
             mListView = lv;
 
             Utils.prepareCustomPreferencesList(container, mRootView, mListView, false);
