@@ -71,6 +71,11 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+    <!-- Double Tap -->
+    <string name="double_tap_to_sleep_lockscreen_title">Lock Screen Sleep</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Double-tap on the Lock Screen to Sleep</string>
+    <string name="double_tap_lock_screen">Lock Screen</string>
+
      <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">Gesture Anywhere</string>
     <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
