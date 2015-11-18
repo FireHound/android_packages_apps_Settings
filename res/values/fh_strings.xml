@@ -25,4 +25,7 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- Unlink notification volume -->
+    <string name="link_volume_option_title">Link ring and notification volume</string>
+
 </resources>
