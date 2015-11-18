@@ -62,6 +62,10 @@
     <string name="show_headset_icon_title">Headsets Icon</string>
     <string name="show_headset_icon_summary">Shows headsets icon when headsets are connected.</string>
 
+    <!-- FC Notifications -->
+    <string name="disable_fc_notifications_title">Disable FC notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
