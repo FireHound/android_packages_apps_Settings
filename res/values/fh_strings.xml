@@ -629,7 +629,7 @@
 
     <!-- Disable quick settings on lock screen switch -->
     <string name="lockscreen_qs_disabled_title">Quick settings disabled on lock screen</string>
-    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings and keyguard shortcuts on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_summary">Enable expanding quick settings and keyguard shortcuts on secure lock screens</string>
 
     <!-- Quick settings tiles columns and rows config -->
     <string name="qs_layout_category">Rows and columns</string>
@@ -736,5 +736,21 @@
     <!-- Location easy toggle -->
     <string name="qs_location_easy_toggle_title">Location easy toggle</string>
     <string name="qs_location_easy_toggle_summary">One click will turn location services on or off instead of taking you to settings</string>
+
+    <!-- Carrier label -->
+    <string name="carrier_title">Carrier Label</string>
+    <string name="carrier_summary">Customize the Carrier Label</string>
+    <string name="carrier_options_summary">Customize the carrier label</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen only</string>
+    <string name="show_carrier_statusbar">Statusbar only</string>
+    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+    <string name="status_bar_carrier_color">Carrier label color</string>
+    <string name="status_bar_carrier_size">Carrier label text size</string>
+    <string name="status_bar_carrier_font_style_title">Carrier Label Font</string>
 
 </resources>
