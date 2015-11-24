@@ -17,11 +17,14 @@
 package com.android.settings.fuelgauge;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.BatteryStats;
 import android.os.Build;
 import android.os.Bundle;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Process;
@@ -68,10 +71,12 @@ public class PowerUsageSummary extends PowerUsageBase {
     private static final String KEY_BATTERY_HISTORY = "battery_history";
 
     private static final int MENU_STATS_TYPE = Menu.FIRST;
-    private static final int MENU_HIGH_POWER_APPS = Menu.FIRST + 3;
+    private static final int MENU_STATS_RESET = Menu.FIRST + 2;
+    private static final int MENU_BATTERY_SAVER = Menu.FIRST + 3;
+    private static final int MENU_HIGH_POWER_APPS = Menu.FIRST + 4;
     @VisibleForTesting
-    static final int MENU_ADDITIONAL_BATTERY_INFO = Menu.FIRST + 4;
-    private static final int MENU_HELP = Menu.FIRST + 5;
+    static final int MENU_ADDITIONAL_BATTERY_INFO = Menu.FIRST + 5;
+    private static final int MENU_HELP = Menu.FIRST + 6;
 
     private BatteryHistoryPreference mHistPref;
     private PreferenceGroup mAppListGroup;
@@ -131,24 +136,50 @@ public class PowerUsageSummary extends PowerUsageBase {
         return super.onPreferenceTreeClick(preference);
     }
 
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         if (DEBUG) {
-            menu.add(Menu.NONE, MENU_STATS_TYPE, Menu.NONE, R.string.menu_stats_total)
+            menu.add(0, MENU_STATS_TYPE, 0, R.string.menu_stats_total)
                     .setIcon(com.android.internal.R.drawable.ic_menu_info_details)
                     .setAlphabeticShortcut('t');
         }
 
-        menu.add(Menu.NONE, MENU_HIGH_POWER_APPS, Menu.NONE, R.string.high_power_apps);
+        MenuItem reset = menu.add(0, MENU_STATS_RESET, 0, R.string.battery_stats_reset)
+                .setIcon(R.drawable.ic_delete)
+                .setAlphabeticShortcut('d');
+        reset.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
+        MenuItem batterySaver = menu.add(0, MENU_BATTERY_SAVER, 0, R.string.battery_saver);
+        batterySaver.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+
+        menu.add(0, MENU_HIGH_POWER_APPS, 0, R.string.high_power_apps);
 
         PowerUsageFeatureProvider powerUsageFeatureProvider =
                 FeatureFactory.getFactory(getContext()).getPowerUsageFeatureProvider(getContext());
         if (powerUsageFeatureProvider != null &&
                 powerUsageFeatureProvider.isAdditionalBatteryInfoEnabled()) {
-            menu.add(Menu.NONE, MENU_ADDITIONAL_BATTERY_INFO,
-                    Menu.NONE, R.string.additional_battery_info);
+            menu.add(0, MENU_ADDITIONAL_BATTERY_INFO,
+                    0, R.string.additional_battery_info);
         }
         super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    private void resetStats() {
+        AlertDialog dialog = new AlertDialog.Builder(getActivity())
+            .setTitle(R.string.battery_stats_reset)
+            .setMessage(R.string.battery_stats_message)
+            .setPositiveButton(R.string.ok_string, new OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    mStatsHelper.resetStatistics();
+                    refreshStats();
+                    mHandler.removeMessages(MSG_REFRESH_STATS);
+                }
+            })
+            .setNegativeButton(R.string.cancel, null)
+            .create();
+        dialog.show();
     }
 
     @Override
@@ -160,6 +191,9 @@ public class PowerUsageSummary extends PowerUsageBase {
     public boolean onOptionsItemSelected(MenuItem item) {
         final SettingsActivity sa = (SettingsActivity) getActivity();
         switch (item.getItemId()) {
+            case MENU_STATS_RESET:
+                resetStats();
+                return true;
             case MENU_STATS_TYPE:
                 if (mStatsType == BatteryStats.STATS_SINCE_CHARGED) {
                     mStatsType = BatteryStats.STATS_SINCE_UNPLUGGED;
@@ -167,6 +201,10 @@ public class PowerUsageSummary extends PowerUsageBase {
                     mStatsType = BatteryStats.STATS_SINCE_CHARGED;
                 }
                 refreshStats();
+                return true;
+            case MENU_BATTERY_SAVER:
+                sa.startPreferencePanel(BatterySaverSettings.class.getName(), null,
+                        R.string.battery_saver, null, null, 0);
                 return true;
             case MENU_HIGH_POWER_APPS:
                 Bundle args = new Bundle();
@@ -294,10 +332,6 @@ public class PowerUsageSummary extends PowerUsageBase {
         return results;
     }
 
-    private boolean sipperCanBePruned(BatterySipper sipper) {
-        return sipper.drainType != BatterySipper.DrainType.SCREEN;
-    }
-
     protected void refreshStats() {
         super.refreshStats();
         updatePreference(mHistPref);
@@ -322,16 +356,14 @@ public class PowerUsageSummary extends PowerUsageBase {
             final int numSippers = usageList.size();
             for (int i = 0; i < numSippers; i++) {
                 final BatterySipper sipper = usageList.get(i);
+                if ((sipper.totalPowerMah * SECONDS_IN_HOUR) < MIN_POWER_THRESHOLD_MILLI_AMP) {
+                    continue;
+                }
                 double totalPower = USE_FAKE_DATA ? 4000 : mStatsHelper.getTotalPower();
                 final double percentOfTotal =
                         ((sipper.totalPowerMah / totalPower) * dischargeAmount);
-                if (sipperCanBePruned(sipper)) {
-                    if ((sipper.totalPowerMah * SECONDS_IN_HOUR) < MIN_POWER_THRESHOLD_MILLI_AMP) {
-                        continue;
-                    }
-                    if (((int) (percentOfTotal + .5)) < 1) {
-                        continue;
-                    }
+                if (((int) (percentOfTotal + .5)) < 1) {
+                    continue;
                 }
                 if (sipper.drainType == BatterySipper.DrainType.OVERCOUNTED) {
                     // Don't show over-counted unless it is at least 2/3 the size of
@@ -342,7 +374,7 @@ public class PowerUsageSummary extends PowerUsageBase {
                     if (percentOfTotal < 10) {
                         continue;
                     }
-                    if ("user".equals(Build.TYPE) || "userdebug".equals(Build.TYPE) || "eng".equals(Build.TYPE)) {
+                    if ("user".equals(Build.TYPE) || "userdebug".equals(Build.TYPE)) {
                         continue;
                     }
                 }
@@ -355,7 +387,7 @@ public class PowerUsageSummary extends PowerUsageBase {
                     if (percentOfTotal < 5) {
                         continue;
                     }
-                    if ("user".equals(Build.TYPE) || "userdebug".equals(Build.TYPE) || "eng".equals(Build.TYPE)) {
+                    if ("user".equals(Build.TYPE) || "userdebug".equals(Build.TYPE)) {
                         continue;
                     }
                 }
