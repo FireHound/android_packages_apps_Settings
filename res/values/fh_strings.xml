@@ -53,6 +53,10 @@
     <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="status_bar_date_string_edittext_summary">Enter string</string>
 
+    <!-- Double Tap on LS to sleep -->
+    <string name="double_tap_ls">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_ls_summary">Double tap anywhere on lockscreen to sleep</string>
+
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
     <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
