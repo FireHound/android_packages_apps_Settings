@@ -329,6 +329,7 @@
     <string name="status_bar_show_weather_summary">Display the current temperature on the status bar</string>
  
     <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_clock_position_title">Clock position</string>
     <string name="status_bar_clock_position_right">Right</string>
     <string name="status_bar_clock_position_left">Left</string>
@@ -873,5 +874,19 @@
     <string name="ticker_disabled">No ticker</string>
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notifications and music ticker</string>
+
+    <!-- Power menu animation -->
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_default">Default</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
+    <string name="power_menu_animation_rotate">Rotation</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
 
 </resources>

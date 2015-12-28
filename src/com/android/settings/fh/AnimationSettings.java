@@ -47,8 +47,10 @@ public class AnimationSettings extends SettingsPreferenceFragment
     private static final String TAG = "AnimationSettings";
 
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
+    private static final String POWER_MENU_ANIMATION = "power_menu_animation";
 
     private ListPreference mToastAnimation;
+    private ListPreference mPowerMenuAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,13 @@ public class AnimationSettings extends SettingsPreferenceFragment
         mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
         mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
         mToastAnimation.setOnPreferenceChangeListener(this);
+
+        mPowerMenuAnimation = (ListPreference) findPreference(POWER_MENU_ANIMATION);
+        int powermenuanimation = Settings.System.getInt(resolver,
+                Settings.System.POWER_MENU_ANIMATION, 0);
+        mPowerMenuAnimation.setValue(String.valueOf(powermenuanimation));
+        mPowerMenuAnimation.setSummary(mPowerMenuAnimation.getEntry());
+        mPowerMenuAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -81,6 +90,13 @@ public class AnimationSettings extends SettingsPreferenceFragment
                     Settings.System.TOAST_ANIMATION, (String) newValue);
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             Toast.makeText(getActivity(), "Toast test!!!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (preference == mPowerMenuAnimation) {
+            int value = Integer.parseInt((String) newValue);
+            int index = mPowerMenuAnimation.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.POWER_MENU_ANIMATION, value);
+            mPowerMenuAnimation.setSummary(mPowerMenuAnimation.getEntries()[index]);
             return true;
         }
         return false;

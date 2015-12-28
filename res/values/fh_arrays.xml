@@ -238,15 +238,15 @@
     <!-- Status Bar cm -->
     <!-- Status bar -->
     <string-array name="status_bar_clock_position_entries" translatable="false">
-        <item>@string/status_bar_clock_position_center</item>
         <item>@string/status_bar_clock_position_right</item>
+        <item>@string/status_bar_clock_position_center</item>
         <item>@string/status_bar_clock_position_left</item>
     </string-array>
 
     <string-array name="status_bar_clock_position_entries_rtl" translatable="false">
+        <item>@string/status_bar_clock_position_left</item>
         <item>@string/status_bar_clock_position_center</item>
         <item>@string/status_bar_clock_position_right</item>
-        <item>@string/status_bar_clock_position_left</item>
     </string-array>
 
     <string-array name="status_bar_clock_position_values" translatable="false">
@@ -529,6 +529,35 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- Power menu animation  -->
+    <string-array name="power_menu_animation_entries">
+        <item>@string/power_menu_animation_default</item>
+        <item>@string/power_menu_animation_bottom</item>
+        <item>@string/power_menu_animation_top</item>
+        <item>@string/power_menu_animation_rotate</item>
+        <item>@string/power_menu_animation_xylon</item>
+        <item>@string/power_menu_animation_slide</item>
+        <item>@string/power_menu_animation_turn</item>
+        <item>@string/power_menu_animation_fly</item>
+        <item>@string/power_menu_animation_card</item>
+        <item>@string/power_menu_animation_translucent_top</item>
+        <item>@string/power_menu_animation_translucent_bottom</item>
+    </string-array>
+
+    <string-array name="power_menu_animation_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 
 </resources>
