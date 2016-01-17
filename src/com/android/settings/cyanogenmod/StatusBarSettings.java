@@ -39,6 +39,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.fh.SeekBarPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
@@ -61,7 +62,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String PREF_QS_TRANSPARENT_SHADE = "qs_transparent_shade";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -77,7 +78,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarDateFormat;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-    private ListPreference mQuickPulldown;
+    private SeekBarPreference mQSShadeAlpha;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -151,6 +152,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQuickPulldown.setValue(String.valueOf(quickPulldown));
         updatePulldownSummary(quickPulldown);
         mQuickPulldown.setOnPreferenceChangeListener(this);
+
+        // QS shade alpha
+        mQSShadeAlpha =
+                (SeekBarPreference) prefSet.findPreference(PREF_QS_TRANSPARENT_SHADE);
+        int qSShadeAlpha = Settings.System.getInt(resolver,
+                Settings.System.QS_TRANSPARENT_SHADE, 255);
+        mQSShadeAlpha.setValue(qSShadeAlpha / 1);
+        mQSShadeAlpha.setOnPreferenceChangeListener(this);
+
+
     }
 
     @Override
@@ -268,6 +279,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             CMSettings.System.putInt(
                     resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
             updatePulldownSummary(quickPulldown);
+            return true;
+        } else if (preference == mQSShadeAlpha) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(resolver, Settings.System.QS_TRANSPARENT_SHADE, alpha * 1);
             return true;
         }
         return false;
