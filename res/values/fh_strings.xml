@@ -41,6 +41,9 @@
     <!-- QS shade transparency -->
     <string name="qs_transparent_shade">QS Shade Transparency</string>
 
+    <!-- QS header transparency -->
+    <string name="qs_transparent_header">QS Header Transparency</string>
+
    <!--Status bar date -->
     <string name="status_bar_clock_category">Clock</string>
     <string name="status_bar_date_title">Date</string>
