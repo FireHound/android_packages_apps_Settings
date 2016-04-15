@@ -27,6 +27,8 @@
   
     <!-- Recents settings -->
     <string name="recents_settings">Recents</string>
+    <string name="recents_show_membar_title">Memory Bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>	
 
     <!-- Show seconds -->
     <string name="status_bar_clock_seconds_title">Show Seconds</string>
