@@ -4,9 +4,7 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -329,5 +327,10 @@
     <string name="pa_login_checking_password">Checking account\u2026</string>
     <string name="pa_login_incorrect_login">Login was incorrect</string>
     <string name="pa_pattern_or_fingerprint_header">Must draw pattern or use fingerprint to unlock</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser Indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
 
 </resources>
