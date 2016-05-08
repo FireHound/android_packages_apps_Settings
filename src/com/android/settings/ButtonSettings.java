@@ -31,6 +31,7 @@ import android.os.Handler;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
@@ -57,6 +58,8 @@ import org.cyanogenmod.internal.util.ScreenType;
 
 import java.util.List;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements
@@ -70,6 +73,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_MENU_LONG_PRESS = "hardware_keys_menu_long_press";
     private static final String KEY_ASSIST_PRESS = "hardware_keys_assist_press";
     private static final String KEY_ASSIST_LONG_PRESS = "hardware_keys_assist_long_press";
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
@@ -142,6 +146,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     private PreferenceCategory mNavigationPreferencesCat;
 
+    private ColorPickerPreference mNavbarButtonTint;
+
     private Handler mHandler;
 
     @Override
@@ -213,6 +219,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Navigation bar left
         mNavigationBarLeftPref = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_LEFT);
+
+        // Navigation bar button color
+        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
+        mNavbarButtonTint.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mNavbarButtonTint.setSummary(hexColor);
+        mNavbarButtonTint.setNewPreviewColor(intColor);
 
         // Navigation bar recents long press activity needs custom setup
         mNavigationRecentsLongPressAction =
@@ -617,6 +632,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
             CMSettings.Secure.putString(getContentResolver(),
                     CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY, putString);
+            return true;
+        } else if (preference == mNavbarButtonTint) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_TINT, intHex);
             return true;
         } else if (preference == mCameraDoubleTapPowerGesture) {
             boolean value = (Boolean) newValue;
