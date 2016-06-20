@@ -146,6 +146,11 @@
 
    <!-- Gestures Settings -->
    <string name="gestures_settings">Gestures</string> 
+   <string name="advanced_gestures">Advanced Gestures</string>
+   
+   <!-- Three-fingers-swipe to screenshot -->
+   <string name="three_finger_gesture">Three Finger Gesture</string>
+   <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string> 
 
    <!-- Disabling immersive mode messages -->
    <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
