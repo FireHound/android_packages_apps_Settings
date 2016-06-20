@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2016 The FireHound Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -72,7 +69,7 @@
     <string name="color_default">Default</string>
 
      <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Gesture Anywhere</string>
+    <string name="gesture_anywhere_title">Gestures</string>
     <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
     <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
     <string name="gesture_anywhere_position_title">Location</string>
@@ -1416,5 +1413,10 @@
     <string name="camera_sounds_title">Camera shutter sound</string>
     <string name="camera_sounds_summary">Enable system camera shutter sound</string>
     <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_ss">Handshake Gestures</string>
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
 </resources>
