@@ -25,6 +25,10 @@
     <!-- Launch Dev Tools -->
     <string name="development_tools_title">Development tools</string>
 
+    <!-- Volume Dialog Expanded -->
+    <string name="volume_dialog_force_expanded_title">Force Expanded Volume Panel</string>
+    <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode</string>
+
     <!-- SlimSizer  -->
     <string name="listsystem">List</string>
     <string name="sizer_title">System App Remover</string>
