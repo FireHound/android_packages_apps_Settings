@@ -50,6 +50,14 @@
                 android:key="notification_volume"
                 android:icon="@*android:drawable/ic_audio_ring_notif"
                 android:title="@string/notification_volume_option_title"/>
+
+	<!-- Volume Panel Expand -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                android:key="volume_dialog_force_expanded"
+                android:title="@string/volume_dialog_force_expanded_title"
+                android:summary="@string/volume_dialog_force_expanded_summary"
+                android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

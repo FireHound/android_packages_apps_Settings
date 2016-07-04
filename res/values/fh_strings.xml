@@ -48,6 +48,10 @@
     <string name="mod_version">FireHound version</string>
     <string name="mod_version_default">1.0</string>
 
+    <!-- Volume Dialog Expanded -->
+    <string name="volume_dialog_force_expanded_title">Volume Panel Expand</string>
+    <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode. First time you need to press on expand button.</string>
+
     <!-- Circle app bar -->
     <string name="category_app_circle_bar_title">App launcher</string>
     <string name="app_circle_bar_title">App circle bar</string>
