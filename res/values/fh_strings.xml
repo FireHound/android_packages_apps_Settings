@@ -15,6 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Expose Phone Info -->
+    <string name="device_info_title">Phone info</string>
+
     <!-- About phone screen, FH version -->
     <string name="fh_mod_version">FireHound Version</string>
 
