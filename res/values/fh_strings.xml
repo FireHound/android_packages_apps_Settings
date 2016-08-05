@@ -166,8 +166,8 @@
     <string name="fh_google_plus_summary">Visit and Join Community for More Information</string>
     <string name="about_fh">About FireHound</string>
     <string name="fh_donation_title">Donate to FireHound</string>
-    <string name="fh_donation_summary">Donations are welcomed and will be used to keep our build servers alive</string>
-    <string name="fh_maintainers_title">FireHound FireMen</string>
+    <string name="fh_donation_summary">Donations are welcome and will be used to keep our build servers alive</string>
+    <string name="fh_maintainers_title">FireMen</string>
     <string name="fh_maintainers_summary">Official Device Maintainers and Officially Supported Devices</string>
 
     <!-- About phone screen, Device model -->
