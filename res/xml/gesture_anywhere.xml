@@ -19,7 +19,7 @@
     android:title="@string/gesture_anywhere_title" >
 
     <PreferenceCategory
-	android:title="@string/gesture_anywhere_enabled_title />
+	android:title="@string/gesture_anywhere_enabled_title" />
 
     <SwitchPreference
         android:key="gesture_anywhere_enabled"
