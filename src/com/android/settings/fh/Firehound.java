@@ -50,7 +50,7 @@ public class Firehound extends SettingsPreferenceFragment {
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/communities/114615598909452601377");
 	} else if (preference == mDonationUrl) {
-	    launchUrl("https://https://www.paypal.me/AdamLapinski");
+	    launchUrl("https://www.paypal.me/AdamLapinski");
 	} else if (preference == mMaintainersUrl) {
 	    launchUrl("https://github.com/FireHound/android_vendor_fh/blob/mm/Maintainers");
         } else if (preference == mDeveloperUrl) {
