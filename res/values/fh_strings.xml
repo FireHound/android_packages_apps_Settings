@@ -80,6 +80,7 @@
     <string name="gestures_settings">Gestures</string>
     <string name="advanced_gestures">Advanced Gestures</string>
     <string name="fh_online">About FireHound</string>
+    <string name="category_interface">Interface</string>
 
     <!-- Maintainers -->
     <string name="maintainers">Official FireHound Maintainers</string>
@@ -578,5 +579,41 @@
     <!-- Top Level Substratum settings -->
     <string name="substratum_title">Substratum</string>
     <string name="substratum_summary">Customize Themes</string>
+
+    <!-- Blur UI -->
+    <string name="nav_blur_ui_title">Blur UI</string>
+    <string name="blur_ui_category_title">Blur personalizations</string>
+    <string name="blurred_status_bar_expanded_enabled_pref">Blur StatusBar Background</string>
+    <string name="blurred_status_bar_expanded_enabled_pref_summary">Blur the background when you pull down the status bar</string>
+    <string name="translucent_notifications_pref">Translucent Notifications</string>
+    <string name="translucent_notifications_pref_summary">Set the background of notifications translucent</string>
+    <string name="translucent_header_pref">Blurred Status Bar Header </string>
+    <string name="translucent_header_pref_summary">Blur the background of status bar header</string>
+    <string name="translucent_quick_settings_pref">Translucent Expanded StatusBar</string>
+    <string name="translucent_quick_settings_pref_summary">Make qs panel background transparent</string>
+    <string name="transluency_level_universal">Transluency level</string>
+    <string name="blur_expstatus_cat">Expanded StatusBar </string>
+    <string name="blur_notifications_cat">Notifications</string>
+    <string name="blur_header_cat">StatusBar Header</string>
+    <string name="blur_qs_cat">Quick Settings</string>
+    <string name="blur_recents_cat">Recents</string>
+    <string name="blurred_recent_app_enabled_pref">Blur Recents background </string>
+    <string name="blurred_recent_app_enabled_pref_summary">Background of recents apps list gets blurred</string>
+    <string name="blurred_scale">Blur scale</string>
+    <string name="blurred_scale_summary">Quality of blur image</string>
+    <string name="blurred_radius">Blur radius</string>
+    <string name="blurred_radius_summary">Amount of blur</string>
+    <string name="blur_cat_notice">Notice</string>
+    <string name="blur_cat_notice_summary">Blur personalizations are automatically disabled during Keyguard view!</string>
+    <string name="blurred_scale">Blur Scale</string>
+    <string name="blurred_scale_summary">Quality of blur image</string>
+    <string name="blurred_radius">Blur Radius</string>
+    <string name="blurred_radius_summary">Amount of blur</string>
+    <string name="blur_colors_cat">Blur Color filters</string>
+    <string name="blur_light_color">Light image color filter</string>
+    <string name="blur_dark_color">Dark image color filter</string>
+    <string name="blur_mixed_color">Mixed image color filter</string>
+    <string name="blur_colors_notice">What are these colors for?</string>
+    <string name="blur_colors_notice_summary">These colors are the ones tinting the BlurBackground. Instead of the normal Grey, you can now choose colors in any way you like.\nThere are three color filters available for: Light backgrounds, Dark backgrounds and Light/Dark backgrounds.\nSo how are these colors working?? \n Simple, as the titles say, the Light filter will be used for Lighter backgrounds, Dark filter for dark backgrounds and the mixed filter one will be used for backgrounds not too dark but neither too light.\nThese colors are used for both BlurBackgrounds: NotificationsDrawer and RecentsApps </string>
 
 </resources>

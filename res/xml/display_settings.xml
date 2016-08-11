@@ -159,4 +159,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+            android:key="interface"
+	    android:title="@string/category_interface">
+
+	<PreferenceScreen
+                android:key="nav_blur_ui"
+                android:fragment="com.android.settings.beanstalk.BlurUI"
+		android:title="@string/nav_blur_ui_title"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
