@@ -117,12 +117,6 @@ public class NetworkTraffic extends SettingsPreferenceFragment
                             Settings.System.NETWORK_TRAFFIC_AUTOHIDE, 0) == 1));
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
-        mNetTrafficHidearrow =
-            (SwitchPreference) prefSet.findPreference(NETWORK_TRAFFIC_HIDEARROW);
-        mNetTrafficHidearrow.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.NETWORK_TRAFFIC_HIDEARROW, 0) == 1));
-        mNetTrafficHidearrow.setOnPreferenceChangeListener(this);
-
         mNetTrafficAutohideThreshold = (SeekBarPreference) prefSet.findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
         int netTrafficAutohideThreshold = Settings.System.getInt(resolver,
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 10);
@@ -229,24 +223,11 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE, value ? 1 : 0);
             return true;
-        } else if (preference == mNetTrafficHidearrow) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_HIDEARROW, value ? 1 : 0);
-            return true;
         } else if (preference == mNetTrafficAutohideThreshold) {
             int threshold = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, threshold * 1);
             return true;
-        }else if (preference == mColorPicker) {
-            String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
-                    .valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUSBAR_CLOCK_COLOR, intHex);
-            return true; 
 	}
         else if (preference == mNetTrafficColor) {
             String hex = ColorPickerPreference.convertToARGB(
