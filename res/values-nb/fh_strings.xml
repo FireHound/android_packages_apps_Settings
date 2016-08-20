@@ -54,7 +54,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Byggdato</string>
   <!-- FireHound Updater -->
-  <string name="cmupdate_settings_title">FireHound oppdateringer</stringg>
+  <string name="cmupdate_settings_title">FireHound oppdateringer</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Oppdater Cyanogen recovery</string>
   <string name="update_recovery_summary">Oppdater recovery med systemoppdateringer</string>
