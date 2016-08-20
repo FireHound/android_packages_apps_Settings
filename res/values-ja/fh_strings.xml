@@ -37,6 +37,7 @@
   <string name="root_access_apps">アプリのみ</string>
   <string name="root_access_adb">ADBのみ</string>
   <string name="root_access_all">アプリとADB</string>
+  <!-- Preference link for root appops -->
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, FireHound version -->
@@ -548,7 +549,6 @@
   <string name="volume_adjust_sounds_title">音量調整の音</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">バイブレーションの強さ</string>
-  <string name="vibrator_warning">%1$dより大きい値は推奨されません</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">色の調整</string>
   <string name="color_calibration_summary">画面の色を調整する</string>
@@ -571,23 +571,6 @@
   <string name="display_rotation_90_title">90度</string>
   <string name="display_rotation_180_title">180度</string>
   <string name="display_rotation_270_title">270度</string>
-  <!-- Display settings.  Screen color. -->
-  <string name="screencolor">画面の色</string>
-  <string name="screencolor_summary">画面の色彩、彩度、コントラストまたは輝度を調整する</string>
-  <string name="custom_screencolor">カスタムの画面の色</string>
-  <string name="screencolor_save">保存</string>
-  <string name="screencolor_cancel">キャンセル</string>
-  <string name="restore_preview">デフォルトの写真を表示</string>
-  <string name="selectnewfile_menu">ギャラリーから新しい写真を表示</string>
-  <string name="selectfile_menu">ギャラリーから写真を表示</string>
-  <string name="restore_default_str">リセット</string>
-  <string name="hue_str">色相: <xliff:g id="hue_value">%1$s</xliff:g></string>
-  <string name="saturation_str">彩度: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-  <string name="contrast_str">コントラスト: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-  <string name="intensity_str">強度: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
-  <string name="screen_color_standard">スタンダード</string>
-  <string name="screen_color_vivid">ビビッド</string>
-  <string name="screen_color_custom">カスタム</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">画面を見やすく、目の疲れを軽減するために、時間と周囲の環境に合わせて画面を最適化する</string>
   <string name="live_display_mode">ディスプレイのモード</string>
@@ -617,6 +600,9 @@
   <string name="live_display_color_profile_photography_summary">写真の完全な色再現</string>
   <string name="live_display_color_profile_basic_title">基本</string>
   <string name="live_display_color_profile_basic_summary">無調整のディスプレイを使用する</string>
+  <!-- LiveDisplay : Picture Adjustment -->
+  <string name="adj_saturation_title">彩度</string>
+  <string name="adj_contrast_title">コントラスト</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">入力方法の選択のアイコン</string>
   <string name="ime_switcher_notify_summary">入力方法の選択のアイコンを表示する</string>
@@ -810,13 +796,13 @@
   <string name="select_custom_activity_title">カスタムのアクティビティを選択</string>
   <!-- Blacklist preferences -->
   <string name="blacklist_title">着信拒否リスト</string>
-  <string name="blacklist_edit_dialog_title">着信拒否した電話番号を編集</string>
+  <string name="blacklist_edit_dialog_title">着信拒否する電話番号を編集</string>
   <string name="blacklist_prefs">設定</string>
   <string name="blacklist_button_delete">削除</string>
   <string name="blacklist_empty_text">着信拒否した番号がありません。追加（+）ボタンをタップしてエントリーを追加します。</string>
   <string name="blacklist_disabled_empty_text">特定の電話番号からの通話やメッセージを拒否するには、着信拒否リストを有効にしてください。</string>
   <string name="blacklist_summary_disabled">無効</string>
-  <string name="blacklist_summary">着信拒否リストにある電話番号からの着信やメッセージを受け取らないようにします</string>
+  <string name="blacklist_summary">着信拒否リストにある電話番号からの着信やメッセージを受け取らないようにする</string>
   <string name="blacklist_notify">通知を表示</string>
   <string name="blacklist_private_numbers_title">非通知番号</string>
   <string name="blacklist_private_numbers_summary_disabled">非通知番号からの着信を拒否しない</string>
@@ -829,12 +815,12 @@
   <string name="blacklist_summary_type_calls_and_messages">着信とメッセージ</string>
   <string name="blacklist_regex_title">ワイルドカードを使用</string>
   <string name="blacklist_regex_summary">[.]をワイルドカードとして使用し、[*]を繰り返しとして使用します。例えば[123.*]なら123から始まる番号をブロックし、[.*123.*]なら123を含む番号をブロックします。</string>
-  <string name="blacklist_policy_block_calls">着信拒否する</string>
-  <string name="blacklist_policy_block_messages">メッセージを受信拒否する</string>
+  <string name="blacklist_policy_block_calls">着信拒否</string>
+  <string name="blacklist_policy_block_messages">メッセージを受信拒否</string>
   <string name="blacklist_bad_number_add">無効な電話番号は着信拒否リストに追加できません</string>
   <!-- Blacklist management -->
   <string name="remove_blacklist_number_title">番号を削除</string>
-  <string name="remove_blacklist_entry">この着信拒否している電話番号を削除しますか？</string>
+  <string name="remove_blacklist_entry">着信拒否しているこの電話番号を削除しますか？</string>
   <string name="select_contact">連絡先を選択</string>
   <!-- Sms security limit -->
   <string name="app_security_title">アプリのセキュリティ</string>
@@ -1073,4 +1059,5 @@
   <string name="security_settings_fingerprint_sensor_location_front">前面</string>
   <string name="security_settings_fingerprint_sensor_location_left">左側面</string>
   <string name="security_settings_fingerprint_sensor_location_right">右側面</string>
+  <!-- SIM status format string -->
 </resources>

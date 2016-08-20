@@ -80,6 +80,12 @@
                 android:defaultValue="true" />
 
         <SwitchPreference
+                android:key="high_touch_sensitivity"
+                android:title="@string/high_touch_sensitivity_title"
+                android:summary="@string/high_touch_sensitivity_summary"
+                android:defaultValue="false" />
+
+        <SwitchPreference
                 android:key="camera_gesture"
                 android:title="@string/camera_gesture_title"
                 android:summary="@string/camera_gesture_desc"
@@ -89,8 +95,7 @@
         <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
                 android:key="proximity_on_wake"
                 android:title="@string/proximity_wake_title"
-                android:summary="@string/proximity_wake_summary"
-                android:defaultValue="true" />
+                android:summary="@string/proximity_wake_summary" />
 
         <!-- Seconds before sleep -->
         <ListPreference

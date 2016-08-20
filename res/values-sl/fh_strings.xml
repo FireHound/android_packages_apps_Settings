@@ -40,6 +40,9 @@
   <string name="root_access_apps">Samo aplikacije</string>
   <string name="root_access_adb">Samo ADB</string>
   <string name="root_access_all">Aplikacije in ADB</string>
+  <!-- Preference link for root appops -->
+  <string name="root_appops_title">Upravljaj s skrbniškimi dostopi</string>
+  <string name="root_appops_summary">Ogled in nadzor skrbniških pravil</string>
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, FireHound version -->
@@ -462,7 +465,7 @@
   <string name="hardware_keys_home_key_title">Gumb Domov</string>
   <string name="hardware_keys_back_key_title">Gumb Nazaj</string>
   <string name="hardware_keys_menu_key_title">Gumb Meni</string>
-  <string name="hardware_keys_assist_key_title">Gumb Iskanje</string>
+  <string name="hardware_keys_assist_key_title">Gumb Išči</string>
   <string name="hardware_keys_appswitch_key_title">Gumb Nedavno</string>
   <string name="hardware_keys_camera_key_title">Gumb fotoaparata</string>
   <string name="hardware_keys_volume_keys_title">Gumba za glasnost</string>
@@ -551,7 +554,7 @@
   <string name="volume_adjust_sounds_title">Zvoki za prilagoditev glasnosti</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Jakost vibriranja</string>
-  <string name="vibrator_warning">Vrednosti višje od %1$d niso priporočljive</string>
+  <string name="vibrator_warning">Vrednosti višje od %1$d %% niso priporočljive</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Umerjanje barv</string>
   <string name="color_calibration_summary">Umeri barve na zaslonu</string>
@@ -574,23 +577,6 @@
   <string name="display_rotation_90_title">90 stopinj</string>
   <string name="display_rotation_180_title">180 stopinj</string>
   <string name="display_rotation_270_title">270 stopinj</string>
-  <!-- Display settings.  Screen color. -->
-  <string name="screencolor">Barva zaslona</string>
-  <string name="screencolor_summary">Naravnajte odtenek, nasičenost, kontrast in jakost zaslona</string>
-  <string name="custom_screencolor">Barva zaslona po meri</string>
-  <string name="screencolor_save">Shrani</string>
-  <string name="screencolor_cancel">Prekliči</string>
-  <string name="restore_preview">Pokaži privzeto sliko</string>
-  <string name="selectnewfile_menu">Pokaži novo sliko iz galerije</string>
-  <string name="selectfile_menu">Pokaži sliko iz galerije</string>
-  <string name="restore_default_str">Ponastavi</string>
-  <string name="hue_str">Odtenek: <xliff:g id="hue_value">%1$s</xliff:g></string>
-  <string name="saturation_str">Nasičenost: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-  <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-  <string name="intensity_str">Jakost: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
-  <string name="screen_color_standard">Običajno</string>
-  <string name="screen_color_vivid">Živahno</string>
-  <string name="screen_color_custom">Po meri</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiziraj zaslon glede na čas dneva in pogoje okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
   <string name="live_display_mode">Način prikaza</string>
@@ -620,6 +606,15 @@
   <string name="live_display_color_profile_photography_summary">Popolna izvedba barv za fotografije</string>
   <string name="live_display_color_profile_basic_title">Osnoven</string>
   <string name="live_display_color_profile_basic_summary">Uporabi neumerjen zaslon</string>
+  <string name="live_display_color_profile_adaptive_title">Prilagodljiv</string>
+  <string name="live_display_color_profile_adaptive_summary">Barve se prilagajajo pogojem okolice</string>
+  <!-- LiveDisplay : Picture Adjustment -->
+  <string name="picture_adjustment_title">Prilagoditev slike</string>
+  <string name="picture_adjustment_summary">Prilagodi odtenek, nasičenost, jakost in kontrast</string>
+  <string name="adj_hue_title">Odtenek</string>
+  <string name="adj_saturation_title">Nasičenost</string>
+  <string name="adj_intensity_title">Jakost</string>
+  <string name="adj_contrast_title">Kontrast</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Ikona izbirnika</string>
   <string name="ime_switcher_notify_summary">Prikaži ikono izbirnika metode za vnos</string>
@@ -659,7 +654,7 @@
   <string name="gestures_action_home">Domov</string>
   <string name="gestures_action_back">Nazaj</string>
   <string name="gestures_action_menu">Meni</string>
-  <string name="gestures_action_search">Začni z iskanjem</string>
+  <string name="gestures_action_search">Začni iskati</string>
   <string name="gestures_action_recent">Nedavne aplikacije</string>
   <!-- Stylus gestures -->
   <string name="stylus_app_not_installed">%s ni nameščen</string>
@@ -900,6 +895,11 @@
         <![CDATA[<b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Skupaj prispevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+  <string name="contributions_info_menu">Podatki o sodelavcih</string>
+  <string name="contributions_info_msg">
+        <![CDATA[<b>Skupaj sodelavcev:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Skupaj prispevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Zadnja posodobitev:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
   <string name="category_sounds">Zvoki</string>
   <string name="notification_manager">Obvestila</string>
   <string name="lockscreen_settings">Zaklepanje zaslona</string>
@@ -1072,5 +1072,12 @@
   <string name="lockscreen_wallpaper_title">Slika ozadja</string>
   <string name="not_available_with_app">Ni na voljo s/z %1$s</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Poiščite tipalo za prstne odtise na <xliff:g id="sensor_location">%1$s</xliff:g> vašega telefona.</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">zadnji strani</string>
+  <string name="security_settings_fingerprint_sensor_location_front">sprednji strani</string>
+  <string name="security_settings_fingerprint_sensor_location_left">levi strani</string>
+  <string name="security_settings_fingerprint_sensor_location_right">desni strani</string>
+  <!-- SIM status format string -->
+  <string name="sim_status_format_string">Glas: <xliff:g id="voice_status">%1$s</xliff:g> / Podatki: <xliff:g id="data_status">%2$s</xliff:g></string>
 </resources>

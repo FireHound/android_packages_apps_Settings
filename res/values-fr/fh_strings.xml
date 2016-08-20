@@ -39,6 +39,7 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="root_access_apps">Applications uniquement</string>
   <string name="root_access_adb">ADB uniquement</string>
   <string name="root_access_all">Applications et ADB</string>
+  <!-- Preference link for root appops -->
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, FireHound version -->
@@ -550,7 +551,6 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="volume_adjust_sounds_title">Son lors du réglage du volume</string>
   <!-- Hardware tunables - Vibrator intensity -->
   <string name="vibrator_intensity_title">Intensité du vibreur</string>
-  <string name="vibrator_warning">Les valeurs supérieures à %1$d ne sont pas recommandées</string>
   <!-- Hardware tunables - Color calibration -->
   <string name="color_calibration_title">Calibrage des couleurs</string>
   <string name="color_calibration_summary">Calibrer les couleurs de l\'écran</string>
@@ -573,23 +573,6 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="display_rotation_90_title">90 degrés</string>
   <string name="display_rotation_180_title">180 degrés</string>
   <string name="display_rotation_270_title">270 degrés</string>
-  <!-- Display settings.  Screen color. -->
-  <string name="screencolor">Couleur de l\'écran</string>
-  <string name="screencolor_summary">Régler la teinte, la saturation, le contraste ou l\'intensité de l\'écran</string>
-  <string name="custom_screencolor">Couleur d\'écran personnalisée</string>
-  <string name="screencolor_save">Enregistrer</string>
-  <string name="screencolor_cancel">Annuler</string>
-  <string name="restore_preview">Afficher l\'image par défaut</string>
-  <string name="selectnewfile_menu">Afficher la nouvelle image depuis la galerie</string>
-  <string name="selectfile_menu">Afficher l\'image depuis la galerie</string>
-  <string name="restore_default_str">Réinitialiser</string>
-  <string name="hue_str">Teinte : <xliff:g id="hue_value">%1$s</xliff:g></string>
-  <string name="saturation_str">Saturation : <xliff:g id="saturation_value">%1$s</xliff:g></string>
-  <string name="contrast_str">Contraste : <xliff:g id="contrast_value">%1$s</xliff:g></string>
-  <string name="intensity_str">Intensité : <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
-  <string name="screen_color_standard">Standard</string>
-  <string name="screen_color_vivid">Vive</string>
-  <string name="screen_color_custom">Personnalisée</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
   <string name="live_display_mode">Mode d\'affichage</string>
@@ -619,6 +602,9 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <string name="live_display_color_profile_photography_summary">Reproduction parfaite des couleurs pour les photos</string>
   <string name="live_display_color_profile_basic_title">Basique</string>
   <string name="live_display_color_profile_basic_summary">Utiliser l\'écran sans étalonnage</string>
+  <!-- LiveDisplay : Picture Adjustment -->
+  <string name="adj_saturation_title">Saturation</string>
+  <string name="adj_contrast_title">Contraste</string>
   <!-- Whether to display IME switcher notifcation -->
   <string name="ime_switcher_notify">Icône du sélecteur</string>
   <string name="ime_switcher_notify_summary">Afficher l\'icône du sélecteur de mode de saisie</string>
@@ -1053,4 +1039,5 @@ Vous êtes maintenant à <xliff:g id="step_count">%1$d</xliff:g> étapes de l\'a
   <!-- Lock screen wallpaper -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <!-- SIM status format string -->
 </resources>
