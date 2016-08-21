@@ -62,6 +62,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
     private static final String PREF_QS_TRANSPARENT_SHADE = "qs_transparent_shade";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
@@ -78,6 +79,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarDateFormat;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
+    private ListPreference mQuickPulldown;
     private SeekBarPreference mQSShadeAlpha;
 
     @Override
@@ -160,7 +162,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 Settings.System.QS_TRANSPARENT_SHADE, 255);
         mQSShadeAlpha.setValue(qSShadeAlpha / 1);
         mQSShadeAlpha.setOnPreferenceChangeListener(this);
-
 
     }
 
