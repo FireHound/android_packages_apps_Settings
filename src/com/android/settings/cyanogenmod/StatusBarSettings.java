@@ -151,13 +151,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         enableStatusBarBatteryDependents(batteryStyle);
         mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
 
-        int quickPulldown = CMSettings.System.getInt(resolver,
-                CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
-        mQuickPulldown.setValue(String.valueOf(quickPulldown));
-        updatePulldownSummary(quickPulldown);
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-
-        // QS shade alpha
+	// QS shade alpha
         mQSShadeAlpha =
                 (SeekBarPreference) prefSet.findPreference(PREF_QS_TRANSPARENT_SHADE);
         int qSShadeAlpha = Settings.System.getInt(resolver,
@@ -173,6 +167,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQSHeaderAlpha.setValue(qSHeaderAlpha / 1);
         mQSHeaderAlpha.setOnPreferenceChangeListener(this);
 
+        int quickPulldown = CMSettings.System.getInt(resolver,
+                CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
+        mQuickPulldown.setValue(String.valueOf(quickPulldown));
+        updatePulldownSummary(quickPulldown);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
     }
 
     @Override
