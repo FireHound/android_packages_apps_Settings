@@ -52,6 +52,12 @@
             android:title="@string/share_fh_title"
             android:summary="@string/share_fh_summary" />
 
+	<!-- FH Telegram -->
+	<Preference
+	    android:key"join"
+	    android:title"@string/fh_telegram_title"
+	    android:summary"@string/fh_telegram_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

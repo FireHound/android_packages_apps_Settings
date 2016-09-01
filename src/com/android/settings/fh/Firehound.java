@@ -24,6 +24,7 @@ public class Firehound extends SettingsPreferenceFragment {
     Preference mDeveloperUrl;
     Preference mDonationUrl;
     Preference mMaintainersUrl;
+    Preference mTelegramUrl;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -35,6 +36,8 @@ public class Firehound extends SettingsPreferenceFragment {
         mDeveloperUrl = findPreference("fh_developer");
 	mDonationUrl = findPreference("fh_donation");
 	mMaintainersUrl = findPreference("fh_maintainers");
+	mTelegramUrl = findPreference("fh_telegram");
+
     }
 
     @Override
@@ -55,6 +58,8 @@ public class Firehound extends SettingsPreferenceFragment {
 	    launchUrl("https://github.com/FireHound/android_vendor_fh/blob/mm/Maintainers");
         } else if (preference == mDeveloperUrl) {
             launchUrl("https://github.com/PMS22");
+	} else if (preference == mTelegramUrl) {
+            launchUrl("https://telegram.me/joinchat/DN1qs0F0tcmPZseUF6BSfw");
         } else if (preference.getKey().equals(KEY_FH_SHARE)) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);

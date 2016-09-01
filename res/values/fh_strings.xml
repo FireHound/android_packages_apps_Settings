@@ -212,6 +212,10 @@
     <string name="fh_maintainers_title">FireMen</string>
     <string name="fh_maintainers_summary">Official Device Maintainers and Officially Supported Devices</string>
 
+    <!-- Telegram join -->
+    <string name="fh_telegram_title">Join Official Telegram Group</string>
+    <string name="fh_telegram_summary">Join for latest updates and remotely conversing</string>
+
     <!-- About phone screen, Device model -->
     <string name="device_model">Device model</string>
 
