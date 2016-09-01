@@ -25,8 +25,10 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -62,9 +64,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
     private static final String PREF_QS_TRANSPARENT_SHADE = "qs_transparent_shade";
     private static final String PREF_QS_TRANSPARENT_HEADER = "qs_transparent_header";
+    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -81,6 +83,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mQuickPulldown;
+
     private SeekBarPreference mQSShadeAlpha;
     private SeekBarPreference mQSHeaderAlpha;
 
@@ -89,6 +92,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
+	PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
@@ -284,12 +288,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarBatteryShowPercent.setSummary(
                     mStatusBarBatteryShowPercent.getEntries()[index]);
             return true;
-        } else if (preference == mQuickPulldown) {
-            int quickPulldown = Integer.valueOf((String) newValue);
-            CMSettings.System.putInt(
-                    resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
-            updatePulldownSummary(quickPulldown);
-            return true;
         } else if (preference == mQSShadeAlpha) {
             int alpha = (Integer) newValue;
             Settings.System.putInt(resolver, Settings.System.QS_TRANSPARENT_SHADE, alpha * 1);
@@ -297,7 +295,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         } else if (preference == mQSHeaderAlpha) {
             int alpha = (Integer) newValue;
             Settings.System.putInt(resolver, Settings.System.QS_TRANSPARENT_HEADER, alpha * 1);
-            return true;
+	return true;
+        } else if (preference == mQuickPulldown) {
+            int quickPulldown = Integer.valueOf((String) newValue);
+            CMSettings.System.putInt(
+                    resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
+            updatePulldownSummary(quickPulldown); 
+           return true;
         }
         return false;
     }

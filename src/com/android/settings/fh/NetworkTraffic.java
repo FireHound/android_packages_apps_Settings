@@ -223,16 +223,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, threshold * 1);
             return true;
-        }else if (preference == mColorPicker) {
-            String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
-                    .valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUSBAR_CLOCK_COLOR, intHex);
-            return true; 
-	}
-        else if (preference == mNetTrafficColor) {
+        } else if (preference == mNetTrafficColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             preference.setSummary(hex);
