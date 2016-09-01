@@ -54,7 +54,7 @@
 
 	<!-- FH Telegram -->
 	<Preference
-	    android:key"join"
+	    android:key="join"
 	    android:title"@string/fh_telegram_title"
 	    android:summary"@string/fh_telegram_summary" />
 
