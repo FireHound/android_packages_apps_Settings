@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2015 The CyanogenMod Project
+     Copyright (C) 2016 FireHound ROMs
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -37,8 +37,8 @@
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
 
-    <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">CyanogenMod version</string>
+    <!-- About phone screen, FH version -->
+    <string name="mod_version">FireHound Version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, CyanogenMod Api Level -->
@@ -221,5 +221,31 @@
     <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset counters?</string>
 
     <string name="ok">OK</string>
+
+    <!-- Share FH -->
+    <string name="share_fh_title">Share FireHound</string>
+    <string name="share_fh_summary">Pour some fuel and spread Fire</string>
+    <string name="share_message">FireHound is Custom ROM developed focusing on stability and features! Go go go, flash FireHound and change the way you use your smartphone! For more information, join our community: @ https://plus.google.com/communities/114615598909452601377</string>
+    <string name="share_chooser_title">Share FireHound</string>
+
+    <!-- FireHound Info -->
+    <string name="fh_developer_title">Developers Github</string>
+    <string name="fh_developer_summary">Support the Developer and FireHound Team</string>
+    <string name="maintainers_fh_title">FireHound Official Maintainers</string>
+    <string name="fh_online">About FireHound</string>
+    <string name="about_developer">About Developer</string>
+    <string name="fh_git_title">FireHound Github Source</string>
+    <string name="fh_git_summary">Go and Compile FireHound for your Device</string>
+    <string name="fh_google_plus_title">FireHound Google Plus Community</string>
+    <string name="fh_google_plus_summary">Visit and Join Community for More Information</string>
+    <string name="about_fh">About FireHound</string>
+    <string name="fh_donation_title">Donate to FireHound</string>
+    <string name="fh_donation_summary">Donations are welcome and will be used to keep our build servers alive</string>
+    <string name="fh_maintainers_title">FireMen</string>
+    <string name="fh_maintainers_summary">Official Device Maintainers and Officially Supported Devices</string>
+
+    <!-- Telegram join -->
+    <string name="fh_telegram_title">Join Official Telegram Group</string>
+    <string name="fh_telegram_summary">Join for latest updates and remotely conversing</string>
 
 </resources>

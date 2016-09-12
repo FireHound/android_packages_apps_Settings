@@ -32,6 +32,20 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
+	<!-- Mod version -->
+        <Preference android:key="mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mod_version"
+                android:summary="@string/mod_version_default"
+		android:icon="@drawable/ic_fh_logo" />
+		
+	<!-- Device firmware version -->
+        <Preference android:key="firmware_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/firmware_version"
+                android:summary="@string/device_info_default"
+                android:icon="@drawable/ic_settings_applications" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -71,20 +85,6 @@
                 android:shouldDisableView="false"
                 android:title="@string/model_number"
                 android:summary="@string/device_info_default"/>
-
-        <!-- Device firmware version -->
-        <Preference android:key="firmware_version"
-                android:enabled="false"
-                android:shouldDisableView="false"
-                android:title="@string/firmware_version"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Mod version -->
-        <Preference android:key="mod_version"
-                android:enabled="false"
-                android:shouldDisableView="false"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
 
         <!-- CyanogenMod API Version -->
         <Preference android:key="mod_api_level"
