@@ -123,11 +123,21 @@
 
         <activity android:name=".Settings$WirelessSettings"
             android:label="@string/header_category_wireless_networks">
-            <intent-filter android:priority="4">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.category.wireless" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+	<activity android:name=".Settings$BurntExtraSettings"
+            android:label="@string/fh_section_title">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.fh" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+	<!-- Reserved for Themes when CM brings it up -->
 
         <activity android:name=".Settings$DeviceSettings"
             android:label="@string/header_category_device">
@@ -2526,6 +2536,20 @@
             android:launchMode="singleTop"
             android:theme="@style/CryptKeeperBlankTheme"
         />
+
+	<!-- FireHound Ashes -->
+        <activity android:name="Settings$MainSettingsActivity"
+                android:label="@string/fh_settings_title"
+                android:icon="@drawable/ic_fh_logo">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.fh" />
+            <meta-data android:name="com.android.settings.FRAGMENT-CLASS"
+                android:value="com.android.settings.fh.FhSettings" />
+        </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
