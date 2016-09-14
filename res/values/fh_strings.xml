@@ -36,19 +36,17 @@
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
 
-    <!-- Dashboard Conditions -->
-    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <!-- Dashboard Customizations-->
+    <string name="dashboard_category">Dashboard options</string>
+    <string name="dashboard_suggestions_title">Dashboard Suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+    <string name="remove_tile_summaries_title">Remove Tile Summaries</string>
+    <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
+    <string name="dashboard_conditions_title">Dashboard Conditions</string>
     <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
     <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
-
-    <!-- Disable dashboard summary -->
-    <string name="remove_tile_summaries_title">Remove tile summaries</string>
-    <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
-
-    <!-- Dashboard suggestions -->
-    <string name="dashboard_category">Dashboard options</string>
-    <string name="disable_suggestions_title">Disable suggestions</string>
-    <string name="disable_suggestions_summary">Disable the suggestions that appear on top of the dashboard</string>
+    <string name="dashboard_category">Dashboard Customizations</string>
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>

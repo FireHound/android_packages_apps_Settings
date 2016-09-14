@@ -134,12 +134,31 @@
                 android:key="battery_lights"
                 cm:requiresConfig="@*android:bool/config_intrusiveBatteryLed" />
 
-	<!-- Disable Dashboard SUmmary -->
+	<!-- Notification lights -->
+        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+                android:key="notification_lights"
+                cm:requiresConfig="@*android:bool/config_intrusiveNotificationLed" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+            android:key="dashboard"
+            android:title="@string/dashboard_category">
+
+	<!-- Disable Dashboard Summary -->
         <com.android.fh.SystemSettingSwitchPreference
                 android:key="remove_tile_summary"
                 android:title="@string/remove_tile_summaries_title"
                 android:summary="@string/remove_tile_summaries_summary"
                 android:defaultValue="false" />
+
+	<!-- Disable Dashboard Suggestions -->
+	<com.android.settings.fh.SystemSettingSwitchPreference
+                android:key="disable_suggestions"
+                android:title="@string/dashboard_suggestions_title"
+                android:summaryOn="@string/summary_dashboard_suggestions_enabled"
+                android:summaryOff="@string/summary_dashboard_suggestions_disabled"
+                android:defaultValue="true" />
 
 	<!-- Dashboard Conditions -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
@@ -148,11 +167,6 @@
                 android:summaryOn="@string/summary_dashboard_conditions_enabled"
                 android:summaryOff="@string/summary_dashboard_conditions_disabled"
                 android:defaultValue="true" />
-
-        <!-- Notification lights -->
-        <org.cyanogenmod.internal.cmparts.CMPartsPreference
-                android:key="notification_lights"
-                cm:requiresConfig="@*android:bool/config_intrusiveNotificationLed" />
 
     </PreferenceCategory>
 
