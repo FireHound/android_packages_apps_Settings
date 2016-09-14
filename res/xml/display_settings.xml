@@ -64,6 +64,12 @@
                 android:title="@string/camera_gesture_title"
                 android:summary="@string/camera_gesture_desc" />
 
+	<com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />
+
         <SwitchPreference
                 android:key="camera_double_tap_power_gesture"
                 android:title="@string/camera_double_tap_power_gesture_title"
