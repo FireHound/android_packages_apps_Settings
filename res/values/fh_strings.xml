@@ -41,6 +41,14 @@
     <string name="mod_version">FireHound Version</string>
     <string name="mod_version_default">Unknown</string>
 
+    <!-- Force expanded notifications -->
+   <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+   <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+   <!-- Disabling immersive mode messages -->
+   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
+   <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+
     <!-- About phone screen, CyanogenMod Api Level -->
     <string name="mod_api_level">CyanogenMod API level</string>
     <string name="mod_api_level_default">Unknown</string>
