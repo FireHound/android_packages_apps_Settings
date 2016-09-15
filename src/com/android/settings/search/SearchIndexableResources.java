@@ -21,7 +21,6 @@ import com.android.settings.DateTimeSettings;
 import com.android.settings.DevelopmentSettings;
 import com.android.settings.DeviceInfoSettings;
 import com.android.settings.DisplaySettings;
-import com.android.settings.fh.FhSettings;
 import com.android.settings.LegalSettings;
 import com.android.settings.PrivacySettings;
 import com.android.settings.R;
@@ -94,13 +93,6 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         BluetoothSettings.class.getName(),
                         R.drawable.ic_settings_bluetooth));
-
-	sResMap.put(FhSettings.class.getName(),
-                new SearchIndexableResource(
-                        Ranking.getRankForClassName(FhSettings.class.getName()),
-                        NO_DATA_RES_ID,
-                        FhSettings.class.getName(),
-                        R.drawable.ic_fh_logo));
 
         sResMap.put(SimSettings.class.getName(),
                 new SearchIndexableResource(
