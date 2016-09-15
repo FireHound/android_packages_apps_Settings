@@ -21,6 +21,12 @@
         android:key="fh_categories"
         android:title="@string/fh_title" >
 
+	<!-- About FireHound -->
+        <PreferenceScreen 
+	    android:key="info"
+            android:title="@string/about_fh"
+	    android:fragment="com.android.settings.fh.Firehound"
+ 	    android:icon="@drawable/ic_settings_about" />
+
 </PreferenceCategory>
-	
 </PreferenceScreen>
