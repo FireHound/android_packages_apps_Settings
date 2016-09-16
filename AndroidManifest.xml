@@ -2535,6 +2535,20 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+	<!-- FH Settings -->
+        <activity android:name="Settings$FhSettingsActivity"
+                android:label="@string/fh_settings_title"
+                android:icon="@drawable/ic_fh_logo">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.fh" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.fh.FhSettings" />
+        </activity>
+
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">
@@ -2953,21 +2967,6 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.sim.SimSettings" />
         </activity>
-
-	<!-- FHSettings -->
-        <activity android:name="Settings$MainSettingsActivity"
-             android:label="@string/fh_settings_title"
-             android:taskAffinity="">
-            <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.fh.FhSettings" />
-        </activity>
-
-	<activity
-              android:name=".fh.FhSettings" />
 
         <activity android:name=".sim.SimPreferenceDialog"
             android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar"
