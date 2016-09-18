@@ -134,7 +134,6 @@
     <declare-styleable name="DividerPreference">
         <attr name="allowDividerAbove" format="boolean" />
         <attr name="allowDividerBelow" format="boolean" />
-    </declare-styleable>
 
     <!-- For GesturePreference -->
     <declare-styleable name="GesturePreference">
