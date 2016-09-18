@@ -234,6 +234,7 @@
 
     <string name="ok">OK</string>
 
+<<<<<<< HEAD:res/values/fh_strings.xml
     <!-- Share FH -->
     <string name="share_fh_title">Share FireHound</string>
     <string name="share_fh_summary">Pour some fuel and spread Fire</string>
@@ -266,4 +267,8 @@
     <string name="fh_title">Fire Scars</string>
     <string name="status_bar_title">Status Bar</string>
     <string name="notification_settings">Notification Drawer</string>
+
+    <!-- Lights settings -->
+    <string name="lights_label">Lights</string>
+
 </resources>
