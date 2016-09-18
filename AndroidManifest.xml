@@ -2538,6 +2538,7 @@
 	<!-- FH Settings -->
         <activity android:name="Settings$FhSettingsActivity"
                 android:label="@string/fh_settings_title"
+		android:summary="@string/fh_settings_summary"
                 android:icon="@drawable/ic_fh_logo">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.SETTINGS" />

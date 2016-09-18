@@ -262,6 +262,7 @@
 
     <!-- FHSettings -->
     <string name="fh_settings_title">FireHound Ashes</string>
+    <string name="fh_settings_summary">FireHound Core Settings</string>
     <string name="fh_section_title">Burnt Extras</string>
     <string name="fh_title">Fire Scars</string>
     <string name="status_bar_title">Status Bar</string>
