@@ -120,6 +120,12 @@
         <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
                 android:key="build_date" />
 
+        <!-- Vendor Version -->
+        <Preference
+                android:key="vendor_version"
+                android:title="@string/vendor_version"
+                android:summary="@string/vendor_version_default"/>
+
         <!-- Detailed build version -->
         <Preference
                 android:key="build_number"
