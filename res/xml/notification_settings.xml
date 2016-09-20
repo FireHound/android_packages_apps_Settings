@@ -49,4 +49,11 @@
             android:title="@string/qs_battery_easy_toggle_title"
             android:summary="@string/qs_battery_easy_toggle_summary"
             android:defaultValue="false" />
+
+        <!-- Data -->
+        <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="qs_data_advanced"
+            android:title="@string/qs_advanced_data_title"
+            android:summary="@string/qs_advanced_data_summary"
+            android:defaultValue="false" />
 </PreferenceScreen>
