@@ -33,6 +33,11 @@
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
 
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/advanced_reboot_title"
+            android:summary="@string/advanced_reboot_summary" />
+
     <PreferenceScreen
             android:key="local_backup_password"
             android:title="@string/local_backup_password_title"
@@ -116,6 +121,11 @@
         android:persistent="false"
         android:entries="@array/root_access_entries"
         android:entryValues="@array/root_access_values" />
+
+    <Preference
+        android:key="root_appops"
+        android:title="@string/root_appops_title"
+        android:summary="@string/root_appops_summary" />
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 FireHound ROMs
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -47,6 +46,10 @@
 
     <!-- About phone screen, FH version -->
     <string name="mod_version">FireHound Version</string>
+
+    <!-- Preference link for root appops -->
+    <string name="root_appops_title">Manage root accesses</string>
+    <string name="root_appops_summary">View and control the root rules</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- Force expanded notifications -->
@@ -274,5 +277,38 @@
 
     <!-- Lights settings -->
     <string name="lights_label">Lights</string>
+
+    <!-- Memory -->
+    <string name="memory_startup_apps_title">Apps started on boot</string>
+
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Advanced reboot</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
+
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
+
+    <!-- Protected apps lockpattern reset button -->
+    <string name="lockpattern_reset_button">Reset pattern</string>
+    <string name="lockpattern_settings_reset_summary">Enter primary email account and associated password to reset pattern lock</string>
+
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">Reset</string>
+    <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
+    <string name="protected_apps">Protected apps</string>
+    <string name="protected_apps_summary">Manage which apps are hidden behind a secure lock</string>
+    <string name="saving_protected_components">Saving component state\u2026</string>
+    <string name="launch_app">Launch app</string>
+
+    <string name="pa_login_username_hint">Username (email)</string>
+    <string name="pa_login_password_hint">Password</string>
+    <string name="pa_login_submit_button">Sign in</string>
+    <string name="pa_login_checking_password">Checking account\u2026</string>
+    <string name="pa_login_incorrect_login">Login was incorrect</string>
+    <string name="pa_pattern_or_fingerprint_header">Must draw pattern or use fingerprint to unlock</string>
 
 </resources>
