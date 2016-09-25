@@ -691,4 +691,8 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- Fancy tiles animation -->
+    <string name="qs_fancy_animation_title">Fancy QS animation</string>
+    <string name="qs_fancy_animation_summary">Animate when pulling down the statusbar</string>
+
 </resources>
