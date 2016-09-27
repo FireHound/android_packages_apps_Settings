@@ -20,7 +20,6 @@ import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Icon;
 import android.os.PersistableBundle;
-import android.provider.Settings;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
@@ -111,9 +110,7 @@ public abstract class Condition {
     }
 
     public boolean shouldShow() {
-        return isActive() && !isSilenced()
-               && ((Settings.System.getInt(mManager.getContext().getContentResolver(),
-               Settings.System.DISABLE_DASHBOARD_CONDITIONS, 1) == 1));
+        return isActive() && !isSilenced();
     }
 
     long getLastChange() {

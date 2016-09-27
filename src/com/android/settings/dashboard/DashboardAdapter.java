@@ -101,23 +101,12 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     }
 
     public List<Tile> getSuggestions() {
-        if ((Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.DISABLE_SUGGESTIONS, 1) == 1)) {
-             return mSuggestions;
-        } else {
-             return null;
-        }
+        return mSuggestions;
     }
 
     public void setSuggestions(List<Tile> suggestions) {
-        if ((Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.DISABLE_SUGGESTIONS, 1) == 1)) {
-             mSuggestions = suggestions;
-             recountItems();
-        } else {
-             mSuggestions = null;
-             recountItems();
-        }
+        mSuggestions = suggestions;
+        recountItems();
     }
 
     public Tile getTile(ComponentName component) {
@@ -405,13 +394,8 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         holder.icon.setImageDrawable(mCache.getIcon(tile.icon));
         holder.title.setText(tile.title);
         if (!TextUtils.isEmpty(tile.summary)) {
-           if ((Settings.System.getInt(mContext.getContentResolver(),
-                    Settings.System.REMOVE_TILE_SUMMARY, 0) == 1)) {
-                holder.summary.setVisibility(View.GONE);
-            } else {
-                holder.summary.setText(tile.summary);
-                holder.summary.setVisibility(View.VISIBLE);
-            }
+            holder.summary.setText(tile.summary);
+            holder.summary.setVisibility(View.VISIBLE);
         } else {
             holder.summary.setVisibility(View.GONE);
         }
