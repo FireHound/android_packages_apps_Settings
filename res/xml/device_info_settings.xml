@@ -33,7 +33,6 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
-<<<<<<< HEAD
 	<!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
