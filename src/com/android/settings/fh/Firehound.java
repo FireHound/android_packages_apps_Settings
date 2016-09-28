@@ -56,7 +56,7 @@ public class Firehound extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.FIREHOUND;
+        return MetricsEvent.APPLICATION;
     }
 
     @Override
