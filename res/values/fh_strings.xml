@@ -806,4 +806,8 @@
     <!-- Screenshot Sound  -->
     <string name="screenshot_sound_title">Enable screenshot sound</string>
     <string name="screenshot_sound_summary">Option to enable or disable the screenshot sound</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
 </resources>
