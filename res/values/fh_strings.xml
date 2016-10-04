@@ -243,7 +243,6 @@
 
     <string name="ok">OK</string>
 
-<<<<<<< HEAD:res/values/fh_strings.xml
     <!-- Share FH -->
     <string name="share_fh_title">Share FireHound</string>
     <string name="share_fh_summary">Pour some fuel and spread Fire</string>
