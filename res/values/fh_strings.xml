@@ -276,6 +276,9 @@
     <string name="status_bar_title">Status Bar</string>
     <string name="notification_settings">Notification Drawer</string>
 
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume Adjustment Sounds</string>
+
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
     <string name="lock_pattern_size_4">4x4</string>
