@@ -172,6 +172,11 @@
             android:fragment="com.android.settings.fh.BlurUI"
             android:title="@string/nav_blur_ui_title"/>
 
+    <PreferenceScreen
+        android:key="fh_trans"
+        android:fragment="com.android.settings.fh.TransparencySettings"
+        android:title="@string/fh_trans_title" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
