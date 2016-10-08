@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.preference.PreferenceFragment;
+import android.provider.Settings;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
@@ -28,7 +29,7 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -36,27 +37,51 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-public class StatusBarSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class AnimationSettings extends SettingsPreferenceFragment
+    implements OnPreferenceChangeListener {
+
+    private static final String TAG = "AnimationSettings";
+
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
+
+    private ListPreference mToastAnimation;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.animation_settings);
+	PreferenceScreen prefSet = getPreferenceScreen();
+	ContentResolver resolver = getActivity().getContentResolver();
+
+	// Toast Animations
+        mToastAnimation = (ListPreference) prefSet.findPreference(KEY_TOAST_ANIMATION);
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        int CurrentToastAnimation = Settings.System.getInt(
+                resolver, Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
+        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
+        mToastAnimation.setOnPreferenceChangeListener(this);
     }
-
-
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        return true;
-    }
-
-
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.APPLICATION;
-    }
+       return MetricsEvent.APPLICATION;
+   }
 
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+	if preference == mToastAnimation) {
+            int index = mToastAnimation.findIndexOfValue((String) newValue);
+            Settings.System.putString(resolver,
+                    Settings.System.TOAST_ANIMATION, (String) newValue);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            Toast.makeText(getActivity(), "Toast test!!!", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return false;
+    }
 }
+
+
