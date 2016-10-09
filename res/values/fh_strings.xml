@@ -33,6 +33,10 @@
     <string name="root_access_apps">Apps only</string>
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
+    
+   <!-- Quick unlock -->
+   <string name="unlock_quick_unlock_control_title">Quick Unlock</string>
+   <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <!-- Battery Bar -->
     <string name="battery_icon">Battery icon style</string>
