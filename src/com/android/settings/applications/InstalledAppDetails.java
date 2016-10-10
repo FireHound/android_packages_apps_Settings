@@ -475,7 +475,8 @@ public class InstalledAppDetails extends AppInfoBase
                     uninstallUpdatesItem, mAppsControlDisallowedAdmin);
         }
 
-        menu.findItem(OPEN_PROTECTED_APPS).setVisible(mPackageInfo.applicationInfo.protect);
+        menu.findItem(OPEN_PROTECTED_APPS).setVisible(mPackageInfo != null &&
+                mPackageInfo.applicationInfo != null && mPackageInfo.applicationInfo.protect);
     }
 
     @Override
@@ -552,8 +553,13 @@ public class InstalledAppDetails extends AppInfoBase
     private void setAppLabelAndIcon(PackageInfo pkgInfo) {
         final View appSnippet = mHeader.findViewById(R.id.app_snippet);
         mState.ensureIcon(mAppEntry);
+<<<<<<< HEAD
         setupAppSnippet(appSnippet, mAppEntry.label, mAppEntry.icon, pkgInfo.packageName,
                 pkgInfo != null ? pkgInfo.versionName : null);
+=======
+        setupAppSnippet(appSnippet, mAppEntry.label, mAppEntry.icon,
+                pkgInfo != null ? pkgInfo.versionName : null, pkgInfo.packageName);
+>>>>>>> 8d3f7e495917f126a7fee1486170ce2c866b6ae3
     }
 
     private boolean signaturesMatch(String pkg1, String pkg2) {
@@ -1041,8 +1047,13 @@ public class InstalledAppDetails extends AppInfoBase
         }
     }
 
+<<<<<<< HEAD
     public static void setupAppSnippet(View appSnippet, CharSequence label, Drawable icon, CharSequence packageName,
             CharSequence versionName) {
+=======
+    public static void setupAppSnippet(View appSnippet, CharSequence label, Drawable icon,
+            CharSequence versionName, String packageName) {
+>>>>>>> 8d3f7e495917f126a7fee1486170ce2c866b6ae3
         LayoutInflater.from(appSnippet.getContext()).inflate(R.layout.widget_text_views,
                 (ViewGroup) appSnippet.findViewById(android.R.id.widget_frame));
 
@@ -1077,6 +1088,12 @@ public class InstalledAppDetails extends AppInfoBase
         }
         // Version number of application
         TextView appVersion = (TextView) appSnippet.findViewById(R.id.widget_text1);
+
+        if (packageName != null) {
+            TextView appPackage = (TextView) appSnippet.findViewById(R.id.widget_text2);
+            appPackage.setText(packageName);
+            appPackage.setSelected(true);
+        }
 
         if (!TextUtils.isEmpty(versionName)) {
             appVersion.setSelected(true);

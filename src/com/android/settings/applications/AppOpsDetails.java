@@ -101,8 +101,13 @@ public class AppOpsDetails extends InstrumentedFragment {
         final View appSnippet = mRootView.findViewById(R.id.app_snippet);
         CharSequence label = mPm.getApplicationLabel(pkgInfo.applicationInfo);
         Drawable icon = mPm.getApplicationIcon(pkgInfo.applicationInfo);
+<<<<<<< HEAD
         InstalledAppDetails.setupAppSnippet(appSnippet, label, icon, null,
                 pkgInfo != null ? pkgInfo.versionName : null);
+=======
+        InstalledAppDetails.setupAppSnippet(appSnippet, label, icon,
+                pkgInfo != null ? pkgInfo.versionName : null, null);
+>>>>>>> 8d3f7e495917f126a7fee1486170ce2c866b6ae3
     }
 
     private String retrieveAppEntry() {
