@@ -72,7 +72,6 @@
                 android:title="@string/camera_gesture_title"
                 android:summary="@string/camera_gesture_desc" />
 
-<<<<<<< HEAD
 	<com.android.settings.fh.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:title="@string/toast_icon_title"
@@ -84,8 +83,6 @@
                 android:title="@string/camera_double_tap_power_gesture_title"
                 android:summary="@string/camera_double_tap_power_gesture_desc" />
 
-=======
->>>>>>> 8d3f7e495917f126a7fee1486170ce2c866b6ae3
         <PreferenceScreen
                 android:key="screensaver"
                 android:title="@string/screensaver_settings_title"

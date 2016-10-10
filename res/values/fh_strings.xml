@@ -328,14 +328,12 @@
     <string name="pa_login_incorrect_login">Login was incorrect</string>
     <string name="pa_pattern_or_fingerprint_header">Must draw pattern or use fingerprint to unlock</string>
 
-<<<<<<< HEAD:res/values/fh_strings.xml
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Superuser Indicator</string>
     <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
     <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
-=======
+
     <!-- title for lock screen weather preference -->
-    <string name="lockscreen_weather_enabled_title">Show weather</string>
->>>>>>> 8d3f7e495917f126a7fee1486170ce2c866b6ae3:res/values/cm_strings.xml
+    <string name="lockscreen_weather_enabled_title">Show Weather</string>
 
 </resources>
