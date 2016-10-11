@@ -17,6 +17,11 @@
 package com.android.settings.fh;
 
 import android.app.Activity;
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.DialogInterface;
+import android.content.res.Resources;
+import android.net.TrafficStats;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.preference.PreferenceFragment;
@@ -46,7 +51,6 @@ public class AnimationSettings extends SettingsPreferenceFragment
 
     private ListPreference mToastAnimation;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +76,7 @@ public class AnimationSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-	if preference == mToastAnimation) {
+	if (preference == mToastAnimation) {
             int index = mToastAnimation.findIndexOfValue((String) newValue);
             Settings.System.putString(resolver,
                     Settings.System.TOAST_ANIMATION, (String) newValue);
@@ -83,5 +87,3 @@ public class AnimationSettings extends SettingsPreferenceFragment
         return false;
     }
 }
-
-
