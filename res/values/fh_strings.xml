@@ -65,6 +65,9 @@
     <string name="build_date">Build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">Animations</string>
+
     <!-- CM Updater -->
     <string name="cmupdate_settings_title">CyanogenMod updates</string>
 

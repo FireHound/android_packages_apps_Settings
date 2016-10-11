@@ -32,6 +32,12 @@
             android:id="@+id/notification_settings"
             android:title="@string/notification_settings"
             android:fragment="com.android.settings.fh.NotificationSettings" />
+	
+	<!-- Animation Settings -->
+	<PreferenceScreen
+	    android:key="animation"
+	    android:title="@string/animation_settings_title"
+	    android:fragment="com.android.settings.fh.AnimationSettings" />
 
 	<!-- About FireHound -->
         <PreferenceScreen 
