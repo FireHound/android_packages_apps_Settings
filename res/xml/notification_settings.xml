@@ -18,6 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notification_settings">
 
+    <PreferenceCategory
+        android:key="advanced_notifications"
+        android:title="@string/advanced_notifications">
+
 	<!-- Force Expanded Notifications -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
@@ -30,6 +34,12 @@
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary"
         android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advanced_toggle"
+        android:title="@string/advanced_toggle">
 
         <!-- Wifi toggle -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
@@ -59,6 +69,36 @@
             android:summary="@string/qs_advanced_data_summary"
             android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="qs_layout_category"
+        android:title="@string/qs_interface">
+
+    <ListPreference
+        android:key="qs_rows_portrait"
+        android:title="@string/qs_rows_portrait_title"
+        android:entries="@array/qs_rows_portrait_entries"
+        android:entryValues="@array/qs_rows_portrait_values" />
+
+    <ListPreference
+        android:key="qs_rows_landscape"
+        android:title="@string/qs_rows_landscape_title"
+        android:entries="@array/qs_rows_landscape_entries"
+        android:entryValues="@array/qs_rows_landscape_values" />
+
+    <ListPreference
+        android:key="qs_columns"
+        android:title="@string/qs_columns_title"
+        android:entries="@array/qs_columns_entries"
+        android:entryValues="@array/qs_columns_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="qs_misc"
+            android:title="@string/qs_misc">
+
         <!-- Haptic feedback -->
         <com.android.settings.fh.SystemSettingSwitchPreference
             android:key="quick_settings_vibrate"
@@ -72,5 +112,7 @@
         android:title="@string/lockscreen_qs_disabled_title"
         android:summary="@string/lockscreen_qs_disabled_summary"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
