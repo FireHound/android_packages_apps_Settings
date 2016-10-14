@@ -16,6 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to show Device Id -->
+  <!--  Device Info screen. Confirmation that Device ID is copied to clipboard -->
+  <!--  Device Info screen. Confirmation that Device ID is not available -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Label for the deviceID text put to clipboard -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_cm">Aktywowałeś opcje programistyczne!</string>
@@ -35,6 +39,8 @@
   <string name="root_access_adb">Tylko ADB</string>
   <string name="root_access_all">Aplikacje i ADB</string>
   <!-- Preference link for root appops -->
+  <string name="root_appops_title">Zarządzaj dostępem do roota</string>
+  <string name="root_appops_summary">Przeglądaj i kontroluj zasady roota</string>
   <!-- NFC PreferenceCategory title -->
   <string name="nfc_title_category">NFC</string>
   <!-- About phone screen, FireHound version -->
