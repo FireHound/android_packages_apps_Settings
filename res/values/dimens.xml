@@ -324,4 +324,11 @@
     <!-- Visible vertical space we want to show below password edittext field when ime is shown.
          The unit is sp as it is related to the text size of password requirement item. -->
     <dimen name="visible_vertical_space_below_password">20sp</dimen>
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
+    <integer name="navigation_bar_height_min_percent">65</integer>
+    <integer name="navigation_bar_height_max_percent">135</integer>
+    <integer name="navigation_bar_width_min_percent">65</integer>
+    <integer name="navigation_bar_width_max_percent">135</integer>
+    <dimen name="dashboard_category_padding_bottom">8dip</dimen>
 </resources>
