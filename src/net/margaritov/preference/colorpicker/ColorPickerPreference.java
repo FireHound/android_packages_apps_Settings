@@ -32,7 +32,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import org.cyanogenmod.cmparts.R;
+import com.android.settings.R;
 
 /**
  * A preference type that allows a user to choose a time

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.input;
+package com.android.settings.fh;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -30,8 +30,8 @@ import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
