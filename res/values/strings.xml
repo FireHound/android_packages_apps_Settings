@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2007 The Android Open Source Project
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+
           http://www.apache.org/licenses/LICENSE-2.0
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -6471,4 +6474,1124 @@
    </string>
 
     <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a PIN to encrypt the device while setting up fingerprint unlock. [CHAR LIMIT=NONE] -->
-    <string name="encryption_interstitial_message_pin_for_fingerprint">In addition to using your fingerprint to unlock your device, you can further protect this device by requiring your 
+    <string name="encryption_interstitial_message_pin_for_fingerprint">In addition to using your fingerprint to unlock your device, you can further protect this device by requiring your PIN before it starts up. Until the device starts up, it can\u2019t receive calls, messages, or notifications, including alarms.\n\nThis helps protect data on lost or stolen devices.</string>
+    <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a pattern to encrypt the device while setting up fingerprint unlock. [CHAR LIMIT=NONE] -->
+    <string name="encryption_interstitial_message_pattern_for_fingerprint">In addition to using your fingerprint to unlock your device, you can further protect this device by requiring your pattern before it starts up. Until the device starts up, it can\u2019t receive calls, messages, or notifications, including alarms.\n\nThis helps protect data on lost or stolen devices.</string>
+    <!-- Message shown on encryption interstitial to ask the user whether or not they want to use a password to encrypt the device while setting up fingerprint unlock. [CHAR LIMIT=NONE] -->
+    <string name="encryption_interstitial_message_password_for_fingerprint">In addition to using your fingerprint to unlock your device, you can further protect this device by requiring your password before it starts up. Until the device starts up, it can\u2019t receive calls, messages, or notifications, including alarms.\n\nThis helps protect data on lost or stolen devices.</string>
+
+    <!-- Radio button text that require a PIN to start device [CHAR LIMIT=NONE] -->
+    <string name="encrypt_require_pin">Require PIN to start device</string>
+    <!-- Radio button text that require a pattern to start device [CHAR LIMIT=NONE] -->
+    <string name="encrypt_require_pattern">Require pattern to start device</string>
+    <!-- Radio button text that require a password to start device [CHAR LIMIT=NONE] -->
+    <string name="encrypt_require_password">Require password to start device</string>
+
+    <!-- Radio button text that doesn't require a PIN to decrypt [CHAR LIMIT=NONE] -->
+    <string name="encrypt_dont_require_pin">No thanks</string>
+    <!-- Radio button text that doesn't require a pattern to decrypt [CHAR LIMIT=NONE] -->
+    <string name="encrypt_dont_require_pattern">No thanks</string>
+    <!-- Radio button text that doesn't require a password to decrypt [CHAR LIMIT=NONE] -->
+    <string name="encrypt_dont_require_password">No thanks</string>
+
+   <!-- Title for encryption dialog that disables TalkBack. [CHAR_LIMIT=25] -->
+   <string name="encrypt_talkback_dialog_require_pin">Require PIN?</string>
+
+   <!-- Title for encryption dialog that disables TalkBack. [CHAR_LIMIT=25] -->
+   <string name="encrypt_talkback_dialog_require_pattern">Require pattern?</string>
+
+   <!-- Title for encryption dialog that disables TalkBack. [CHAR_LIMIT=25] -->
+   <string name="encrypt_talkback_dialog_require_password">Require password?</string>
+
+   <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
+   <string name="encrypt_talkback_dialog_message_pin">When you enter your PIN to start this device, accessibility services like <xliff:g id="service" example="TalkBack">%1$s</xliff:g> won\u2019t yet be available.</string>
+
+   <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
+   <string name="encrypt_talkback_dialog_message_pattern">When you enter your pattern to start this device, accessibility services like <xliff:g id="service" example="TalkBack">%1$s</xliff:g> won\u2019t yet be available.</string>
+
+   <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
+   <string name="encrypt_talkback_dialog_message_password">When you enter your password to start this device, accessibility services like <xliff:g id="service" example="TalkBack">%1$s</xliff:g> won\u2019t yet be available.</string>
+
+   <!-- Title and summary for SIM Status -->
+   <string name="imei_information_title">IMEI information</string>
+   <string name="imei_information_summary">IMEI relative information</string>
+   <string name="slot_number">(Slot<xliff:g id="slot_num">%1$d</xliff:g>)</string>
+
+   <!-- New strings needed for App Info 2 -->
+   <!-- Preference label for app default launch settings [CHAR LIMIT=35]-->
+   <string name="launch_by_default">Open by default</string>
+
+   <!-- Summary for app storage preference [CHAR LIMIT=15] -->
+   <string name="storage_summary_format"><xliff:g id="size" example="30.00MB">%1$s</xliff:g> used in <xliff:g id="storage_type" example="internal storage">%2$s</xliff:g></string>
+
+   <!-- Category name for App Launch -->
+   <string name="app_launch_domain_links_title">Opening links</string>
+   <string name="app_launch_open_domain_urls_title">Open supported links</string>
+   <string name="app_launch_open_domain_urls_summary">Open without asking</string>
+   <string name="app_launch_supported_domain_urls_title">Supported links</string>
+   <string name="app_launch_other_defaults_title">Other defaults</string>
+
+   <!-- Summary for app storage preference -->
+   <string name="storage_summary_format"><xliff:g id="size" example="30.00MB">%1$s</xliff:g> used in <xliff:g id="storage_type" example="internal memory">%2$s</xliff:g></string>
+   <!-- Internal storage label -->
+   <string name="storage_type_internal">internal memory</string>
+   <!-- External storage label -->
+   <string name="storage_type_external">external memory</string>
+
+   <!-- Summary describing internal storage for applications [CHAR LIMIT=25] -->
+   <string name="storage_type_internal">Internal storage</string>
+   <!-- Summary describing external storage for applications [CHAR LIMIT=25] -->
+   <string name="storage_type_external">External storage</string>
+
+   <!-- Title for data usage screen when entered from app info [CHAR LIMIT=30] -->
+   <string name="app_data_usage">App data usage</string>
+   <!-- Summary for data usage preference [CHAR LIMIT=15] -->
+   <string name="data_summary_format"><xliff:g id="size" example="30.00MB">%1$s</xliff:g> used since <xliff:g id="date" example="Jan 12">%2$s</xliff:g></string>
+
+   <!-- Title of storage preference to control where app is stored -->
+   <string name="storage_used">Storage used</string>
+
+   <!-- Title of button to change storage [CHAR LIMIT=25] -->
+   <string name="change">Change</string>
+
+   <!-- Title of dialog to change storage [CHAR LIMIT=25] -->
+   <string name="change_storage">Change storage</string>
+
+   <!-- Label for notification settings for an specific app [CHAR LIMIT=40] -->
+   <string name="notifications_label">Notifications</string>
+   <!-- App notification summary with notifications enabled [CHAR LIMIT=40] -->
+   <string name="notifications_enabled">Normal</string>
+   <!-- App notification summary with notifications disabled [CHAR LIMIT=40] -->
+   <string name="notifications_disabled">Blocked</string>
+    <!-- App notification summary with notifications silenced [CHAR LIMIT=40] -->
+    <string name="notifications_silenced">Silenced</string>
+    <!-- App notification summary with notifications redacted [CHAR LIMIT=70] -->
+    <string name="notifications_redacted">Sensitive content not on lock screen</string>
+    <!-- App notification summary with notifications hidden [CHAR LIMIT=40] -->
+    <string name="notifications_hidden">Not on lock screen</string>
+    <!-- App notification summary with notifications bypassing DND [CHAR LIMIT=40] -->
+    <string name="notifications_priority">Do Not Disturb overridden</string>
+    <!-- App notification summary divider [CHAR LIMIT=40] -->
+    <string name="notifications_summary_divider">\u00A0/\u00A0</string>
+    <!-- App notification summary for advanced controls -->
+    <string name="notification_summary_level">Level %d</string>
+
+   <!-- Permissions preference summary [CHAR LIMIT=40] -->
+   <plurals name="permissions_summary">
+       <item quantity="one"><xliff:g id="count" example="1">%d</xliff:g> permission granted</item>
+       <item quantity="other"><xliff:g id="count" example="10">%d</xliff:g> permissions granted</item>
+   </plurals>
+
+   <!-- Runtime permissions preference summary [CHAR LIMIT=40] -->
+   <plurals name="runtime_permissions_summary">
+       <item quantity="one"><xliff:g id="count" example="1">%d</xliff:g> of <xliff:g id="count" example="1">%d</xliff:g> permission granted</item>
+       <item quantity="other"><xliff:g id="count" example="10">%d</xliff:g> of <xliff:g id="count" example="10">%d</xliff:g> permissions granted</item>
+   </plurals>
+
+    <!-- Runtime permissions preference summary.  Number of additional permissions granted. [CHAR LIMIT=40] -->
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one"><xliff:g id="count" example="1">%d</xliff:g> additional permission</item>
+        <item quantity="other"><xliff:g id="count" example="10">%d</xliff:g> additional permissions</item>
+    </plurals>
+
+    <!-- Runtime permissions preference summary, shown when the app has no permissions granted. [CHAR LIMIT=40] -->
+    <string name="runtime_permissions_summary_no_permissions_granted">No permissions granted</string>
+
+    <!-- Runtime permissions preference summary, shown when the app requests no permissions. [CHAR LIMIT=40] -->
+    <string name="runtime_permissions_summary_no_permissions_requested">No permissions requested</string>
+
+    <!-- Label for showing all apps in list [CHAR LIMIT=30] -->
+    <string name="filter_all_apps">All apps</string>
+    <!-- Label for showing enabled apps in list [CHAR LIMIT=30] -->
+    <string name="filter_enabled_apps">Enabled</string>
+    <!-- Label for showing personal apps in list [CHAR LIMIT=30] -->
+    <string name="filter_personal_apps">Personal</string>
+    <!-- Label for showing work apps in list [CHAR LIMIT=30] -->
+    <string name="filter_work_apps">Work</string>
+    <!-- Label for showing apps with blocked notifications in list [CHAR LIMIT=30] -->
+    <string name="filter_notif_blocked_apps">Blocked</string>
+    <!-- Label for showing apps with domain URLs (data URI with http or https) in list [CHAR LIMIT=30] -->
+    <string name="filter_with_domain_urls_apps">With domain URLs</string>
+    <!-- Label for showing apps with priority notifications in list [CHAR LIMIT=50] -->
+    <string name="filter_notif_priority_apps">Overrides Do Not Disturb</string>
+    <!-- Label for showing apps redacting sensitive notifications in list [CHAR LIMIT=50] -->
+    <string name="filter_notif_sensitive_apps">No sensitive content on lock screen</string>
+    <!-- Label for showing apps hiding notifications from lockscreen [CHAR LIMIT=50] -->
+    <string name="filter_notif_hide_notifications_apps">Never shown on lock screen</string>
+    <!-- Filter label for apps that the user has silenced [CHAR LIMIT=40] -->
+    <string name="filter_notif_silent">Shown silently</string>
+
+    <!-- Title for advanced application management settings [CHAR LIMIT=30] -->
+    <string name="advanced_apps">Advanced</string>
+
+    <!-- Title for application configuration settings [CHAR LIMIT=30] -->
+    <string name="configure_apps">Configure apps</string>
+
+   <!-- Warning toast shown when data usage screen can't find specified app -->
+   <string name="unknown_app">Unknown app</string>
+
+   <!-- Label for list that shows all permissions -->
+   <string name="app_permissions">App permissions</string>
+   <!-- Summary of permissions currently granted to apps [CHAR LIMIT=45] -->
+   <string name="app_permissions_summary"><xliff:g id="count" example="10">%d</xliff:g> of <xliff:g id="count" example="10">%d</xliff:g> apps allowed additional access</string>
+   <!-- Summary of number of apps currently granted a single permission [CHAR
+        LIMIT=45] -->
+   <string name="app_permissions_group_summary"><xliff:g id="count" example="10">%d</xliff:g> of <xliff:g id="count" example="10">%d</xliff:g> apps allowed</string>
+
+   <!-- Label for tap to wake setting [CHAR LIMIT=30] -->
+   <string name="tap_to_wake">Tap to wake</string>
+
+   <!-- Summary for take to wake setting [CHAR LIMIT=90] -->
+   <string name="tap_to_wake_summary">Double-tap anywhere on the screen to wake device</string>
+
+    <!-- Title of a preference item that will show the user's preferences for this app's priority for opening links to websites that it claims to support [CHAR LIMIT=30] -->
+    <string name="domain_urls_title">Opening links</string>
+
+    <!-- Summary for an app that doesn't open any domain URLs [CHAR LIMIT=45] -->
+    <string name="domain_urls_summary_none">Don\u2019t open supported links</string>
+
+    <!-- Summary of an app that can open URLs for exactly one domain [CHAR LIMIT=45] -->
+    <string name="domain_urls_summary_one">Open <xliff:g id="domain" example="mail.google.com">%s</xliff:g></string>
+
+    <!-- Summary of an app that can open several domain's URLs [CHAR LIMIT=45] -->
+    <string name="domain_urls_summary_some">Open <xliff:g id="domain" example="mail.google.com">%s</xliff:g> and other URLs</string>
+
+    <!-- Description of settings item that leads to list of all apps that can open web links [CHAR LIMIT=NONE] -->
+    <plurals name="domain_urls_apps_summary">
+        <item quantity="zero">No app can open any supported link</item>
+        <item quantity="one">One app can open its supported links</item>
+        <item quantity="other"><xliff:g id="count" example="10">%d</xliff:g> apps can open their supported links</item>
+    </plurals>
+
+    <!-- Explanation that the app that will ALWAYS be launched to open web links to domains that it understands -->
+    <string name="app_link_open_always">Open in this app</string>
+
+    <!-- Explanation that the user will be asked whether to launch the app to open web links to domains that it understands -->
+    <string name="app_link_open_ask">Ask every time</string>
+
+    <!-- Explanation that the app that will NEVER be launched to open web links to domains that it understands -->
+    <string name="app_link_open_never">Don&#8217;t open in this app</string>
+
+    <!-- Fingerprint hint message when finger was not recognized.-->
+    <string name="fingerprint_not_recognized">Not recognized</string>
+
+    <!-- Title for Default Apps settings [CHAR LIMIT=30] -->
+    <string name="default_apps_title">Default</string>
+
+    <!-- Title for Default Apps settings for work [CHAR LIMIT=30] -->
+    <string name="default_for_work">Default for work</string>
+
+    <!-- Title for Assist and voice input settings [CHAR LIMIT=30] -->
+    <string name="assist_and_voice_input_title">Assist &amp; voice input</string>
+
+    <!-- Title for Default Assist settings [CHAR LIMIT=30] -->
+    <string name="default_assist_title">Assist app</string>
+
+    <!-- Summary for No Default Assist settings [CHAR LIMIT=45] -->
+    <string name="default_assist_none">None</string>
+
+    <!-- Title for Choose Assist dialog [CHAR LIMIT=35] -->
+    <string name="choose_assist_title">Choose Assist app</string>
+
+    <!-- [CHAR_LIMIT=45] Title of the security warning dialog for setting an assitant -->
+    <string name="assistant_security_warning_title">
+        Make <xliff:g id="assistant_app_name">%s</xliff:g> your assistant?
+    </string>
+
+    <!-- [CHAR_LIMIT=NONE] Warning message about security implications of setting an assistant,
+         displayed as a dialog message when the user selects an assistant. -->
+    <string name="assistant_security_warning">The assistant will be able to read information about
+        apps in use on your system, including information visible on your screen or accessible
+        within the apps.</string>
+
+    <!-- Label for the button to acknowledge assistant security implications. [CHAR LIMIT=30] -->
+    <string name="assistant_security_warning_agree">Agree</string>
+
+    <!-- Label for the button to bail out assistant security implications. [CHAR LIMIT=30] -->
+    <string name="assistant_security_warning_disagree">Disagree</string>
+
+    <!-- Title for Choose voice input dialog [CHAR LIMIT=30] -->
+    <string name="choose_voice_input_title">Choose voice input</string>
+
+    <!-- Title for Default Browser settings [CHAR LIMIT=30] -->
+    <string name="default_browser_title">Browser app</string>
+
+    <!-- Summary for No Default Browser settings [CHAR LIMIT=45] -->
+    <string name="default_browser_title_none">No default Browser</string>
+
+    <!--  Title for Default Phone app settings [CHAR LIMIT=30] -->
+    <string name="default_phone_title">Phone app</string>
+
+    <!-- Label of default app for current setting [CHAR LIMIT=40] -->
+    <string name="default_app">(Default)</string>
+
+    <!-- Label of system app for current setting -->
+    <string name="system_app">(System)</string>
+
+    <!-- Label of system and default app for current setting -->
+    <string name="system_default_app">(System default)</string>
+
+    <!-- Title of app storage screen [CHAR LIMIT=30] -->
+    <string name="apps_storage">Apps storage</string>
+
+    <!-- Title of usage access screen [CHAR LIMIT=30] -->
+    <string name="usage_access">Usage access</string>
+
+    <!-- Label for setting which controls whether app has usage access [CHAR LIMIT=45] -->
+    <string name="permit_usage_access">Permit usage access</string>
+
+    <!-- Link to the apps page for app usage settings [CHAR LIMIT=45] -->
+    <string name="app_usage_preference">App usage preferences</string>
+
+    <!-- Description of the usage access setting [CHAR LIMIT=NONE] -->
+    <string name="usage_access_description">Usage access allows an app to track what other apps you\u2019re using and how often, as well as your carrier, language settings, and other details.</string>
+
+    <!-- Title for screen showing recent memory usage of device [CHAR LIMIT=30]-->
+    <string name="memory_settings_title">Memory</string>
+
+    <!-- Title for screen showing recent memory usage of specific app [CHAR LIMIT=30]-->
+    <string name="memory_details_title">Memory details</string>
+
+    <!-- Description of app always running [CHAR LIMIT=45] -->
+    <string name="always_running">Always running (<xliff:g id="percentage" example="5%">%s</xliff:g>)</string>
+
+    <!-- Description of app sometimes running [CHAR LIMIT=45] -->
+    <string name="sometimes_running">Sometimes running (<xliff:g id="percentage" example="5%">%s</xliff:g>)</string>
+
+    <!-- Description of app rarely running [CHAR LIMIT=45] -->
+    <string name="rarely_running">Rarely running (<xliff:g id="percentage" example="5%">%s</xliff:g>)</string>
+
+    <!-- Maximum memory usage key [CHAR LIMIT=25] -->
+    <string name="memory_max_use">Maximum</string>
+
+    <!-- Average memory usage key [CHAR LIMIT=25] -->
+    <string name="memory_avg_use">Average</string>
+
+    <!-- Maximum memory used by an app [CHAR LIMIT=25] -->
+    <string name="memory_max_desc">Maximum <xliff:g id="memory" example="30MB">%1$s</xliff:g></string>
+
+    <!-- Average memory used by an app [CHAR LIMIT=25] -->
+    <string name="memory_avg_desc">Average <xliff:g id="memory" example="30MB">%1$s</xliff:g></string>
+
+    <!-- Formatting for memory description [CHAR LIMIT=25] -->
+    <string name="memory_use_running_format"><xliff:g id="memory" example="30MB">%1$s</xliff:g> / <xliff:g id="running" example="Always running">%2$s</xliff:g></string>
+
+    <!-- Label for process [CHAR LIMIT=25] -->
+    <string name="process_format"><xliff:g id="app_name" example="Settings">%1$s</xliff:g> (<xliff:g id="count" example="3">%2$d</xliff:g>)</string>
+
+    <!-- Label for list to control apps that ignore battery saving restrictions [CHAR LIMIT=27]-->
+    <string name="high_power_apps">Battery optimization</string>
+
+    <!-- Filter for apps allowed to use a lot of power [CHAR LIMIT=25] -->
+    <string name="high_power_filter_on">Not optimized</string>
+
+    <!-- Summary of app allowed to use a lot of power [CHAR LIMIT=60] -->
+    <string name="high_power_on">Not optimized</string>
+
+    <!-- Summary of app not allowed to use a lot of power [CHAR LIMIT=60] -->
+    <string name="high_power_off">Optimizing battery use</string>
+
+    <!-- Summary of app which doesn't have a battery optimization setting [CHAR LIMIT=60] -->
+    <string name="high_power_system">Battery optimization not available</string>
+
+    <!-- Description of high power switch [CHAR LIMIT=NONE] -->
+    <string name="high_power_desc">Don\u2019t apply battery optimization. May drain your battery more quickly.</string>
+
+    <!-- Description of number of apps with high power turned on [CHAR LIMIT=NONE] -->
+    <plurals name="high_power_count">
+        <item quantity="one">1 app allowed to ignore battery optimization</item>
+        <item quantity="other"><xliff:g id="count" example="10">%d</xliff:g> apps allowed to ignore battery optimization</item>
+    </plurals>
+
+    <!-- Title of prompt dialog app can invoke to turn off optimization [CHAR LIMIT=NONE] -->
+    <string name="high_power_prompt_title">Ignore battery optimizations?</string>
+
+    <!-- Body text of prompt dialog app can invoke to turn off optimization [CHAR LIMIT=NONE] -->
+    <string name="high_power_prompt_body">Let app
+        <xliff:g id="app_name" example="Settings">%1$s</xliff:g> stay connected in the
+        background?  This may use more battery.</string>
+
+    <!-- Summary of power usage for an app [CHAR LIMIT=NONE] -->
+    <string name="battery_summary"><xliff:g id="percentage" example="2">%1$d</xliff:g>%% use since last full charge</string>
+
+    <!-- Summary for app with no battery usage [CHAR LIMIT=NONE] -->
+    <string name="no_battery_summary">No battery use since last full charge</string>
+
+    <!-- Link to an apps notification settings [CHAR LIMIT=50] -->
+    <string name="app_notification_preferences">App settings</string>
+
+    <!-- Turn on settings for system ui tuner [CHAR LIMIT=40] -->
+    <string name="system_ui_settings">Show SystemUI Tuner</string>
+
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
+    <string name="additional_permissions">Additional permissions</string>
+
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
+    <string name="additional_permissions_more"><xliff:g id="count" example="2">%1$d</xliff:g> more</string>
+
+    <!-- Title of dialog shown to ask for user consent for sharing a bugreport that was requested remotely by the IT administrator. -->
+    <string name="share_remote_bugreport_dialog_title">Share bug report?</string>
+    <!-- Message of a dialog shown to ask for user consent for sharing a bugreport that was requested remotely by the IT administrator. -->
+    <string name="share_remote_bugreport_dialog_message_finished">Your IT admin requested a bug report to help troubleshoot this device. Apps and data may be shared.</string>
+    <!-- Message of a dialog shown to ask for user consent for sharing a bugreport that was requested remotely by the IT administrator and it's still being taken. -->
+    <string name="share_remote_bugreport_dialog_message">Your IT admin requested a bug report to help troubleshoot this device. Apps and data may be shared, and your device may temporarily slow down.</string>
+    <!-- Message of a dialog shown to inform that the remote bugreport that was requested remotely by the IT administrator is still being taken and will be shared when finished. -->
+    <string name="sharing_remote_bugreport_dialog_message">This bug report is being shared with your IT admin. Contact them for more details.</string>
+    <!-- Acceptance label of dialog shown to ask for user consent for sharing the remote bugreport. -->
+    <string name="share_remote_bugreport_action">Share</string>
+    <!-- Decline label of dialog shown to ask for user consent for sharing the remote bugreport. -->
+    <string name="decline_remote_bugreport_action">Decline</string>
+
+    <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for charging only. -->
+    <string name="usb_use_charging_only">Charge this device</string>
+    <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
+         user select what the USB connection for this device should be used for. This choice
+         is for charging only. -->
+    <string name="usb_use_charging_only_desc">Just charge this device</string>
+    <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for powering the other device only. -->
+    <string name="usb_use_power_only">Supply power</string>
+    <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
+         user select what the USB connection for this device should be used for. This choice
+         is for powering the other device. -->
+    <string name="usb_use_power_only_desc">Supply power to the other connected device</string>
+    <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for transferring files via MTP. -->
+    <string name="usb_use_file_transfers">Transfer files</string>
+    <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for transferring files via MTP. -->
+    <string name="usb_use_file_transfers_desc">Transfer files to another device</string>
+    <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for transferring photos via PTP. -->
+    <string name="usb_use_photo_transfers">Transfer photos (PTP)</string>
+    <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for transferring photos via PTP. -->
+    <string name="usb_use_photo_transfers_desc">Transfer photos or files if MTP is not supported (PTP)</string>
+    <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for entering MIDI mode. -->
+    <string name="usb_use_MIDI">Use device as MIDI</string>
+    <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
+         select what the USB connection for this device should be used for. This choice
+         is for entering MIDI mode. -->
+    <string name="usb_use_MIDI_desc">Use this device as MIDI</string>
+    <!-- The title used in a dialog which lets the user select what the USB connection
+         for this device should be used for. Choices are usb_use_charging_only,
+         usb_use_file_transfer, use_use_photo_transfer, and usb_use_MIDI -->
+    <string name="usb_use">Use USB to</string>
+    <string name="usb_tethering_title">USB tethering</string>
+    <string name="usb_tethering_desc">Use device for USB tethering</string>
+
+    <!-- Settings item title for background check prefs [CHAR LIMIT=35] -->
+    <string name="background_check_pref">Background check</string>
+
+    <!-- Settings screen title for background check prefs [CHAR LIMIT=35] -->
+    <string name="background_check_title">Full background access</string>
+
+    <!-- Title for the "context" preference to determine whether assist can access the data currently displayed on-screen [CHAR LIMIT=40] -->
+    <string name="assist_access_context_title">Use text from screen</string>
+
+    <!-- Summary for the "context" preference to determine whether assist can access the data currently displayed on-screen [CHAR LIMIT=NONE] -->
+    <string name="assist_access_context_summary">Allow the assist app to access the screen contents as text</string>
+
+    <!-- Title for the "screenshot" preference to determine whether assist can access the screenshot of your screen [CHAR LIMIT=40] -->
+    <string name="assist_access_screenshot_title">Use screenshot</string>
+
+    <!-- Summary for the "screenshot" preference to determine whether assist can access the screenshot of your screen [CHAR LIMIT=NONE] -->
+    <string name="assist_access_screenshot_summary">Allow the assist app to access an image of the screen</string>
+
+
+    <!-- Footer text in the manage assist screen. [CHAR LIMIT=NONE] -->
+    <string name="assist_footer">Assist apps can help you based on information from the screen you\u2019re viewing. Some apps support both launcher and voice input services to give you integrated assistance.</string>
+
+    <!-- Label for average memory use section [CHAR LIMIT=30] -->
+    <string name="average_memory_use">Average memory use</string>
+
+    <!-- Label for maximum memory use section [CHAR LIMIT=30] -->
+    <string name="maximum_memory_use">Maximum memory use</string>
+
+    <!-- Label for app list of memory use [CHAR LIMIT=30] -->
+    <string name="memory_usage">Memory usage</string>
+
+    <!-- Label for app list of memory use [CHAR LIMIT=30] -->
+    <string name="app_list_memory_use">App usage</string>
+
+    <!-- Label for details about an app's memory use [CHAR LIMIT=30] -->
+    <string name="memory_details">Details</string>
+
+    <!-- Summary for how much memory an app has used [CHAR LIMIT=NONE] -->
+    <string name="memory_use_summary"><xliff:g id="size" example="30MB">%1$s</xliff:g> avg memory used in last 3 hours</string>
+
+    <!-- Summary for no memory use for an app [CHAR LIMIT=NONE] -->
+    <string name="no_memory_use_summary">No memory used in last 3 hours</string>
+
+    <!-- Menu item for Sorting list by average memory use [CHAR LIMIT=NONE]-->
+    <string name="sort_avg_use">Sort by avg use</string>
+
+    <!-- Menu item for Sorting list by maximum memory use [CHAR LIMIT=NONE] -->
+    <string name="sort_max_use">Sort by max use</string>
+
+    <!-- Label for the current performance of the device [CHAR LIMIT=25] -->
+    <string name="memory_performance">Performance</string>
+
+    <!-- Label for total memory of device [CHAR LIMIT=25] -->
+    <string name="total_memory">Total memory</string>
+
+    <!-- Label for average memory usage of device [CHAR LIMIT=25] -->
+    <string name="average_used">Average used (&#x0025;)</string>
+
+    <!-- Label for free memory of device [CHAR LIMIT=25] -->
+    <string name="free_memory">Free</string>
+
+    <!-- Label for button that leads to list of apps and their memory usage [CHAR LIMIT=40]-->
+    <string name="memory_usage_apps">Memory used by apps</string>
+
+    <!-- Description of number of apps using memory [CHAR LIMIT=NONE] -->
+    <plurals name="memory_usage_apps_summary">
+        <item quantity="one">1 app used memory in the last <xliff:g id="duration" example="3 hours">%2$s</xliff:g></item>
+        <item quantity="other"><xliff:g id="count" example="10">%1$d</xliff:g> apps used memory in the last <xliff:g id="duration" example="3 hours">%2$s</xliff:g></item>
+    </plurals>
+
+    <!-- Label for frequency that the app is runnig (e.g. always, sometimes, etc.) [CHAR LIMIT=25] -->
+    <string name="running_frequency">Frequency</string>
+
+    <!-- Label for maximum amount of memory app has used [CHAR LIMIT=25] -->
+    <string name="memory_maximum_usage">Maximum usage</string>
+
+    <!-- Summary of data item when no data usage [CHAR LIMIT=40] -->
+    <string name="no_data_usage">No data used</string>
+
+    <!-- Zen mode access settings - title for warning dialog when enabling access [CHAR LIMIT=NONE] -->
+    <string name="zen_access_warning_dialog_title">Allow access to Do Not Disturb for <xliff:g id="app" example="Tasker">%1$s</xliff:g>?</string>
+
+    <!-- Zen mode access settings - summary for warning dialog when enabling access [CHAR LIMIT=NONE] -->
+    <string name="zen_access_warning_dialog_summary">The app will be able to turn on/off Do Not Disturb and make changes to related settings.</string>
+
+    <string name="zen_access_disabled_package_warning">Must stay turned on because notification access is on</string>
+
+    <!-- Zen mode access settings - title for warning dialog when revoking access [CHAR LIMIT=NONE] -->
+    <string name="zen_access_revoke_warning_dialog_title">Revoke access to Do Not Disturb for <xliff:g id="app" example="Tasker">%1$s</xliff:g>?</string>
+
+    <!-- Zen mode access settings - summary for warning dialog when revoking access [CHAR LIMIT=NONE] -->
+    <string name="zen_access_revoke_warning_dialog_summary">All Do Not Disturb rules created by this app will be removed.</string>
+
+    <!-- Ignore battery optimizations on label [CHAR LIMIT=30] -->
+    <string name="ignore_optimizations_on">Don\u2019t optimize</string>
+
+    <!-- Ignore battery optimizations off label [CHAR LIMIT=30] -->
+    <string name="ignore_optimizations_off">Optimize</string>
+
+    <!-- Ignore battery optimizations on description [CHAR LIMIT=NONE] -->
+    <string name="ignore_optimizations_on_desc">May drain your battery more quickly</string>
+
+    <!-- Ignore battery optimizations off description [CHAR LIMIT=NONE] -->
+    <string name="ignore_optimizations_off_desc">Recommended for better battery life</string>
+
+    <!-- Ignore battery optimizations dialog title [CHAR LIMIT=NONE] -->
+    <string name="ignore_optimizations_title">Allow <xliff:g id="app" example="Tasker">%s</xliff:g> to ignore battery optimizations?</string>
+
+    <!-- Label for None item in AppListPreference [CHAR LIMIT=40] -->
+    <string name="app_list_preference_none">None</string>
+
+    <!-- Warning message about disabling usage access on profile owner [CHAR LIMIT=NONE] -->
+    <string name="work_profile_usage_access_warning">Turning off usage access for this app doesn\u2019t prevent your administrator tracking data usage for apps in your work profile.</string>
+
+    <!-- Number of characters used for lock screen text [CHAR LIMIT=NONE] -->
+    <string name="accessibility_lock_screen_progress"><xliff:g id="count" example="1">%1$d</xliff:g> of <xliff:g id="count" example="1">%2$d</xliff:g> characters used</string>
+
+    <!-- System Alert Window settings -->
+    <!-- Title of Draw Overlay preference item [CHAR LIMIT=55] -->
+    <string name="draw_overlay_title">Apps that can draw over other apps</string>
+    <!-- Title of draw overlay screen [CHAR LIMIT=30] -->
+    <string name="draw_overlay">Draw over other apps</string>
+    <!-- Settings title in main settings screen for SYSTEM_ALERT_WINDOW [CHAR LIMIT=45] -->
+    <string name="system_alert_window_settings">Draw over other apps</string>
+    <!-- Title for the apps with SYSTEM_ALERT_WINDOW permission/privilege [CHAR LIMIT=20] -->
+    <string name="system_alert_window_apps_title">Apps</string>
+    <!-- Title for the apps that are allowed to draw on top of other apps [CHAR LIMIT=60] -->
+    <string name="system_alert_window_access_title">Draw over other apps</string>
+    <!-- Label for setting which controls whether app can draw overlays [CHAR LIMIT=45] -->
+    <string name="permit_draw_overlay">Permit drawing over other apps</string>
+    <!-- Link to the apps page for SYSTEM_ALERT_WINDOW settings [CHAR LIMIT=45] -->
+    <string name="app_overlay_permission_preference">App draw on top permission</string>
+    <!-- Description of allowing overlay setting [CHAR LIMIT=NONE] -->
+    <string name="allow_overlay_description">This permission allows an app to display on top of other apps you\u2019re using and may interfere with your use of the interface in other applications, or change what you think you are seeing in other applications.</string>
+
+    <!-- Keyword for VR setting -->
+    <string name="keywords_vr_listener">vr virtual reality listener stereo helper service</string>
+    <!-- Keyword for SYSTEM_ALERT_WINDOW -->
+    <string name="keywords_system_alert_window">system alert window dialog draw on top other apps</string>
+    <!-- Main settings screen item's title to go into the overlay settings screen [CHAR LIMIT=30] -->
+    <string name="overlay_settings">Draw over other apps</string>
+
+    <!-- Summary of number of apps currently can draw overlays [CHAR LIMIT=60] -->
+    <string name="system_alert_window_summary"><xliff:g id="count" example="10">%d</xliff:g> of <xliff:g id="count" example="10">%d</xliff:g> apps allowed to draw on top of other apps</string>
+
+    <!-- Label for showing apps that can draw overlays [CHAR LIMIT=45] -->
+    <string name="filter_overlay_apps">Apps with permission</string>
+    <!-- Summary of app allowed to draw overlay [CHAR LIMIT=60] -->
+    <string name="system_alert_window_on">Yes</string>
+    <!-- Summary of app not allowed to draw overlay [CHAR LIMIT=60] -->
+    <string name="system_alert_window_off">No</string>
+
+
+    <!-- Write Settings settings -->
+    <!-- Settings title in main settings screen for WRITE_SETTINGS [CHAR LIMIT=30] -->
+    <string name="write_settings">Modify system settings</string>
+    <!-- Keyword for WRITE_SETTINGS -->
+    <string name="keywords_write_settings">write modify system settings</string>
+    <!-- Summary of number of apps currently can draw overlays [CHAR LIMIT=60] -->
+    <string name="write_settings_summary"><xliff:g id="count" example="10">%d</xliff:g> of <xliff:g id="count" example="10">%d</xliff:g> apps allowed to modify system settings</string>
+
+    <!-- Label for showing apps that can write system settings [CHAR LIMIT=45] -->
+    <string name="filter_write_settings_apps">Can modify system settings</string>
+    <!-- Title for the apps that are allowed to write system settings [CHAR LIMIT=60] -->
+    <string name="write_settings_title">Can modify system settings</string>
+    <!-- Main settings screen item's title to go into the write system settings screen [CHAR LIMIT=30] -->
+    <string name="write_system_settings">Modify system settings</string>
+    <!-- Link to the apps page for WRITE_SETTINGS settings [CHAR LIMIT=52] -->
+    <string name="write_settings_preference">App modify system settings permission</string>
+    <!-- Label for setting which controls whether app can write system settings [CHAR LIMIT=45] -->
+    <string name="permit_write_settings">Allow modify system settings</string>
+    <!-- Description of the write system settings [CHAR LIMIT=NONE] -->
+    <string name="write_settings_description">This permission allows an app to modify system settings.</string>
+    <!-- Summary of app allowed to write system settings [CHAR LIMIT=45] -->
+    <string name="write_settings_on">Yes</string>
+    <!-- Summary of app not allowed to write system settings [CHAR LIMIT=45] -->
+    <string name="write_settings_off">No</string>
+
+    <!-- Title of setting that controls gesture to open camera [CHAR LIMIT=40] -->
+    <string name="camera_gesture_title">Double twist for camera</string>
+
+    <!-- Description of setting that controls gesture to open camera [CHAR LIMIT=NONE] -->
+    <string name="camera_gesture_desc">Open the camera app by twisting your wrist twice</string>
+
+    <!-- Title of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=40] -->
+    <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
+
+    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+    <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+
+    <!-- Title of setting that controls screen zoom (e.g. how large interface elements appear). [CHAR LIMIT=40] -->
+    <string name="screen_zoom_title">Display size</string>
+    <!-- Short summary for Magnification gesture. Lets the user know that this makes items on screen larger or smaller. Appears in the accessibility portion of Setup Wizard. [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_short_summary">Make items on screen larger or smaller</string>
+    <!-- Keywords for setting that controls screen zoom (e.g. how large interface elements appear). [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_keywords">display density, screen zoom, scale, scaling</string>
+    <!-- Summary of screen zoom setting screen. [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_summary">Make the items on your screen smaller or larger. Some apps on your screen may change position.</string>
+    <!-- Title of the screen zoom preview activity. -->
+    <string name="screen_zoom_preview_title">Preview</string>
+    <!-- Description for the button that makes interface elements smaller. [CHAR_LIMIT=NONE] -->
+    <string name="screen_zoom_make_smaller_desc">Make smaller</string>
+    <!-- Description for the button that makes interface elements larger. [CHAR_LIMIT=NONE] -->
+    <string name="screen_zoom_make_larger_desc">Make larger</string>
+
+    <!-- Name Initial shown in the conversation message icon. [CHAR LIMIT=1] -->
+    <string name="screen_zoom_conversation_icon_alex">A</string>
+    <!-- Name Initial shown in the conversation message icon. [CHAR LIMIT=1] -->
+    <string name="screen_zoom_conversation_icon_pete">P</string>
+    <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_conversation_message_1">Hi Pete!</string>
+    <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_conversation_message_2">Hey, want to grab coffee and catch up today?</string>
+    <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_conversation_message_3">Sounds great. I know of a good place not too far from here.</string>
+    <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
+    <string name="screen_zoom_conversation_message_4">Perfect!</string>
+    <!-- Conversation message timestamp of the messaging app preview screen. [CHAR LIMIT=20] -->
+    <string name="screen_zoom_conversation_timestamp_1">Tue 6:00PM</string>
+    <!-- Conversation message timestamp of the messaging app preview screen. [CHAR LIMIT=20] -->
+    <string name="screen_zoom_conversation_timestamp_2">Tue 6:01PM</string>
+    <!-- Conversation message timestamp of the messaging app preview screen. [CHAR LIMIT=20] -->
+    <string name="screen_zoom_conversation_timestamp_3">Tue 6:02PM</string>
+    <!-- Conversation message timestamp of the messaging app preview screen. [CHAR LIMIT=20] -->
+    <string name="screen_zoom_conversation_timestamp_4">Tue 6:03PM</string>
+
+    <!-- Button to show all top-level settings items [CHAR LIMIT=20] -->
+    <string name="see_all">See all</string>
+    <!-- Button to show less top-level settings items [CHAR LIMIT=20] -->
+    <string name="see_less">See less</string>
+
+    <!-- Wi-Fi state - Disconnected [CHAR LIMIT=NONE] -->
+    <string name="disconnected">Disconnected</string>
+
+    <!-- Summary of data usage [CHAR LIMIT=NONE] -->
+    <string name="data_usage_summary_format"><xliff:g id="amount" example="50%">%1$s</xliff:g> of data used</string>
+
+    <!-- Summary of notifications [CHAR LIMIT=NONE] -->
+    <plurals name="notification_summary">
+        <item quantity="one"><xliff:g id="count" example="1">%d</xliff:g> app blocked from sending</item>
+        <item quantity="other"><xliff:g id="count" example="10">%d</xliff:g> apps blocked from sending</item>
+    </plurals>
+
+    <!-- Summary of notifications when no apps are blocked [CHAR LIMIT=NONE] -->
+    <string name="notification_summary_none">All apps allowed to send</string>
+
+    <!-- Summary of apps [CHAR LIMIT=NONE] -->
+    <string name="apps_summary"><xliff:g id="count" example="24">%1$d</xliff:g> apps installed</string>
+    <!-- Example summary of apps used in Setup Wizard preview screen [CHAR LIMIT=NONE] -->
+    <string name="apps_summary_example">24 apps installed</string>
+
+    <!-- Summary of storage usage [CHAR LIMIT=NONE] -->
+    <string name="storage_summary"><xliff:g id="size1" example="8GB">%1$s</xliff:g> of <xliff:g id="size2" example="32GB">%2$s</xliff:g> used</string>
+
+    <!-- Summary of display with adaptive brightness on [CHAR LIMIT=NONE] -->
+    <string name="display_summary_on">Adaptive brightness is ON</string>
+
+    <!-- Summary of display with adaptive brightness off [CHAR LIMIT=NONE] -->
+    <string name="display_summary_off">Adaptive brightness is OFF</string>
+
+    <!-- Summary of memory screen [CHAR LIMIT=NONE] -->
+    <string name="memory_summary">Avg <xliff:g id="used_memory" example="1.7GB">%1$s</xliff:g> of <xliff:g id="total_memory" example="2GB">%2$s</xliff:g> memory used</string>
+
+    <!-- Summary of user screen [CHAR LIMIT=NONE] -->
+    <string name="user_summary">Signed in as <xliff:g id="user_name" example="Jason">%1$s</xliff:g></string>
+
+    <!-- Summary of payment screen [CHAR LIMIT=NONE] -->
+    <string name="payment_summary"><xliff:g id="app_name" example="Payment App">%1$s</xliff:g> is default</string>
+
+    <!-- Summary of location screen [CHAR LIMIT=NONE] -->
+    <string name="location_on_summary">ON / <xliff:g id="location_mode" example="High accuracy">%1$s</xliff:g></string>
+
+    <!-- Location off [CHAR LIMIT=NONE] -->
+    <string name="location_off_summary">OFF</string>
+
+    <!-- Backup disabled summary [CHAR LIMIT=NONE] -->
+    <string name="backup_disabled">Back up disabled</string>
+
+    <!-- Summary of device info page [CHAR LIMIT=NONE] -->
+    <string name="about_summary">Android <xliff:g id="version" example="6.0">%1$s</xliff:g></string>
+
+    <!-- TODO: Update these strings with the finalized ones. -->
+    <!-- Title for dialog displayed when user clicks on a setting locked by an admin [CHAR LIMIT=30] -->
+    <string name="disabled_by_policy_title">Action not allowed</string>
+    <!-- Shown when the user tries to change a settings locked by an admin [CHAR LIMIT=200] -->
+    <string name="default_admin_support_msg">This action is disabled. Contact your organization\'s administrator to learn more.</string>
+    <!-- Shown in dialog to allow user to see more information about the device admin [CHAR LIMIT=30] -->
+    <string name="admin_support_more_info">More details</string>
+    <!-- Shown in admin details page to warn user about policies the admin can set in a work profile. [CHAR LIMIT=NONE] -->
+    <string name="admin_profile_owner_message">Your administrator can monitor and manage apps and data associated with your work profile, including settings, permissions, corporate access, network activity, and the device\'s location information.</string>
+    <!-- Shown in admin details page to warn user about policies the admin can set on a user. [CHAR LIMIT=NONE] -->
+    <string name="admin_profile_owner_user_message">Your administrator can monitor and manage apps and data associated with this user, including settings, permissions, corporate access, network activity, and the device\'s location information.</string>
+    <!-- Shown in admin details page to warn user about policies the admin can set on a device. [CHAR LIMIT=NONE] -->
+    <string name="admin_device_owner_message">Your administrator can monitor and manage apps and data associated with this device, including settings, permissions, corporate access, network activity, and the device\'s location information.</string>
+
+    <!-- Turn off a conditional state of the device (e.g. airplane mode, or hotspot) [CHAR LIMIT=30] -->
+    <string name="condition_turn_off">Turn off</string>
+
+    <!-- Turn on a conditional state of the device (e.g. cellular data) [CHAR LIMIT=30] -->
+    <string name="condition_turn_on">Turn on</string>
+
+    <!-- Content description used when expanding a condition item to see more details -->
+    <string name="condition_expand_show">Show</string>
+
+    <!-- Content description used when collapsing a condition item to see less details -->
+    <string name="condition_expand_hide">Hide</string>
+
+<!-- Title of condition that hotspot is on [CHAR LIMIT=30] -->
+    <string name="condition_hotspot_title">Hotspot is on</string>
+
+    <!-- Summary of condition that hotspot is on [CHAR LIMIT=NONE] -->
+    <string name="condition_hotspot_summary">Portable Wi-Fi hotspot <xliff:g name="ap_name" example="AndroidAP">%1$s</xliff:g> is active, Wi-Fi for this device is turned off.</string>
+
+    <!-- Title of condition that airplane mode is on [CHAR LIMIT=30] -->
+    <string name="condition_airplane_title">Airplane mode is on</string>
+
+    <!-- Summary of condition that airplane mode is on [CHAR LIMIT=NONE] -->
+    <string name="condition_airplane_summary">Wi-Fi, Bluetooth, and cellular network are turned off. You can\'t make phone calls or connect to the Internet.</string>
+
+    <!-- Title of condition that do not disturb is on [CHAR LIMIT=30] -->
+    <string name="condition_zen_title">Do not disturb is on (<xliff:g name="zen_mode_type" example="Alarms only">%1$s</xliff:g>)</string>
+
+    <!-- Title of condition that battery saver is on [CHAR LIMIT=30] -->
+    <string name="condition_battery_title">Battery Saver is on</string>
+
+    <!-- Summary of condition that battery saver is on [CHAR LIMIT=NONE] -->
+    <string name="condition_battery_summary">Performance is reduced. Location services and background data are turned off.</string>
+
+    <!-- Title of condition that cellular data is off [CHAR LIMIT=30] -->
+    <string name="condition_cellular_title">Cellular data is off</string>
+
+    <!-- Summary of condition that cellular data is off [CHAR LIMIT=NONE] -->
+    <string name="condition_cellular_summary">Internet is available only via Wi-Fi</string>
+
+    <!-- Title of condition that background data is off [CHAR LIMIT=30] -->
+    <string name="condition_bg_data_title">Data Saver is on</string>
+
+    <!-- Summary of condition that background data is off [CHAR LIMIT=NONE] -->
+    <string name="condition_bg_data_summary">Background data is only available via Wi-Fi. This may affect some apps or services when Wi-Fi is not available.</string>
+
+    <!-- Title of condition that work mode is off [CHAR LIMIT=30] -->
+    <string name="condition_work_title">Work profile is off</string>
+
+    <!-- Summary of condition that work mode is off [CHAR LIMIT=NONE] -->
+    <string name="condition_work_summary">Apps, background sync, and other features related to your work profile are turned off.</string>
+
+    <!-- Title for the suggestions section on the dashboard [CHAR LIMIT=30] -->
+    <string name="suggestions_title">Suggestions (<xliff:g name="count" example="3">%1$d</xliff:g>)</string>
+
+    <!-- Name of option to remove a suggestion from the list [CHAR LIMIT=30] -->
+    <string name="suggestion_remove">Remove</string>
+
+    <!-- Name of the setting to change the display's color temperature -->
+    <string name="color_temperature">Cool color temperature</string>
+
+    <!-- Description of the setting to change the display's color temperature -->
+    <string name="color_temperature_desc">Use cooler display colors</string>
+
+    <!-- Toast message letting the user know the color temperature setting is not immediate -->
+    <string name="color_temperature_toast">To apply color change, turn off screen</string>
+
+    <!-- Name of the setting to disable the automatic update -->
+    <string name="ota_disable_automatic_update">Automatic system updates</string>
+
+    <!-- Label for category for data usage [CHAR LIMIT=30] -->
+    <string name="usage">Usage</string>
+
+    <!-- Label for cellular data usage in data usage screen [CHAR LIMIT=60] -->
+    <string name="cellular_data_usage">Cellular data usage</string>
+
+    <!-- Label for wifi data usage in data usage screen [CHAR LIMIT=60] -->
+    <string name="wifi_data_usage">Wi-Fi data usage</string>
+
+    <!-- Label for ethernet data usage in data usage screen [CHAR LIMIT=60] -->
+    <string name="ethernet_data_usage">Ethernet data usage</string>
+
+    <!-- Label for section about wifi in data usage screen [CHAR LIMIT=60] -->
+    <string name="wifi">Wi-Fi</string>
+
+    <!-- Label for section about ethernet in data usage screen [CHAR LIMIT=60] -->
+    <string name="ethernet">Ethernet</string>
+
+    <!-- Format string for amount of cellular data used [CHAR LIMIT=30] -->
+    <string name="cell_data_template"><xliff:g name="units" example="GB">%1$s</xliff:g> cellular data</string>
+
+    <!-- Format string for amount of wifi data used [CHAR LIMIT=30] -->
+    <string name="wifi_data_template"><xliff:g name="units" example="GB">%1$s</xliff:g> Wi-Fi data</string>
+
+    <!-- Format string for amount of ethernet data used [CHAR LIMIT=30] -->
+    <string name="ethernet_data_template"><xliff:g name="units" example="GB">%1$s</xliff:g> ethernet data</string>
+
+    <!-- Format for a summary describing the amount of data before the user is warned [CHAR LIMIT=NONE] -->
+    <string name="cell_warning_only"><xliff:g name="amount" example="1 GB">%1$s</xliff:g> Data warning</string>
+
+    <!-- Format for a summary describing the amount of data before the user is warned or limited [CHAR LIMIT=NONE] -->
+    <string name="cell_warning_and_limit"><xliff:g name="amount" example="1 GB">%1$s</xliff:g> Data warning / <xliff:g name="amount" example="2 GB">%2$s</xliff:g> Data limit</string>
+
+    <!-- Title of button and screen for billing cycle preferences [CHAR LIMIT=30 -->
+    <string name="billing_cycle">Billing cycle</string>
+
+    <!-- Summary describing when the billing cycle for their phone carrier starts [CHAR LIMIT=NONE] -->
+    <string name="billing_cycle_summary">Monthly cycle starts on the <xliff:g name="day" example="1st">%1$s</xliff:g> of every month</string>
+
+    <!-- Summary describing when the billing cycle for their phone carrier starts [CHAR LIMIT=NONE] -->
+    <string name="billing_cycle_fragment_summary">Monthly starting <xliff:g name="day_of_month" example="1st">%1$s</xliff:g></string>
+
+    <!-- Title of button and screen for which wifi networks have data restrictions [CHAR LIMIT=30 -->
+    <string name="network_restrictions">Network restrictions</string>
+
+    <!-- A summary shown on data usage screens to indicate inaccuracy of data tracking [CHAR LIMIT=NONE] -->
+    <string name="operator_warning">Carrier data accounting may differ from device accounting</string>
+
+    <!-- Format string describing how much data has been used [CHAR LIMIT=20] -->
+    <string name="data_used_template"><xliff:g name="amount" example="1 GB">%1$s</xliff:g> used</string>
+
+    <!-- Label for button to set the amount of data before user is warned about usage [CHAR LIMIT=30] -->
+    <string name="data_warning">Data warning</string>
+
+    <!-- Label for switch about whether to limit how much data can be used [CHAR LIMIT=30] -->
+    <string name="set_data_limit">Set data limit</string>
+
+    <!-- Label for button to set the amount of data before user is limited [CHAR LIMIT=30] -->
+    <string name="data_limit">Data limit</string>
+
+    <!-- Summary about how much data has been used in a date range [CHAR LIMIT=NONE] -->
+    <string name="data_usage_template"><xliff:g name="amount" example="200 MB">%1$s</xliff:g> used between <xliff:g name="date_range" example="Jan 1 -- Feb 2">%2$s</xliff:g></string>
+
+    <!-- Accessibility label for button that leads to screen with more configuration options [CHAR LIMIT=NONE] -->
+    <string name="configure">Configure</string>
+
+    <!-- List of app names included in data usage on app data usage screen
+         [CHAR LIMIT=50] -->
+    <string name="data_usage_other_apps">Other apps included in usage</string>
+
+    <!-- Description of number of apps allowed to ignore Data Saver [CHAR LIMIT=NONE] -->
+    <plurals name="data_saver_unrestricted_summary">
+        <item quantity="one">1 app allowed to use unrestricted data when Data Saver is on</item>
+        <item quantity="other"><xliff:g id="count" example="10">%1$d</xliff:g> apps allowed to use unrestricted data when Data Saver is on</item>
+    </plurals>
+
+    <!-- Name of Data Saver screens [CHAR LIMIT=30] -->
+    <string name="data_saver_title">Data saver</string>
+
+    <!-- Button that leads to list of apps with unrestricted data access [CHAR LIMIT=60] -->
+    <string name="unrestricted_data_saver">Unrestricted data access</string>
+
+    <!-- Description of message shown when app is blacklisted for background data access [CHAR LIMIT=NONE] -->
+    <string name="restrict_background_blacklisted">Background data is turned off</string>
+
+    <!-- Summary for the Data Saver feature being on [CHAR LIMIT=NONE] -->
+    <string name="data_saver_on">On</string>
+
+    <!-- Summary for the Data Saver feature being off [CHAR LIMIT=NONE] -->
+    <string name="data_saver_off">Off</string>
+
+    <!-- Title for switch to allow app unrestricted data usage [CHAR LIMIT=30] -->
+    <string name="unrestricted_app_title">Unrestricted data usage</string>
+
+    <!-- Title for switch to allow app unrestricted data usage [CHAR LIMIT=30] -->
+    <string name="unrestricted_app_summary">Allow unrestricted data access when Data Saver is on</string>
+
+    <!-- Button to switch the default home app [CHAR LIMIT=60] -->
+    <string name="home_app">Home app</string>
+
+    <!-- No default home set summary [CHAR LIMIT=NONE] -->
+    <string name="no_default_home">No default Home</string>
+
+    <!-- Title of the preference controlling whether the device encryption password/PIN/Pattern must be entered before being able to start the device. [CHAR LIMIT=60]-->
+    <string name="lockpattern_settings_require_cred_before_startup">Secure start-up</string>
+
+    <!-- Summary of the preference controlling whether the device encryption *pattern* must be entered before being able to start the device. [CHAR LIMIT=NONE]-->
+    <string name="lockpattern_settings_require_pattern_before_startup_summary">Require pattern to start up your device. While off, this device can\'t receive calls, messages, notifications, or alarms.</string>
+
+    <!-- Summary of the preference controlling whether the device encryption *PIN* must be entered before being able to start the device. [CHAR LIMIT=NONE]-->
+    <string name="lockpattern_settings_require_pin_before_startup_summary">Require PIN to start up your device. While off, this device can\'t receive calls, messages, notifications, or alarms.</string>
+
+    <!-- Summary of the preference controlling whether the device encryption *password* must be entered before being able to start the device. [CHAR LIMIT=NONE]-->
+    <string name="lockpattern_settings_require_password_before_startup_summary">Require password to start up your device. While off, this device can\'t receive calls, messages, notifications, or alarms.</string>
+
+    <!-- Title for suggestion adding more fingerprints [CHAR LIMIT=30] -->
+    <string name="suggestion_additional_fingerprints">Add another fingerprint</string>
+
+    <!-- Summary for suggestion adding more fingerprints [CHAR LIMIT=60] -->
+    <string name="suggestion_additional_fingerprints_summary">Unlock with a different fingerprint</string>
+
+    <!-- Summary of battery saver when on [CHAR LIMIT=NONE] -->
+    <string name="battery_saver_on_summary">On / <xliff:g name="automatic_state" example="Never turn on automatically">%1$s</xliff:g></string>
+
+    <!-- Summary of battery saver when off [CHAR LIMIT=NONE] -->
+    <string name="battery_saver_off_summary">Off / <xliff:g name="automatic_state" example="Never turn on automatically">%1$s</xliff:g></string>
+
+    <!-- [CHAR_LIMIT=NONE] Battery saver: Description for automatic entry option: Never -->
+    <string name="battery_saver_desc_turn_on_auto_never">Never turn on automatically</string>
+
+    <!-- [CHAR_LIMIT=NONE] Battery saver: Description for automatic entry option: pct% battery -->
+    <string name="battery_saver_desc_turn_on_auto_pct">Turn on automatically at %1$s battery</string>
+
+    <!-- [CHAR_LIMIT=NONE] Label for when app is ignoring battery optimizations -->
+    <string name="not_battery_optimizing">Not using battery optimization</string>
+
+    <!-- Text for the setting on whether you can type text into notifications without unlocking the device. -->
+    <string name="lockscreen_remote_input">If device is locked, prevent typing replies or other text in notifications</string>
+
+    <string-array name="bytes_picker_sizes" translatable="false">
+        <item>@*android:string/megabyteShort</item>
+        <item>@*android:string/gigabyteShort</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=30] Label for setting to control the default spell checker -->
+    <string name="default_spell_checker">Default spell checker</string>
+
+    <!-- [CHAR LIMIT=30] Title for dialog for setting to control the default spell checker -->
+    <string name="choose_spell_checker">Choose spell checker</string>
+
+    <!-- [CHAR LIMIT=30] Label for the placeholder of the current spell checker name.  Used when no spell checker is currently selected. -->
+    <string name="spell_checker_not_selected">Not selected</string>
+
+    <!-- Notification log debug tool: missing title -->
+    <string name="notification_log_no_title">(none)</string>
+    <!-- Notification log debug tool: delimiter between header and field data -->
+    <string name="notification_log_details_delimiter">": "</string>
+    <!-- Notification log debug tool: header: package name -->
+    <string name="notification_log_details_package">pkg</string>
+    <!-- Notification log debug tool: header: notification key -->
+    <string name="notification_log_details_key">key</string>
+    <!-- Notification log debug tool: header: notification group -->
+    <string name="notification_log_details_group">group</string>
+    <!-- Notification log debug tool: header: notification group summary suffix -->
+    <string name="notification_log_details_group_summary"> (summary)</string>
+    <!-- Notification log debug tool: header: notification visibility -->
+    <string name="notification_log_details_visibility">visibility</string>
+    <!-- Notification log debug tool: header: notification public version -->
+    <string name="notification_log_details_public_version">publicVersion</string>
+    <!-- Notification log debug tool: header: notification priority -->
+    <string name="notification_log_details_priority">priority</string>
+    <!-- Notification log debug tool: header: notification importance -->
+    <string name="notification_log_details_importance">importance</string>
+    <!-- Notification log debug tool: header: notification importance explanation -->
+    <string name="notification_log_details_explanation">explanation</string>
+    <!-- Notification log debug tool: header: notification contentIntent field -->
+    <string name="notification_log_details_content_intent">intent</string>
+    <!-- Notification log debug tool: header: notification deleteIntent field -->
+    <string name="notification_log_details_delete_intent">delete intent</string>
+    <!-- Notification log debug tool: header: notification fullScreenIntent field -->
+    <string name="notification_log_details_full_screen_intent">full screen intent</string>
+    <!-- Notification log debug tool: header: notification actions list -->
+    <string name="notification_log_details_actions">actions</string>
+    <!-- Notification log debug tool: header: title -->
+    <string name="notification_log_details_title">title</string>
+    <!-- Notification log debug tool: header: notification action remoteinput -->
+    <string name="notification_log_details_remoteinput">remote inputs</string>
+    <!-- Notification log debug tool: header: notification contentView -->
+    <string name="notification_log_details_content_view">custom view</string>
+    <!-- Notification log debug tool: header: notification extras -->
+    <string name="notification_log_details_extras">extras</string>
+    <!-- Notification log debug tool: header: notification icon -->
+    <string name="notification_log_details_icon">icon</string>
+    <!-- Notification log debug tool: header: notification size -->
+    <string name="notification_log_details_parcel">parcel size</string>
+    <!-- Notification log debug tool: notification ashmem size -->
+    <string name="notification_log_details_ashmem">ashmem</string>
+    <!-- Notification log debug tool: header: notification sound info -->
+    <string name="notification_log_details_sound">sound</string>
+    <!-- Notification log debug tool: header: notification vibration info -->
+    <string name="notification_log_details_vibrate">vibrate</string>
+    <!-- Notification log debug tool: the word 'default' -->
+    <string name="notification_log_details_default">default</string>
+    <!-- Notification log debug tool: the word 'none' -->
+    <string name="notification_log_details_none">none</string>
+    <!-- Notification log debug tool: missing ranking information -->
+    <string name="notification_log_details_ranking_null">Ranking object is missing.</string>
+    <!-- Notification log debug tool: the word 'none' -->
+    <string name="notification_log_details_ranking_none">Ranking object doesn\'t contain this key.</string>
+
+    <!-- [CHAR_LIMIT=60] Label for special access screen -->
+    <string name="special_access">Special access</string>
+
+    <!-- Developer option to convert to file encryption - final warning -->
+    <string name="confirm_convert_to_fbe_warning">Really wipe user data and convert to file encryption?</string>
+    <!-- Developer option to convert to file encryption - final button -->
+    <string name="button_confirm_convert_fbe">Wipe and convert</string>
+
+    <!-- Reset rate-limiting in the system service ShortcutManager. [CHAR_LIMIT=none] -->
+    <string name="reset_shortcut_manager_throttling">Reset ShortcutManager rate-limiting counters</string>
+
+    <!-- Title of the dialog box to confirm resetting rate-limiting in the system service ShortcutManager. [CHAR_LIMIT=none] -->
+    <string name="confirm_reset_shortcut_manager_throttling_title">Reset ShortcutManager rate-limiting?</string>
+
+    <!-- Message of the dialog box to confirm resetting rate-limiting in the system service ShortcutManager. [CHAR_LIMIT=none] -->
+    <string name="confirm_reset_shortcut_manager_throttling_message">Reset ShortcutManager rate-limiting counters?</string>
+
+    <!-- Title of notification suggestion during optional steps of setup. [CHAR_LIMIT=60] -->
+    <string name="notification_suggestion_title">Control lock screen notifications</string>
+    <!-- Summary of notification suggestion during optional steps of setup. [CHAR_LIMIT=80] -->
+    <string name="notification_suggestion_summary">Show or hide notification content</string>
+
+    <!-- Summary of developer options to set the smallest width of the screen [CHAR LIMIT=60]-->
+    <string name="developer_density_summary"><xliff:g name="count" example="320">%d</xliff:g> dp</string>
+
+    <!-- Title of developer options to set the smallest width of the screen [CHAR LIMIT=60]-->
+    <string name="developer_smallest_width">Smallest width</string>
+
+    <!-- Message shown when there are no premium SMS apps [CHAR LIMIT=NONE] -->
+    <string name="premium_sms_none">No installed apps have requested Premium SMS access</string>
+
+    <!-- Warning message shown between options to enable Premium SMS for an app [CHAR LIMIT=NONE] -->
+    <string name="premium_sms_warning">Premium SMS may cost you money and will add up to your carrier bills. If you enable permission for an app, you will be able to send premium SMS using that app.</string>
+
+    <!-- Title of screen controlling which apps have access to send premium SMS messages [CHAR LIMIT=60] -->
+    <string name="premium_sms_access">Premium SMS access</string>
+
+    <!-- [CHAR LIMIT=25] Bluetooth is disabled. -->
+    <string name="bluetooth_disabled">Disabled</string>
+
+    <!-- [CHAR LIMIT=60] Name of dev option called demo mode -->
+    <string name="demo_mode">Demo mode</string>
+
+    <!-- [CHAR LIMIT=60] Title of work profile setting page -->
+    <string name="managed_profile_settings_title">Work profile settings</string>
+    <!-- [CHAR LIMIT=60] The preference title for enabling cross-profile remote contact search -->
+    <string name="managed_profile_contact_search_title">Contact search</string>
+    <!-- [CHAR LIMIT=NONE] The preference summary for enabling cross-profile remote contact search -->
+    <string name="managed_profile_contact_search_summary">Allow contact searches by your organization to identify callers and contacts</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_computer">Computer</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_headset">Headset</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_phone">Phone</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_imaging">Imaging</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_headphone">Headphone</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_input_peripheral">Input Peripheral</string>
+
+    <!-- Message for telling the user the kind of BT device being displayed in list. -->
+    <string name="bluetooth_talkback_bluetooth">Bluetooth</string>
+
+    <!-- Wifi extension requirement -->
+    <string name="wifi_set_priority_settings_title">AP priority settings</string>
+    <string name="wifi_set_priority_settings_summary">Click to set priority of each access point</string>
+    <string name="cellular_to_wlan_title">Cellular->WLAN</string>
+    <string name="wifi_auto_connect_type_title">Auto connect type</string>
+    <string name="wifi_auto_connect_type_summary">Specify network connection type</string>
+    <string name="wifi_menu_disconnect">Disconnect from network</string>
+    <string name="cellular_to_wlan_hint_title">Cellular->WLAN hint</string>
+    <string name="cellular_to_wlan_hint_summary">Allow hint when choose manually or always ask in Cellular->WLAN</string>
+    <string name="cellular_to_wlan_hint_toast">Cellular->WLAN connection may be affected</string>
+    <string name="wlan_to_cellular_hint_title">WLAN->Cellular hint</string>
+    <string name="notify_connect">CMCC WLAN prompt</string>
+    <string name="notify_connect_summary">Prompt me when access to CMCC WLAN</string>
+    <string name="wifi_setting_connect_type_error">There was a problem setting the connect type.</string>
+    <string name="app_ops_permiss_name">App network access</string>
+
+    <!-- Roaming Data Settings -->
+    <string name="label_global_roaming_settings">Roaming Settings</string>
+    <string name="set_data_time_range">Show time range</string>
+    <string name="lte_4g_settings_title">Enable 4G</string>
+    <string name="lte_4g_switch_prompt">The phone will change from 3G/2G to 4G, some active task may be stopped</string>
+    <string name="lte_4g_settings_4genable_summary">4G Enabled</string>
+    <string name="lte_4g_settings_4gdisable_summary">4G Disabled</string>
+    <string name="lte_4g_settings_disable">Airplane mode or SIM card is not ready</string>
+
+    <!-- StorageCleaner Settings -->
+    <string name="storage_menu_cleanup">Storage Cleanup</string>
+    <string name="profiles_settings_title">System profiles</string>
+    <string name="select_sim_card">Select SIM card</string>
+
+    <string name="mbn_version">MBN version</string>
+    <!-- show security alert for open type end -->
+    <string name="voice_over_lte">Voice over LTE</string>
+
+    <string name="tethering_help_dialog_title">Help</string>
+    <string name="tethering_help_dialog_text"><b>USB tethering</b> \n You can tether your Android device to your computer with a USB cable, to share your device\'s Internet connection with your computer. \n\n1.USB tethering works with Windows Vista, Windows 7, Windows 8, Windows 8.1 and Linux. \n\n2.If your device has an SD card or USB storage, you can\'t mount it on your computer when USB tethered. \n\n <b>Portable Wi-Fi hotspot</b> \n You can turn your Android device into a portable Wi-Fi hotspot, to share your Android device\'s Internet connection with one or more computers or other devices. \n\n1.When your device is serving as a Wi-Fi hotspot, you can\'t use your device\'s applications to access the Internet via its Wi-Fi connection (but of course you remain connected to the Internet via your mobile data network). \n\n2.You configure the hotspot with the Wi-Fi hotspot settings.</string>
+
+    <string name="turn_on_wifi_dialog_title">Turn on wifi</string>
+    <string name="turn_on_wifi_dialog_text">Wi-Fi is turned off when Mobile HotSpot is active. To turn on Wi-Fi, please turn off Mobile HotSpot.</string>
+    <string name="dialog_not_show_again">Do not show again</string>
+    <string name="tethering_settings_summary">Share your device\'s mobile data connection via USB or a Mobile HotSpot</string>
+
+    <string name="collect_diagnostics_title">Collect Diagnostics</string>
+    <string name="collect_diagnostics_summary">Collect diagnostics data for troubleshooting</string>
+
+    <string name="tethering_no_sim_alert_title">No SIM Card</string>
+    <string name="tethering_no_sim_card_text">Please install SIM card in order to share your data connection with other devices using Mobile HotSpot or USB tethering for Internet access.</string>
+    <string name="tether_settings_launch_title">Mobile HotSpot</string>
+    <string name="wifi_tether_first_use_message">Set up Mobile HotSpot at the First Use</string>
+
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">Reset</string>
+    <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
+    <string name="protected_apps">Protected apps</string>
+    <string name="saving_protected_components">Saving component state</string>
+
+    <string name="lte_data_and_voice_calling_enabled">LTE data and Voice Calling (IMS/VoLTE) service enabled </string>
+    <string name="lte_data_service_enabled">LTE data service enabled </string>
+    <string name="turn_off_wifi_dialog_title">Turn off Wi-Fi</string>
+    <string name="turn_off_wifi_dialog_text">Wi-Fi is turned off when Mobile HotSpot is active. To turn on Wi-Fi, please turn off Mobile HotSpot.</string>
+</resources>

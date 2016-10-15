@@ -24,10 +24,4 @@
         android:summaryOff="@string/su_indicator_summary_off"
         android:defaultValue="true" />
 
-	<!-- Battery Bar -->
-	<PreferenceScreen
-        android:key="battery_bar"
-        android:title="@string/battery_bar_title"
-        android:fragment="src.com.android.settings.fh.BatteryBar" />
-
 </PreferenceScreen>
