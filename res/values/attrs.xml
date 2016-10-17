@@ -134,6 +134,7 @@
     <declare-styleable name="DividerPreference">
         <attr name="allowDividerAbove" format="boolean" />
         <attr name="allowDividerBelow" format="boolean" />
+	</declare-styleable>
 
     <!-- Base attributes available to CustomSeekBarPreference. -->
     <declare-styleable name="CustomSeekBarPreference">
