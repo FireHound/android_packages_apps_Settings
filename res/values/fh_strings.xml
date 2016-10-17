@@ -38,6 +38,9 @@
    <string name="unlock_quick_unlock_control_title">Quick Unlock</string>
    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
+    <!-- Burnt ashes summary -->
+    <string name="fh_settings_summary">Burn it here!!</string>
+
     <!-- Ported CM status bar settings -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -579,10 +582,6 @@
 
     <!-- Notification importance -->
     <string name="tuner_full_importance_settings">Power notification controls</string>
-
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
