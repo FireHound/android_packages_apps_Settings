@@ -27,7 +27,7 @@
 	<!-- Battery Bar -->
 	<PreferenceScreen
         android:key="battery_bar"
-        android:title="@string/battery_bar_title"
+        android:title="@string/battery_bar"
         android:fragment="src.com.android.settings.fh.BatteryBar" />
 
 	<!-- Metwork Traffic -->
