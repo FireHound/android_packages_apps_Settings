@@ -401,7 +401,6 @@
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
     <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back button</string>
-<<<<<<< HEAD:res/values/fh_strings.xml
     
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
