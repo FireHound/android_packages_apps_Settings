@@ -287,6 +287,35 @@
     <string name="share_message">FireHound is Custom ROM developed focusing on stability and features! Go go go, flash FireHound and change the way you use your smartphone! For more information, join our community: @ https://plus.google.com/communities/114615598909452601377</string>
     <string name="share_chooser_title">Share FireHound</string>
 
+    <!-- Maintainers -->
+    <string name="maintainers">Official FireHound Maintainers</string>
+    <string name="yureka">YU YUREKA (tomato)</string>
+    <string name="yureka_summary">Hriday Sharma</string>
+    <string name="yuphoria">YU YUPHORIA (lettuce)</string>
+    <string name="yuphoria_summary">Pranay Narang</string>
+    <string name="yunique">YU YUNIQUE (jalebi)</string>
+    <string name="yunique_summary">Shubhojit Nag</string>
+    <string name="op1">One Plus One (bacon)</string>
+    <string name="op1_summary">PrathameshMS</string>
+    <string name="op2">One Plus Two (oneplus2)</string>
+    <string name="op2_summary">Luy Nagda (Devil2709)</string>
+    <string name="op3">One Plus Three (oneplus3)</string>
+    <string name="op3_summary">PrathameshMS</string>
+    <string name="note3">Redmi Note 3 (kenzo)</string>
+    <string name="note3_summary">Manhar Gupta</string>
+    <string name="dior">Redmi Note 4g (dior)</string>
+    <string name="dior_summary">Luy Nagda (Devil2709)</string>
+    <string name="fortuna3g">Samsung Galaxy Grand (fortuna3g)</string>
+    <string name="fortuna3g_summary">Siddhant Satam</string>
+    <string name="note2">Samsung Note 2 (note2)</string>
+    <string name="note2_summary">Sagar Shah</string>
+    <string name="victara">Mote G (victara)</string>
+    <string name="victara_summary">Anderson Mendes</string>
+    <string name="merlin">Moto G (merlin)</string>
+    <string name="merlin_summary">DerkLord</string>
+    <string name="g3">LG G3 (D855)</string>
+    <string name="g3_summary">Rafael Marchetto</string>
+
     <!-- FireHound Info -->
     <string name="fh_developer_title">Developers Github</string>
     <string name="fh_developer_summary">Support the Developer and FireHound Team</string>

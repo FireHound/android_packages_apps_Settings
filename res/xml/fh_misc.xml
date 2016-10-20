@@ -34,6 +34,13 @@
         android:key="online"
         android:title="@string/fh_online">
 
+	<!-- FireHound Maintainers -->
+	<Preference
+	    android:key="fh_maintainers"
+	    android:title="@string/fh_maintainers_title"
+	    android:summary="@string/fh_maintainers_summary" 
+	    android:fragment="com.android.settings.fh.Maintainers" />
+
         <!-- FireHound Github -->
         <Preference
             android:key="fh_source"
@@ -51,12 +58,6 @@
 	   android:key="fh_donation"
 	   android:title="@string/fh_donation_title"
 	   android:summary="@string/fh_donation_summary" />
-
-	<!-- FireHound Maintainers -->
-	<Preference
-	    android:key="fh_maintainers"
-	    android:title="@string/fh_maintainers_title"
-	    android:summary="@string/fh_maintainers_summary" />
 
 	<!-- FH Share -->
         <Preference

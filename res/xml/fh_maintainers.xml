@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2016 FireHound ROMs
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/maintainers">
+
+	<!-- Yureka -->
+	<Preference
+	android:title="@string/yureka"
+	android:summary="@string/yureka_summary"
+	android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- Yuphoria -->
+	<Preference 
+        android:title="@string/yuphoria"
+        android:summary="@string/yuphoria_summary"
+        android:icon="@drawable/ic_settings_multiuser" />	
+
+	<!-- Yunique -->
+	<Preference 
+        android:title="@string/yunique"
+        android:summary="@string/yunique_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- OP1 -->
+	<Preference 
+        android:title="@string/op1"
+        android:summary="@string/op1_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- OP2 -->
+	<Preference 
+        android:title="@string/op2"
+        android:summary="@string/op2_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- OP3 -->
+	<Preference 
+        android:title="@string/op3"
+        android:summary="@string/op3_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- Redmi note 3 -->
+	<Preference 
+        android:title="@string/note3"
+        android:summary="@string/note3_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- Redmi Note 4g -->
+	<Preference 
+        android:title="@string/dior"
+        android:summary="@string/dior_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+	
+	<!-- Samsung Note 2 -->
+	<Preference 
+        android:title="@string/note2"
+        android:summary="@string/note2_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- Samsung fortuna -->
+	<Preference 
+        android:title="@string/fortuna3g"
+        android:summary="@string/fortuna3g_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- Moto Merlin -->
+	<Preference 
+        android:title="@string/merlin"
+        android:summary="@string/merlin_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- Moto victara -->
+	<Preference 
+        android:title="@string/victara"
+        android:summary="@string/victara_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+	<!-- LG G3 -->
+	<Preference 
+        android:title="@string/g3"
+        android:summary="@string/g3_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+</PreferenceScreen>

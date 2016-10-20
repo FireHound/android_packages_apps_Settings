@@ -40,7 +40,6 @@ public class Firehound extends SettingsPreferenceFragment {
     Preference mGoogleUrl;
     Preference mDeveloperUrl;
     Preference mDonationUrl;
-    Preference mMaintainersUrl;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -51,7 +50,6 @@ public class Firehound extends SettingsPreferenceFragment {
         mGoogleUrl = findPreference("fh_google_plus");
         mDeveloperUrl = findPreference("fh_developer");
 	mDonationUrl = findPreference("fh_donation");
-	mMaintainersUrl = findPreference("fh_maintainers");
     }
 
     @Override
@@ -67,8 +65,6 @@ public class Firehound extends SettingsPreferenceFragment {
             launchUrl("https://plus.google.com/communities/114615598909452601377");
 	} else if (preference == mDonationUrl) {
 	    launchUrl("https://www.paypal.me/AdamLapinski");
-	} else if (preference == mMaintainersUrl) {
-	    launchUrl("https://github.com/FireHound/android_vendor_fh/blob/mm/Maintainers");
         } else if (preference == mDeveloperUrl) {
             launchUrl("https://github.com/PMS22");
         } else if (preference.getKey().equals(KEY_FH_SHARE)) {
