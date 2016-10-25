@@ -315,6 +315,14 @@
     <string name="merlin_summary">DerkLord</string>
     <string name="g3">LG G3 (D855)</string>
     <string name="g3_summary">Rafael Marchetto</string>
+    <string name="titan">Moto G (titan)</string>
+    <string name="titan_summary">Kranoner</string>
+    <string name="yu">YU</string>
+    <string name="oneplus">OnePlus</string>
+    <string name="redmi">Xiaomi</string>
+    <string name="samsung">Samsung</string>
+    <string name="moto">Moto</string>
+    <string name="lg">LG</string>
 
     <!-- FireHound Info -->
     <string name="fh_developer_title">Developers Github</string>
