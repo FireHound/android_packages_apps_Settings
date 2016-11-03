@@ -762,4 +762,9 @@
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music player</string>
     <string name="headset_connect_player_summary">Launch the default music player when a headset is connected</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen battery info</string>
+    <string name="lockscreen_battery_info_summary">Display negotiated charger max current-voltage and battery temperature on lockscreen while charging</string>
+
 </resources>
