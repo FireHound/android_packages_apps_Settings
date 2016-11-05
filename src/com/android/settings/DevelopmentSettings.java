@@ -224,6 +224,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String BACKGROUND_CHECK_KEY = "background_check";
 
     private static final String SHOW_ALL_ANRS_KEY = "show_all_anrs";
+    private static final String SCREENSHOT_TYPE = "screenshot_type";
 
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
@@ -256,6 +257,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private PersistentDataBlockManager mOemUnlockManager;
     private TelephonyManager mTelephonyManager;
 
+    private ListPreference mScreenshotType;
     private SwitchBar mSwitchBar;
     private boolean mLastEnabledState;
     private boolean mHaveDebugSettings;
@@ -536,6 +538,13 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             removePreference(mOtaDisableAutomaticUpdate);
             mOtaDisableAutomaticUpdate = null;
         }
+
+	mScreenshotType = (ListPreference) findPreference(SCREENSHOT_TYPE);
+        int mScreenshotTypeValue = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.SCREENSHOT_TYPE, 0);
+        mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
+        mScreenshotType.setSummary(mScreenshotType.getEntry());
+        mScreenshotType.setOnPreferenceChangeListener(this);
 
         mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
         mColorModePreference.updateCurrentAndSupported();
@@ -2339,6 +2348,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             return true;
         } else if (preference == mLogpersist) {
             writeLogpersistOption(newValue, false);
+            return true;
+	} else if  (preference == mScreenshotType) {
+            int mScreenshotTypeValue = Integer.parseInt(((String) newValue).toString());
+            mScreenshotType.setSummary(
+                    mScreenshotType.getEntries()[mScreenshotTypeValue]);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SCREENSHOT_TYPE, mScreenshotTypeValue);
+            mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
             return true;
         } else if (preference == mUsbConfiguration) {
             writeUsbConfigurationOption(newValue);
