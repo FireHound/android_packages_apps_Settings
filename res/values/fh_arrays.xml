@@ -410,4 +410,16 @@
         <item>900000</item>
         <item>1800000</item>
     </string-array>
+
+	<string-array name="zen_vibration_mode_entries" translatable="false">
+        <item>@string/zen_mode_vibration_never</item>
+        <item>@string/zen_mode_vibration_calls_only</item>
+        <item>@string/zen_mode_vibration_calls_and_notifications</item>
+    </string-array>
+
+    <string-array name="zen_vibration_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
