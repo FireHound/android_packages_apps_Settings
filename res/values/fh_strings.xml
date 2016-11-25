@@ -145,6 +145,12 @@
    <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
    <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
+    <!-- About phone screen, Device model -->
+    <string name="device_model">Device Model</string>
+
+    <!-- About phone screen, Device name -->
+    <string name="device_name">Device Name</string>
+
     <!-- About phone screen, CyanogenMod Api Level -->
     <string name="mod_api_level">CyanogenMod API level</string>
     <string name="mod_api_level_default">Unknown</string>
@@ -416,6 +422,12 @@
     <string name="lockpattern_settings_enable_error_path_title">Show Pattern Error</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Show Pattern Dots</string>
+    <!-- Whether the keyguard will directly show the password entry -->
+    <string name="lock_directly_show_password">Directly show password entry</string>
+    <!-- Whether the keyguard will directly show the pattern view -->
+    <string name="lock_directly_show_pattern">Directly show pattern view</string>
+    <!-- Whether the keyguard will directly show the PIN entry -->
+    <string name="lock_directly_show_pin">Directly show PIN entry</string>
 
     <!-- Lock screen vibrate settings -->
     <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
@@ -470,7 +482,7 @@
 
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to wake-ups triggered by gestures</string>
 
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">High touch sensitivity</string>
@@ -568,4 +580,6 @@
     <!-- Notification importance -->
     <string name="tuner_full_importance_settings">Power notification controls</string>
 
+    <!-- CM Legal -->
+    <string name="cmlicense_title">CyanogenMod legal</string>
 </resources>
