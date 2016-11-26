@@ -42,6 +42,13 @@
 	    android:fragment="com.android.settings.fh.AnimationSettings"
 	    android:icon="@drawable/ic_settings_display" />
 
+	<!-- Gestures Settings -->
+        <PreferenceScreen
+            android:key="gestures"
+            android:title="@string/gestures_settings"
+            android:fragment="com.android.settings.fh.GesturesSettings"
+            android:icon="@drawable/fh_settings_gestures" />
+
 	<!-- About FireHound -->
         <PreferenceScreen 
 	    android:key="info"
