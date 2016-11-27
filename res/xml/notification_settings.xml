@@ -203,6 +203,11 @@
         android:dependency="qs_show_brightness"
         android:defaultValue="true"/>
 
+    <com.android.settings.fh.SystemSettingSwitchPreference
+        android:key="status_bar_battery_style_tile"
+        android:title="@string/status_bar_battery_style_tile_title"
+        android:summary="@string/status_bar_battery_style_tile_summary"
+        android:defaultValue="true" />
 
     </PreferenceCategory>
 
