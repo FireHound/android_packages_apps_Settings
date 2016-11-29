@@ -70,6 +70,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+    private static final String STATUS_BAR_CLOCK_SECONDS = "status_bar_clock_seconds";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -86,6 +87,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mQuickPulldown;
+    private SwitchPreference mStatusBarClockSeconds;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -99,6 +101,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarDate = (ListPreference) findPreference(STATUS_BAR_DATE);
         mStatusBarDateStyle = (ListPreference) findPreference(STATUS_BAR_DATE_STYLE);
         mStatusBarDateFormat = (ListPreference) findPreference(STATUS_BAR_DATE_FORMAT);
+
+	mStatusBarClockSeconds = (SwitchPreference) findPreference(STATUS_BAR_CLOCK_SECONDS);
+        mStatusBarClockSeconds.setChecked((Settings.System.getInt(
+                getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_CLOCK_SECONDS, 0) == 1));
+        mStatusBarClockSeconds.setOnPreferenceChangeListener(this);
+
         mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBatteryShowPercent =
                 (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
@@ -195,6 +204,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             CMSettings.System.putInt(
                     resolver, CMSettings.System.STATUS_BAR_AM_PM, statusBarAmPm);
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntries()[index]);
+            return true;
+	} else if (preference == mStatusBarClockSeconds) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_CLOCK_SECONDS,
+                    (Boolean) newValue ? 1 : 0);
             return true;
 	} else if (preference == mStatusBarDate) {
             int statusBarDate = Integer.valueOf((String) newValue);
