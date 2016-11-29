@@ -71,6 +71,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
     private static final String STATUS_BAR_CLOCK_SECONDS = "status_bar_clock_seconds";
+    private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -88,6 +89,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mQuickPulldown;
     private SwitchPreference mStatusBarClockSeconds;
+    private ListPreference mTextChargingSymbol;
+    private int mTextChargingSymbolValue;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -155,6 +158,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBattery.setValue(String.valueOf(batteryStyle));
         mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
         mStatusBarBattery.setOnPreferenceChangeListener(this);
+
+        mTextChargingSymbol = (ListPreference) findPreference(TEXT_CHARGING_SYMBOL);
+        int textChargingSymbolValue = Settings.Secure.getInt(resolver,
+                Settings.Secure.TEXT_CHARGING_SYMBOL, 0);
+        mTextChargingSymbol.setValue(Integer.toString(textChargingSymbolValue));
+        mTextChargingSymbol.setSummary(mTextChargingSymbol.getEntry());
+        mTextChargingSymbol.setOnPreferenceChangeListener(this);
 
         int batteryShowPercent = CMSettings.System.getInt(resolver,
                 CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
@@ -290,17 +300,23 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
             updatePulldownSummary(quickPulldown);
             return true;
+        } else if (preference == mTextChargingSymbol) {
+            int value = Integer.parseInt((String) newValue);
+            int index = mTextChargingSymbol.findIndexOfValue((String) newValue);
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.TEXT_CHARGING_SYMBOL, value);
+            mTextChargingSymbol.setSummary(mTextChargingSymbol.getEntries()[index]);
+            return true;
         }
         return false;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
-        if (batteryIconStyle == STATUS_BAR_BATTERY_STYLE_HIDDEN ||
-                batteryIconStyle == STATUS_BAR_BATTERY_STYLE_TEXT) {
-            mStatusBarBatteryShowPercent.setEnabled(false);
-        } else {
-            mStatusBarBatteryShowPercent.setEnabled(true);
-        }
+        mStatusBarBatteryShowPercent.setEnabled(
+                batteryIconStyle != STATUS_BAR_BATTERY_STYLE_HIDDEN
+                && batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
+        mTextChargingSymbol.setEnabled(
+                batteryIconStyle == STATUS_BAR_BATTERY_STYLE_TEXT);
     }
 
     private void enableStatusBarClockDependents() {

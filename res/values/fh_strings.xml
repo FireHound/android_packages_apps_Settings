@@ -852,4 +852,11 @@
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
 
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Disabled</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+
 </resources>
