@@ -775,4 +775,8 @@
     <!-- Status bar - double tap to sleep -->
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
+
+    <!-- Themes -->
+    <string name="themes_title">Themes</string>
+    <string name="themes_dashboard_summary">Manage your themes</string>
 </resources>
