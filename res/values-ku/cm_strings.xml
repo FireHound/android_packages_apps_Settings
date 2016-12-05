@@ -220,4 +220,8 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">یاسای وەشانەکە</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
 </resources>

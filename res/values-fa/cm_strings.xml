@@ -237,4 +237,9 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">موارد حقوقی سایانوژن‌مود</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">هرگز</string>
 </resources>

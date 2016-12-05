@@ -311,4 +311,14 @@
   <string name="tuner_full_importance_settings">Kontroller til strømunderretninger</string>
   <!-- CM Legal -->
   <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Andet</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Tidsudløb for Wi\u2011Fi hotspot</string>
+  <string name="hotstpot_inactivity_timeout_never">Aldrig</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minut</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutter</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutter</string>
 </resources>

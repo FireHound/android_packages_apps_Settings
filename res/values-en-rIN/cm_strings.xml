@@ -241,4 +241,9 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">CyanogenMod legal</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Never</string>
 </resources>

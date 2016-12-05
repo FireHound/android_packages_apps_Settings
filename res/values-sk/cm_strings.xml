@@ -238,4 +238,9 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">Právne informácie CyanogenMod</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Nikdy</string>
 </resources>
