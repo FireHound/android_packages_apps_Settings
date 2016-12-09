@@ -19,6 +19,11 @@ limitations under the License.
     <color name="action_bar_icon_tint">@android:color/white</color>
     <color name="text_color_white">@android:color/white</color>
 
+    <!-- Linear color bar -->
+    <color name="linear_color_bar_left">@*android:color/material_deep_teal_500</color>
+    <color name="linear_color_bar_middle">@*android:color/material_deep_teal_500</color>
+    <color name="linear_color_bar_right">#ffced7db</color>
+
     <!-- Storage Summary Title -->
     <color name="storage_summary_title_color">#ff607d8b</color>
     <color name="dashboard_category_title_background">@color/card_background</color>
