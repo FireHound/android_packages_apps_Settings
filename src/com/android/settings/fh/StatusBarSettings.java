@@ -345,6 +345,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     : R.string.status_bar_quick_qs_pulldown_summary_right);
             mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
         }
+    }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
