@@ -34,6 +34,27 @@
             android:title="@string/notification_settings"
             android:fragment="com.android.settings.fh.NotificationSettings"
 	    android:icon="@drawable/ic_settings_notifications" />
+
+	<!-- Display Settings -->
+	<PreferenceScreen
+	    android:id="@+id/display_and_lights_settings"
+            android:title="@string/display_and_lights"
+            android:fragment="com.android.settings.DisplaySettings"
+            android:icon="@drawable/ic_settings_display" />
+
+	<!-- Battery -->
+        <PreferenceScreen
+            android:id="@+id/battery_settings"
+            android:title="@string/power_usage_summary_title"
+            android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
+            android:icon="@drawable/ic_settings_battery" />
+	
+	<!-- Sounds -->
+	<PreferenceScreen
+	    android:id="@+id/sound_settings"
+            android:title="@string/category_sounds"
+            android:fragment="com.android.settings.notification.SoundSettings"
+            android:icon="@drawable/ic_settings_sounds" />
 	
 	<!-- Animation Settings -->
 	<PreferenceScreen
