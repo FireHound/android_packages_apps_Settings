@@ -24,6 +24,9 @@
 
     <!-- Launch Dev Tools -->
     <string name="development_tools_title">Development tools</string>
+  
+    <!-- Recents settings -->
+    <string name="recents_settings">Recents</string>
 
     <!-- Show seconds -->
     <string name="status_bar_clock_seconds_title">Show Seconds</string>
