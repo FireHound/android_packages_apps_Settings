@@ -37,7 +37,7 @@
 	<!-- Mod version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/fh_mod_version"
+                android:title="@string/mod_version"
                 android:summary="@string/mod_version_default"
 		android:icon="@drawable/ic_fh_logo" />
 		
