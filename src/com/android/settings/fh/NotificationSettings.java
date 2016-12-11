@@ -19,6 +19,9 @@ package com.android.settings.fh;
 import android.app.Activity;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.content.ContentResolver;
+import android.content.Intent;
+import android.content.pm.ResolveInfo;
 import android.preference.PreferenceFragment;
 import android.provider.Settings;
 import android.support.v7.preference.PreferenceScreen;
@@ -37,18 +40,18 @@ import com.android.settings.fh.CustomSeekBarPreference;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
-private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
-private static final String PREF_COLUMNS = "qs_columns";
-private static final String KEY_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
-
-private CustomSeekBarPreference mRowsPortrait;
-private CustomSeekBarPreference mRowsLandscape;
-private CustomSeekBarPreference mQsColumns;
-private CustomSeekBarPreference mSysuiQqsCount;
-
 public class NotificationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+        private static final String PREF_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
+        private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
+        private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
+        private static final String PREF_COLUMNS = "qs_columns";
+
+        private CustomSeekBarPreference mSysuiQqsCount;
+        private CustomSeekBarPreference mRowsPortrait;
+        private CustomSeekBarPreference mRowsLandscape;
+        private CustomSeekBarPreference mQsColumns;
 
 	private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
 
@@ -58,6 +61,9 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.notification_settings);
+
+        ContentResolver resolver = getActivity().getContentResolver();
+
 	mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
         mDisableIM.setOnPreferenceChangeListener(this);
         int DisableIM = Settings.System.getInt(getContentResolver(),
@@ -84,7 +90,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
         mQsColumns.setValue(columnsQs / 1);
         mQsColumns.setOnPreferenceChangeListener(this);
 
-        mSysuiQqsCount = (CustomSeekBarPreference) findPreference(KEY_SYSUI_QQS_COUNT);
+        mSysuiQqsCount = (CustomSeekBarPreference) findPreference(PREF_SYSUI_QQS_COUNT);
         int SysuiQqsCount = Settings.Secure.getInt(resolver,
                 Settings.Secure.QQS_COUNT, 5);
         mSysuiQqsCount.setValue(SysuiQqsCount / 1);
@@ -92,11 +98,11 @@ public class NotificationSettings extends SettingsPreferenceFragment implements
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
         int intValue;
         int index;
         if (preference == mDisableIM) {
-            boolean value = (Boolean) newValue;
+            boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), DISABLE_IMMERSIVE_MESSAGE,
                     value ? 1 : 0);
             return true;
