@@ -39,9 +39,9 @@
 
     <bool name="config_regional_display_icc_id_enable">false</bool>
     <!-- When true enable color temperature setting. -->
-    <bool name="config_enableColorTemperature">false</bool>
+    <bool name="config_enableColorTemperature">true</bool>
 
-    <bool name="config_video_call_datausage_enable">false</bool>
+    <bool name="config_video_call_datausage_enable">true</bool>
 
     <!-- carrier tethering default ssid and password begin -->
     <bool name="use_empty_password_default">false</bool>
@@ -93,6 +93,6 @@
     <integer name="config_fingerprintSensorLocation">0</integer>
 
     <!-- If the Storage Manager settings are enabled. -->
-    <bool name="config_storage_manager_settings_enabled">false</bool>
+    <bool name="config_storage_manager_settings_enabled">true</bool>
 
 </resources>
