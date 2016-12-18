@@ -120,7 +120,7 @@
                 android:defaultValue="true" />
 
 	<!-- Force expanded mode -->
-	<com.android.settings.fh.SystemSettingSwitchPreference
+	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="volume_dialog_force_expanded"
         android:title="@string/volume_dialog_force_expanded_title"
         android:summary="@string/volume_dialog_force_expanded_summary"
