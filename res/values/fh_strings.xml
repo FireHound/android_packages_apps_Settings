@@ -169,7 +169,7 @@
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
 
     <!-- About phone screen, FH version -->
-    <string name="mod_version">FireHound Version</string>
+    <string name="fh_mod_version">FireHound Version</string>
 
     <!-- Preference link for root appops -->
     <string name="root_appops_title">Manage root accesses</string>
