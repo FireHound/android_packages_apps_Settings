@@ -686,7 +686,6 @@
         <item>@string/security_settings_fingerprint_sensor_location_right</item>
     </string-array>
 
-<<<<<<< HEAD:res/values/fh_arrays.xml
     <!-- Clear all recents button location -->
     <string-array name="recents_clear_all_location_entries">
         <item>@string/recents_clear_all_location_top_right</item>

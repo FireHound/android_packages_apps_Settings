@@ -33,7 +33,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class Maintainers extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -45,17 +45,15 @@ public class Maintainers extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.fh_maintainers);
     }
 
-
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
         return true;
     }
 
-
-
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.APPLICATION;
+        // todo add a constant in MetricsLogger.java
+        return CMMetricsLogger.APPLICATION;
     }
 
 }
