@@ -48,4 +48,17 @@
          android:dependency="show_clear_all_recents" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="omni_recents_panel"
+        android:title="@string/omniswitch_category" >
+
+        <!-- OmniSwitch -->
+        <PreferenceScreen
+            android:key="omniswitch"
+            android:id="@+id/omniswitch"
+            android:title="@string/omniswitch_settings_title"
+            android:fragment="com.android.settings.fh.OmniSwitch" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

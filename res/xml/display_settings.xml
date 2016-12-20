@@ -136,6 +136,11 @@
         <org.cyanogenmod.internal.cmparts.CMPartsPreference
                 android:key="expanded_desktop_settings" />
 
+	<!-- DPI -->
+	<com.android.settings.display.DensityPreference
+                android:key="density"
+                android:title="@string/developer_smallest_width" />
+
         <PreferenceScreen
                 android:key="font_size"
                 android:title="@string/title_font_size"
