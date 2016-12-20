@@ -122,6 +122,12 @@
         android:summary="@string/titan_summary"
         android:icon="@drawable/ic_settings_multiuser" />
 
+        <!-- Moto condor -->
+        <Preference 
+        android:title="@string/condor"
+        android:summary="@string/condor_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
 	</PreferenceCategory>
 
 	<PreferenceCategory

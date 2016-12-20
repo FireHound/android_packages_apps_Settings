@@ -422,6 +422,8 @@
     <string name="g3_summary">Rafael Marchetto</string>
     <string name="titan">Moto G (titan)</string>
     <string name="titan_summary">Kranoner</string>
+    <string name="condor">Moto E (condor)</string>
+    <string name="condor_summary">Shubhojit</string>
     <string name="yu">YU</string>
     <string name="oneplus">OnePlus</string>
     <string name="redmi">Xiaomi</string>
