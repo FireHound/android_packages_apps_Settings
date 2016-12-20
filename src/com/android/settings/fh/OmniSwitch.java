@@ -92,7 +92,7 @@ public class OmniSwitch extends SettingsPreferenceFragment implements
             startActivity(INTENT_OMNISWITCH_SETTINGS);
             return true;
         }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+        return super.onPreferenceTreeClick(preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
