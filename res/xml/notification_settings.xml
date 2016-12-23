@@ -42,4 +42,11 @@
             android:title="@string/qs_bt_easy_toggle_title"
             android:summary="@string/qs_bt_easy_toggle_summary"
             android:defaultValue="false" />
+
+	<!-- Battery toggle -->
+	<com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="qs_battery_easy_toggle"
+            android:title="@string/qs_battery_easy_toggle_title"
+            android:summary="@string/qs_battery_easy_toggle_summary"
+            android:defaultValue="false" />
 </PreferenceScreen>
