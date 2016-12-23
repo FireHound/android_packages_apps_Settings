@@ -31,6 +31,9 @@ limitations under the License.
     <color name="dashboard_category_title_background">@color/card_background</color>
     <color name="selectable_card_background">@color/card_background</color>
 
+    <!-- External Icon Tint -->
+    <color name="external_tile_icon_tint_color">?android:attr/colorAccent</color>
+
     <!-- Condition card colors -->
     <color name="condition_card_background_color">@*android:color/material_deep_teal_500</color>
     <color name="condition_card_icon_color">@*android:color/primary_text_material_dark</color>
