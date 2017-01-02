@@ -198,8 +198,8 @@
     <!-- About phone screen, Device name -->
     <string name="device_name">Device Name</string>
 
-    <!-- About phone screen, CyanogenMod Api Level -->
-    <string name="mod_api_level">CyanogenMod API level</string>
+    <!-- About phone screen, LineageOS Api Level -->
+    <string name="mod_api_level">LineageOS API level</string>
     <string name="mod_api_level_default">Unknown</string>
 
     <!-- About phone screen, build date -->
@@ -210,7 +210,7 @@
     <string name="animation_settings_title">Animations</string>
 
     <!-- CM Updater -->
-    <string name="cmupdate_settings_title">CyanogenMod updates</string>
+    <string name="cmupdate_settings_title">LineageOS updates</string>
 
     <!-- Names of categories of app ops tabs - extension of AOSP -->
     <string name="app_ops_categories_location">Location</string>
@@ -600,6 +600,9 @@
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
     <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
 
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
@@ -635,6 +638,7 @@
     <!-- Notification importance -->
     <string name="tuner_full_importance_settings">Power notification controls</string>
 
+<<<<<<< HEAD:res/values/fh_strings.xml
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
     <string name="sound_title">Sound</string>
@@ -728,4 +732,11 @@
     <!-- Build SDK -->
     <string name="build_sdk">Android SDK</string>
     <string name="build_sdk_default">Unknown</string>
+
+    <!-- Encryption password -->
+    <string name="crypt_keeper_change_password_title">Change encryption password</string>
+    <string name="crypt_keeper_change_password_summary">Change the password used for device encryption</string>
+    <string name="crypt_keeper_choose_your_password_header">Set encryption password</string>
+    <string name="crypt_keeper_replace_password_title">Replace encryption password</string>
+    <string name="crypt_keeper_replace_password_summary">Remove the separate encryption password</string>
 </resources>
