@@ -72,7 +72,7 @@
     <bool name="wifi_to_cell">false</bool>
 
     <!-- Whether to enable roaming settings -->
-    <bool name="config_roamingsettings_enabled">false</bool>
+    <bool name="config_roamingsettings_enabled">true</bool>
 
     <!-- Whether to show hotspot settings -->
     <bool name="show_wifi_hotspot_settings">false</bool>
