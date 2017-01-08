@@ -84,7 +84,7 @@
     <bool name="config_data_usage_selection">false</bool>
 
     <!-- Whether to enable app network access control -->
-    <bool name="config_app_network_access_enabled">false</bool>
+    <bool name="config_app_network_access_enabled">true</bool>
 
     <!-- Whether to hide ims apn -->
     <bool name="config_hide_ims_apns">false</bool>
