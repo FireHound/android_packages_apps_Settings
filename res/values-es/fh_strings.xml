@@ -101,7 +101,7 @@
     <string name="status_bar_clock_style_hidden">Oculto</string>
 
     <string name="status_bar_am_pm_title">Estilo AM/PM</string>
-    <string name="status_bar_am_pm_info">Relog en 24H activado</string>
+    <string name="status_bar_am_pm_info">Reloj en 24H activado</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Grande</string>
     <string name="status_bar_am_pm_hidden">Oculto</string>
