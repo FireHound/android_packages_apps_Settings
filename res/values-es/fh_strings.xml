@@ -18,49 +18,49 @@
         <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on_cm">You have enabled development settings!</string>
+    <string name="show_dev_on_cm">¡Has habilitado las opciones de desarrollo!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+    <string name="show_dev_already_cm">No es necesario, ya has habilitado las opciones de desarrollo.</string>
 
     <!-- Launch Dev Tools -->
-    <string name="development_tools_title">Development tools</string>
+    <string name="development_tools_title">Herramientas de desarrollo</string>
   
     <!-- Recents settings -->
     <string name="recents_settings">Recientes</string>
     <string name="recents_show_membar_title">Barra de memoria</string>
-    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>	
+    <string name="recents_show_membar_summary">Mostrar una barra con la memoria disponible del dispositivo</string>	
 
     <!-- Show seconds -->
     <string name="status_bar_clock_seconds_title">Mostrar segundos</string>
 
     <!-- Volume Dialog Expanded -->
-    <string name="volume_dialog_force_expanded_title">Force Expanded Volume Panel</string>
-    <string name="volume_dialog_force_expanded_summary">Force the volume panel to always appear in expanded mode</string>
+    <string name="volume_dialog_force_expanded_title">Panel de volumen amplio</string>
+    <string name="volume_dialog_force_expanded_summary">Mostrar panel de volumen siempre amplio</string>
 
     <!-- SlimSizer  -->
-    <string name="listsystem">List</string>
+    <string name="listsystem">Lista</string>
     <string name="sizer_title">Remover aplicaciones del sistema</string>
-    <string name="caution">Caution!</string>
-    <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
+    <string name="caution">Precaución!</string>
+    <string name="sizer_message_startup">Esta herramienta te permite eliminar aplicaciones del sistema. Úsalo con precaución y solo elimina las aplicaciones que sabes que son seguras para eliminar.</string>
     <string name="cancel">Cancelar</string>
-    <string name="sizer_message_delete">Are you sure you want to delete this app?</string>
-    <string name="btn_delete">Delete selected APPs now!</string>
-    <string name="delete_progress_title">Deleting</string>
-    <string name="delete_progress">Selected files are being deleted...</string>
-    <string name="delete_success">Deleted</string>
-    <string name="delete_fail">Unable to delete</string>
+    <string name="sizer_message_delete">¿Seguro que quieres eliminar esta aplicación?</string>
+    <string name="btn_delete">Borrar aplicaciones selecionadas</string>
+    <string name="delete_progress_title">Borrando</string>
+    <string name="delete_progress">Los archivos selecionados se están eliminando...</string>
+    <string name="delete_success">Borrado</string>
+    <string name="delete_fail">No se puede eliminar</string>
     <string name="btn_profile">Perfil</string>
-    <string name="sizer_message_sdnowrite">Cannot write to SD Card.</string>
-    <string name="sizer_message_sdnoread">Cannot read SD Card.</string>
-    <string name="sizer_message_filesuccess">Created profile.</string>
-    <string name="sizer_message_filefail">Failed to create profile.</string>
-    <string name="sizer_message_noselect">Nothing selected.</string>
+    <string name="sizer_message_sdnowrite">No se puede escribir en la tarjeta SD.</string>
+    <string name="sizer_message_sdnoread">No se puede leer en la tarjeta SD.</string>
+    <string name="sizer_message_filesuccess">Perfil creado.</string>
+    <string name="sizer_message_filefail">No se pudo crear el perfil.</string>
+    <string name="sizer_message_noselect">No se ha selecionado nada.</string>
     <string name="system_app_remover">Remover aplicaciones del sistema</string>
 
     <!-- Setting checkbox title for root access -->
     <string name="root_access">Acceso root</string>
-    <string name="root_access_warning_title">Allow root access?</string>
-    <string name="root_access_warning_message">Allowing apps to request root access is very dangerous and could compromise the security of your system!</string>
+    <string name="root_access_warning_title">¿Permitir acceso root?</string>
+    <string name="root_access_warning_message">Permitir que las aplicaciones soliciten acceso root es muy peligroso y podría comprometer la seguridad de su sistema!</string>
     <string name="root_access_none">Deshabilitado</string>
     <string name="root_access_apps">Solo aplicaciones</string>
     <string name="root_access_adb">Solo ADB</string>
