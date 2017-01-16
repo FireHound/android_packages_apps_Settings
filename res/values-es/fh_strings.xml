@@ -67,12 +67,12 @@
     <string name="root_access_all">Aplicaciones y ADB</string>
     
    <!-- Quick unlock -->
-   <string name="unlock_quick_unlock_control_title">Quick Unlock</string>
-   <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+   <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+   <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN/Constraseña correcta</string>
 
     <!--Power menu on Secure Lockscreen -->
     <string name="lockscreen_enable_power_menu_title">Mostrar menu de apagado en pantalla de bloqueo</string>
-    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+    <string name="lockscreen_enable_power_menu_summary">Esta opción sólo desactivará el menú de encendido en las pantallas de bloqueo seguras</string>
 
     <!-- Burnt ashes summary -->
     <string name="fh_settings_summary">Burn it here!!</string>
@@ -82,16 +82,16 @@
     <string name="status_bar_toggle_brightness">Control de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar brillo deslizando en la barra de estado</string>
     <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
-    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
-    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes</string>
+    <string name="status_bar_quick_qs_pulldown_title">Desplazamiento rápido</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Izquierda</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Derecha</string>
-    <string name="status_bar_quick_qs_pulldown_off">Off</string>
+    <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
     <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
     <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
-    <string name="status_bar_show_weather_title">Show weather</string>
-    <string name="status_bar_show_weather_summary">Display the current temperature on the status bar</string>
+    <string name="status_bar_show_weather_title">Mostrar Clima</string>
+    <string name="status_bar_show_weather_summary">Mostrar la temperatura actual en la barra de estado</string>
  
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_style_title">Estilo del reloj</string>
@@ -101,15 +101,15 @@
     <string name="status_bar_clock_style_hidden">Oculto</string>
 
     <string name="status_bar_am_pm_title">Estilo AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_info">Relog en 24H activado</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Grande</string>
     <string name="status_bar_am_pm_hidden">Oculto</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Estilo de batería</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
+    <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
     <string name="status_bar_battery_style_circle">Circulo</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
