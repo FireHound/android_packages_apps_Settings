@@ -95,10 +95,10 @@
  
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_style_title">Estilo del reloj</string>
-    <string name="status_bar_clock_style_right">Derecho</string>
+    <string name="status_bar_clock_style_right">Centrado</string>
     <string name="status_bar_clock_style_left">Izquierdo</string>
-    <string name="status_bar_clock_style_center">Centrado</string>
-    <string name="status_bar_clock_style_hidden">Oculto</string>
+    <string name="status_bar_clock_style_center">Oculto</string>
+    <string name="status_bar_clock_style_hidden">Derecha</string>
 
     <string name="status_bar_am_pm_title">Estilo AM/PM</string>
     <string name="status_bar_am_pm_info">Reloj en 24H activado</string>
