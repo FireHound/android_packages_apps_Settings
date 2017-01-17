@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 FireHound ROMs
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
+        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">¡Has habilitado las opciones de desarrollo!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">No es necesario, ya has habilitado las opciones de desarrollo.</string>
+
+    <!-- Launch Dev Tools -->
+    <string name="development_tools_title">Herramientas de desarrollo</string>
+  
+    <!-- Recents settings -->
+    <string name="recents_settings">Recientes</string>
+    <string name="recents_show_membar_title">Barra de memoria</string>
+    <string name="recents_show_membar_summary">Mostrar una barra con la memoria disponible del dispositivo</string>	
+
+    <!-- Show seconds -->
+    <string name="status_bar_clock_seconds_title">Mostrar segundos</string>
+
+    <!-- Volume Dialog Expanded -->
+    <string name="volume_dialog_force_expanded_title">Panel de volumen amplio</string>
+    <string name="volume_dialog_force_expanded_summary">Mostrar panel de volumen siempre amplio</string>
+
+    <!-- SlimSizer  -->
+    <string name="listsystem">Lista</string>
+    <string name="sizer_title">Remover aplicaciones del sistema</string>
+    <string name="caution">Precaución!</string>
+    <string name="sizer_message_startup">Esta herramienta te permite eliminar aplicaciones del sistema. Úsalo con precaución y solo elimina las aplicaciones que sabes que son seguras para eliminar.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="sizer_message_delete">¿Seguro que quieres eliminar esta aplicación?</string>
+    <string name="btn_delete">Borrar aplicaciones selecionadas</string>
+    <string name="delete_progress_title">Borrando</string>
+    <string name="delete_progress">Los archivos selecionados se están eliminando...</string>
+    <string name="delete_success">Borrado</string>
+    <string name="delete_fail">No se puede eliminar</string>
+    <string name="btn_profile">Perfil</string>
+    <string name="sizer_message_sdnowrite">No se puede escribir en la tarjeta SD.</string>
+    <string name="sizer_message_sdnoread">No se puede leer en la tarjeta SD.</string>
+    <string name="sizer_message_filesuccess">Perfil creado.</string>
+    <string name="sizer_message_filefail">No se pudo crear el perfil.</string>
+    <string name="sizer_message_noselect">No se ha selecionado nada.</string>
+    <string name="system_app_remover">Remover aplicaciones del sistema</string>
+
+    <!-- Setting checkbox title for root access -->
+    <string name="root_access">Acceso root</string>
+    <string name="root_access_warning_title">¿Permitir acceso root?</string>
+    <string name="root_access_warning_message">Permitir que las aplicaciones soliciten acceso root es muy peligroso y podría comprometer la seguridad de su sistema!</string>
+    <string name="root_access_none">Deshabilitado</string>
+    <string name="root_access_apps">Solo aplicaciones</string>
+    <string name="root_access_adb">Solo ADB</string>
+    <string name="root_access_all">Aplicaciones y ADB</string>
+    
+   <!-- Quick unlock -->
+   <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+   <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN/Constraseña correcta</string>
+
+    <!--Power menu on Secure Lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Mostrar menu de apagado en pantalla de bloqueo</string>
+    <string name="lockscreen_enable_power_menu_summary">Esta opción sólo desactivará el menú de encendido en las pantallas de bloqueo seguras</string>
+
+    <!-- Burnt ashes summary -->
+    <string name="fh_settings_summary">Burn it here!!</string>
+
+    <!-- Ported CM status bar settings -->
+    <string name="status_bar_title">Barra de estado</string>
+    <string name="status_bar_toggle_brightness">Control de brillo</string>
+    <string name="status_bar_toggle_brightness_summary">Ajustar brillo deslizando en la barra de estado</string>
+    <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
+    <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes</string>
+    <string name="status_bar_quick_qs_pulldown_title">Desplazamiento rápido</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Izquierda</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Derecha</string>
+    <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
+    <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
+    <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
+    <string name="status_bar_show_weather_title">Mostrar Clima</string>
+    <string name="status_bar_show_weather_summary">Mostrar la temperatura actual en la barra de estado</string>
+ 
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Estilo del reloj</string>
+    <string name="status_bar_clock_style_right">Centrado</string>
+    <string name="status_bar_clock_style_left">Izquierdo</string>
+    <string name="status_bar_clock_style_center">Oculto</string>
+    <string name="status_bar_clock_style_hidden">Derecha</string>
+
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_info">Reloj en 24H activado</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Grande</string>
+    <string name="status_bar_am_pm_hidden">Oculto</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Estilo de batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
+    <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
+    <string name="status_bar_battery_style_circle">Circulo</string>
+    <string name="status_bar_battery_style_text">Texto</string>
+    <string name="status_bar_battery_style_hidden">Oculto</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Percentaje en batería</string>
+    <string name="status_bar_battery_percentage_default">Oculto</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
+    <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+
+    <!-- Status bar - icon blacklist -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_icons_summary">Control which status bar icons are shown</string>
+
+    <!-- Status bar - double tap to sleep -->
+    <string name="status_bar_double_tap_to_sleep_title">Doble tap para dormir</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doble tap en la barra de estado para bloquear</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_bar_summary">Battery Bar Settings</string>
+    <string name="battery_icon">Battery icon style</string>
+    <string name="battery_not_title">Battery icon in notifications</string>
+    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
+    <string name="battery_bar_location">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar">Battery Bar</string>
+    <string name="battery_bar_summary">Battery bar position and color customization</string>
+    <string name="battery_bar_style_title">Battery bar style</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+
+    <!-- Expose Phone Info -->
+    <string name="device_info_title">Phone info</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Toast animation</string>
+    <string name="toast_none_animation">None</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Fade</string>
+    <string name="toast_SlideRight_animation">Slide right</string>
+    <string name="toast_SlideLeft_animation">Slide left</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Fast fade</string>
+    <string name="toast_GrowFade_animation">Grow fade</string>
+    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
+    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
+    <string name="toast_Translucent_animation">Translucent</string>
+    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
+    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+
+    <!-- About phone screen, FH version -->
+    <string name="fh_mod_version">Versión de FireHound</string>
+
+    <!-- Preference link for root appops -->
+    <string name="root_appops_title">Manage root accesses</string>
+    <string name="root_appops_summary">View and control the root rules</string>
+    <string name="mod_version_default">Unknown</string>
+
+    <!-- Force expanded notifications -->
+   <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+   <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+   <!-- Gestures Settings -->
+   <string name="gestures_settings">Gestures</string> 
+   <string name="advanced_gestures">Advanced Gestures</string>
+   
+   <!-- Three-fingers-swipe to screenshot -->
+   <string name="three_finger_gesture">Three Finger Gesture</string>
+   <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string> 
+
+   <!-- Disabling immersive mode messages -->
+   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
+   <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+
+    <!-- About phone screen, Device model -->
+    <string name="device_model">Device Model</string>
+
+    <!-- About phone screen, Device name -->
+    <string name="device_name">Device Name</string>
+
+    <!-- About phone screen, LineageOS Api Level -->
+    <string name="mod_api_level">LineageOS API level</string>
+    <string name="mod_api_level_default">Unknown</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">Animations</string>
+
+    <!-- CM Updater -->
+    <string name="cmupdate_settings_title">LineageOS updates</string>
+
+    <!-- Names of categories of app ops tabs - extension of AOSP -->
+    <string name="app_ops_categories_location">Location</string>
+    <string name="app_ops_categories_personal">Personal</string>
+    <string name="app_ops_categories_messaging">Messaging</string>
+    <string name="app_ops_categories_media">Media</string>
+    <string name="app_ops_categories_device">Device</string>
+    <string name="app_ops_categories_background">Background</string>
+    <string name="app_ops_categories_bootup">Bootup</string>
+    <string name="app_ops_categories_su">Superuser</string>
+
+    <!-- User display names for app ops codes - extension of AOSP -->
+    <string name="app_ops_summaries_coarse_location">coarse location</string>
+    <string name="app_ops_summaries_fine_location">fine location</string>
+    <string name="app_ops_summaries_gps">GPS</string>
+    <string name="app_ops_summaries_vibrate">vibrate</string>
+    <string name="app_ops_summaries_read_contacts">read contacts</string>
+    <string name="app_ops_summaries_modify_contacts">modify contacts</string>
+    <string name="app_ops_summaries_read_call_log">read call log</string>
+    <string name="app_ops_summaries_modify_call_log">modify call log</string>
+    <string name="app_ops_summaries_read_calendar">read calendar</string>
+    <string name="app_ops_summaries_modify_calendar">modify calendar</string>
+    <string name="app_ops_summaries_wifi_scan">Wi-Fi scan</string>
+    <string name="app_ops_summaries_notification">notification/toast</string>
+    <string name="app_ops_summaries_cell_scan">cell scan</string>
+    <string name="app_ops_summaries_call_phone">call phone</string>
+    <string name="app_ops_summaries_read_sms">read SMS</string>
+    <string name="app_ops_summaries_write_sms">write SMS</string>
+    <string name="app_ops_summaries_receive_sms">receive SMS</string>
+    <string name="app_ops_summaries_receive_emergency_sms">receive emergency SMS</string>
+    <string name="app_ops_summaries_receive_mms">receive MMS</string>
+    <string name="app_ops_summaries_receive_wap_push">receive WAP push</string>
+    <string name="app_ops_summaries_send_sms">send SMS</string>
+    <string name="app_ops_summaries_read_icc_sms">read ICC SMS</string>
+    <string name="app_ops_summaries_write_icc_sms">write ICC SMS</string>
+    <string name="app_ops_summaries_modify_settings">modify settings</string>
+    <string name="app_ops_summaries_draw_on_top">draw on top</string>
+    <string name="app_ops_summaries_access_notifications">access notifications</string>
+    <string name="app_ops_summaries_camera">camera</string>
+    <string name="app_ops_summaries_record_audio">record audio</string>
+    <string name="app_ops_summaries_play_audio">play audio</string>
+    <string name="app_ops_summaries_read_clipboard">read clipboard</string>
+    <string name="app_ops_summaries_modify_clipboard">modify clipboard</string>
+    <string name="app_ops_summaries_media_buttons">media buttons</string>
+    <string name="app_ops_summaries_audio_focus">audio focus</string>
+    <string name="app_ops_summaries_master_volume">master volume</string>
+    <string name="app_ops_summaries_voice_volume">voice volume</string>
+    <string name="app_ops_summaries_ring_volume">ring volume</string>
+    <string name="app_ops_summaries_media_volume">media volume</string>
+    <string name="app_ops_summaries_alarm_volume">alarm volume</string>
+    <string name="app_ops_summaries_notification_volume">notification volume</string>
+    <string name="app_ops_summaries_bluetooth_volume">bluetooth volume</string>
+    <string name="app_ops_summaries_keep_awake">keep awake</string>
+    <string name="app_ops_summaries_monitor_location">monitor location</string>
+    <string name="app_ops_summaries_monitor_high_power_location">monitor high power location</string>
+    <string name="app_ops_summaries_get_usage_stats">get usage stats</string>
+    <string name="app_ops_summaries_mute_unmute_microphone">mute/unmute microphone</string>
+    <string name="app_ops_summaries_toast_window">display toasts</string>
+    <string name="app_ops_summaries_project_media">project media</string>
+    <string name="app_ops_summaries_activate_vpn">activate VPN</string>
+    <string name="app_ops_summaries_write_wallpaper">write wallpaper</string>
+    <string name="app_ops_summaries_assist_structure">assist structure</string>
+    <string name="app_ops_summaries_assist_screenshot">assist screenshot</string>
+    <string name="app_ops_summaries_read_phone_state">read phone state</string>
+    <string name="app_ops_summaries_add_voicemail">add voicemail</string>
+    <string name="app_ops_summaries_use_sip">use SIP</string>
+    <string name="app_ops_summaries_make_call">make call</string>
+    <string name="app_ops_summaries_use_fingerprint">use fingerprint</string>
+    <string name="app_ops_summaries_use_body_sensors">use body sensors</string>
+    <string name="app_ops_summaries_read_cell_broadcasts">read cell broadcasts</string>
+    <string name="app_ops_summaries_mock_location">mock location</string>
+    <string name="app_ops_summaries_read_external_storage">read external storage</string>
+    <string name="app_ops_summaries_write_external_storage">write to external storage</string>
+    <string name="app_ops_summaries_turn_screen_on">turn screen on</string>
+    <string name="app_ops_summaries_get_accounts">get accounts</string>
+    <string name="app_ops_summaries_run_in_background">run in background</string>
+    <string name="app_ops_summaries_toggle_wifi">toggle Wi-Fi</string>
+    <string name="app_ops_summaries_toggle_bluetooth">toggle bluetooth</string>
+    <string name="app_ops_summaries_start_at_boot">start at boot</string>
+    <string name="app_ops_summaries_toggle_nfc">toggle NFC</string>
+    <string name="app_ops_summaries_toggle_mobile_data">toggle mobile data</string>
+    <string name="app_ops_summaries_superuser">root access</string>
+
+    <!-- User display names for app ops codes - extension of AOSP -->
+    <string name="app_ops_labels_coarse_location">Coarse location</string>
+    <string name="app_ops_labels_fine_location">Fine location</string>
+    <string name="app_ops_labels_gps">GPS</string>
+    <string name="app_ops_labels_vibrate">Vibrate</string>
+    <string name="app_ops_labels_read_contacts">Read contacts</string>
+    <string name="app_ops_labels_modify_contacts">Modify contacts</string>
+    <string name="app_ops_labels_read_call_log">Read call log</string>
+    <string name="app_ops_labels_modify_call_log">Modify call log</string>
+    <string name="app_ops_labels_read_calendar">Read calendar</string>
+    <string name="app_ops_labels_modify_calendar">Modify calendar</string>
+    <string name="app_ops_labels_wifi_scan">Wi-Fi scan</string>
+    <string name="app_ops_labels_notification">Notification/Toast</string>
+    <string name="app_ops_labels_cell_scan">Cell scan</string>
+    <string name="app_ops_labels_call_phone">Call phone</string>
+    <string name="app_ops_labels_read_sms">Read SMS</string>
+    <string name="app_ops_labels_write_sms">Write SMS</string>
+    <string name="app_ops_labels_receive_sms">Receive SMS</string>
+    <string name="app_ops_labels_receive_emergency_sms">Receive emergency SMS</string>
+    <string name="app_ops_labels_receive_mms">Receive MMS</string>
+    <string name="app_ops_labels_receive_wap_push">Receive WAP push</string>
+    <string name="app_ops_labels_send_sms">Send SMS</string>
+    <string name="app_ops_labels_read_icc_sms">Read ICC SMS</string>
+    <string name="app_ops_labels_write_icc_sms">Write ICC SMS</string>
+    <string name="app_ops_labels_modify_settings">Modify settings</string>
+    <string name="app_ops_labels_draw_on_top">Draw on top</string>
+    <string name="app_ops_labels_access_notifications">Access notifications</string>
+    <string name="app_ops_labels_camera">Camera</string>
+    <string name="app_ops_labels_record_audio">Record audio</string>
+    <string name="app_ops_labels_play_audio">Play audio</string>
+    <string name="app_ops_labels_read_clipboard">Read clipboard</string>
+    <string name="app_ops_labels_modify_clipboard">Modify clipboard</string>
+    <string name="app_ops_labels_media_buttons">Media buttons</string>
+    <string name="app_ops_labels_audio_focus">Audio focus</string>
+    <string name="app_ops_labels_master_volume">Master volume</string>
+    <string name="app_ops_labels_voice_volume">Voice volume</string>
+    <string name="app_ops_labels_ring_volume">Ring volume</string>
+    <string name="app_ops_labels_media_volume">Media volume</string>
+    <string name="app_ops_labels_alarm_volume">Alarm volume</string>
+    <string name="app_ops_labels_notification_volume">Notification volume</string>
+    <string name="app_ops_labels_bluetooth_volume">Bluetooth volume</string>
+    <string name="app_ops_labels_keep_awake">Keep awake</string>
+    <string name="app_ops_labels_monitor_location">Monitor location</string>
+    <string name="app_ops_labels_monitor_high_power_location">Monitor high power location</string>
+    <string name="app_ops_labels_get_usage_stats">Get usage stats</string>
+    <string name="app_ops_labels_mute_unmute_microphone">Mute/unmute microphone</string>
+    <string name="app_ops_labels_toast_window">Display toasts</string>
+    <string name="app_ops_labels_project_media">Project media</string>
+    <string name="app_ops_labels_activate_vpn">Activate VPN</string>
+    <string name="app_ops_labels_write_wallpaper">Write wallpaper</string>
+    <string name="app_ops_labels_assist_structure">Assist structure</string>
+    <string name="app_ops_labels_assist_screenshot">Assist screenshot</string>
+    <string name="app_ops_labels_read_phone_state">Read phone state</string>
+    <string name="app_ops_labels_add_voicemail">Add voicemail</string>
+    <string name="app_ops_labels_use_sip">Use SIP</string>
+    <string name="app_ops_labels_make_call">Make call</string>
+    <string name="app_ops_labels_use_fingerprint">Use fingerprint</string>
+    <string name="app_ops_labels_use_body_sensors">Use body sensors</string>
+    <string name="app_ops_labels_read_cell_broadcasts">Read cell broadcasts</string>
+    <string name="app_ops_labels_mock_location">Mock location</string>
+    <string name="app_ops_labels_read_external_storage">Read external storage</string>
+    <string name="app_ops_labels_write_external_storage">Write to external storage</string>
+    <string name="app_ops_labels_turn_screen_on">Turn screen on</string>
+    <string name="app_ops_labels_get_accounts">Get accounts</string>
+    <string name="app_ops_labels_run_in_background">Run in background</string>
+    <string name="app_ops_labels_toggle_wifi">Toggle Wi-Fi</string>
+    <string name="app_ops_labels_toggle_bluetooth">Toggle bluetooth</string>
+    <string name="app_ops_labels_start_at_boot">Start at boot</string>
+    <string name="app_ops_labels_toggle_nfc">Toggle NFC</string>
+    <string name="app_ops_labels_toggle_mobile_data">Toggle mobile data</string>
+    <string name="app_ops_labels_superuser">Root access</string>
+
+    <!-- App ops permissions -->
+    <string name="app_ops_permissions_allowed">Allowed</string>
+    <string name="app_ops_permissions_ignored">Ignored</string>
+    <string name="app_ops_permissions_always_ask">Always ask</string>
+
+    <!-- App ops detail -->
+    <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (used <xliff:g id="count">%2$s</xliff:g>)</string>
+    <string name="app_ops_allowed_count">Allowed <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_ignored_count">Denied <xliff:g id="count" example="2 times">%s</xliff:g></string>
+    <string name="app_ops_both_count">Allowed <xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
+
+    <!-- App ops menu options -->
+    <string name="app_ops_show_user_apps">Show user apps</string>
+    <string name="app_ops_show_system_apps">Show built-in apps</string>
+    <string name="app_ops_reset_counters">Reset allow/deny counters</string>
+    <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
+    <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset counters?</string>
+
+    <string name="ok">OK</string>
+
+    <!-- Share FH -->
+    <string name="share_fh_title">Compartir FireHound</string>
+    <string name="share_fh_summary">Pour some fuel and spread Fire</string>
+    <string name="share_message">FireHound es una Custom ROM desarrollada en enfocarse a la estabilidad y caracteristicas! Vamos vamos vamos, Instalar FireHound y cambia la manera de usar tu smartphone, Entra a la comunidad: @ https://plus.google.com/communities/114615598909452601377</string>
+    <string name="share_chooser_title">Compartir FireHound</string>
+
+    <!-- Maintainers -->
+    <string name="maintainers">Mantenedores Oficiales de FireHound</string>
+    <string name="yureka">YU YUREKA (tomato)</string>
+    <string name="yureka_summary">Hriday Sharma</string>
+    <string name="yuphoria">YU YUPHORIA (lettuce)</string>
+    <string name="yuphoria_summary">Pranay Narang</string>
+    <string name="yunique">YU YUNIQUE (jalebi)</string>
+    <string name="yunique_summary">Shubhojit Nag</string>
+    <string name="op1">One Plus One (bacon)</string>
+    <string name="op1_summary">PrathameshMS</string>
+    <string name="op2">One Plus Two (oneplus2)</string>
+    <string name="op2_summary">Luy Nagda (Devil2709)</string>
+    <string name="op3">One Plus Three (oneplus3)</string>
+    <string name="op3_summary">PrathameshMS</string>
+    <string name="note3">Redmi Note 3 (kenzo)</string>
+    <string name="note3_summary">Manhar Gupta</string>
+    <string name="dior">Redmi Note 4g (dior)</string>
+    <string name="dior_summary">Luy Nagda (Devil2709)</string>
+    <string name="fortuna3g">Samsung Galaxy Grand (fortuna3g)</string>
+    <string name="fortuna3g_summary">Siddhant Satam</string>
+    <string name="note2">Samsung Note 2 (note2)</string>
+    <string name="note2_summary">Sagar Shah</string>
+    <string name="victara">Mote G (victara)</string>
+    <string name="victara_summary">Anderson Mendes</string>
+    <string name="merlin">Moto G (merlin)</string>
+    <string name="merlin_summary">DerkLord</string>
+    <string name="g3">LG G3 (D855)</string>
+    <string name="g3_summary">Rafael Marchetto</string>
+    <string name="titan">Moto G (titan)</string>
+    <string name="titan_summary">Kranoner</string>
+    <string name="condor">Moto E (condor)</string>
+    <string name="condor_summary">Shubhojit</string>
+    <string name="yu">YU</string>
+    <string name="oneplus">OnePlus</string>
+    <string name="redmi">Xiaomi</string>
+    <string name="samsung">Samsung</string>
+    <string name="moto">Moto</string>
+    <string name="lg">LG</string>
+
+    <!-- FireHound Info -->
+    <string name="fh_developer_title">Desarrollo Github</string>
+    <string name="fh_developer_summary">Apoyo al desarrollo y Equipo FireHound</string>
+    <string name="maintainers_fh_title">Mantenedores Oficiales de FireHound</string>
+    <string name="fh_online">Acerca de FireHound</string>
+    <string name="about_developer">About Developer</string>
+    <string name="fh_git_title">Código FireHound</string>
+    <string name="fh_git_summary">Vamos y construye FireHound para tu dispositivo!</string>
+    <string name="fh_google_plus_title">FireHound Google Plus Community</string>
+    <string name="fh_google_plus_summary">Visit and Join Community for More Information</string>
+    <string name="about_fh">Acerca de FireHound</string>
+    <string name="fh_donation_title">Donar a FireHound</string>
+    <string name="fh_donation_summary">Donations are welcome and will be used to keep our build servers alive</string>
+    <string name="fh_maintainers_title">FireMen</string>
+    <string name="fh_maintainers_summary">Official Device Maintainers and Officially Supported Devices</string>
+
+    <!-- Telegram join -->
+    <string name="fh_telegram_title">Join Official Telegram Group</string>
+    <string name="fh_telegram_summary">Join for latest updates and remotely conversing</string>
+
+    <!-- FHSettings -->
+    <string name="fh_settings_title">FireHound Ashes</string>
+    <string name="fh_section_title">Burnt Extras</string>
+    <string name="fh_title">Fire Scars</string>
+    <string name="status_bar_title">Status Bar</string>
+    <string name="notification_settings">Notification Drawer</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume Adjustment Sounds</string>
+
+    <!-- Vibrator intensity -->
+    <string name="vibrator_intensity_title">Vibrator intensity</string>
+    <string name="vibrator_intensity_dialog_warning">Values greater than %1$d%% are not recommended</string>
+    <string name="vibrator_intensity_dialog_reset">Reset</string>
+
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_3">3x3</string>
+    <string name="lock_pattern_size_4">4x4</string>
+    <string name="lock_pattern_size_5">5x5</string>
+    <string name="lock_pattern_size_6">6x6</string>
+
+    <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Show Pattern Error</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Show Pattern Dots</string>
+    <!-- Whether the keyguard will directly show the password entry -->
+    <string name="lock_directly_show_password">Directly show password entry</string>
+    <!-- Whether the keyguard will directly show the pattern view -->
+    <string name="lock_directly_show_pattern">Directly show pattern view</string>
+    <!-- Whether the keyguard will directly show the PIN entry -->
+    <string name="lock_directly_show_pin">Directly show PIN entry</string>
+
+    <!-- Lock screen vibrate settings -->
+    <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
+    <string name="lockscreen_vibrate_enabled_head">Vibrate When Unlocking</string>
+
+    <!-- Lights settings -->
+    <string name="lights_label">Lights</string>
+
+    <!-- Memory -->
+    <string name="memory_startup_apps_title">Apps started on boot</string>
+
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery, bootloader or performing a soft restart</string>
+
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
+
+    <!-- Protected apps lockpattern reset button -->
+    <string name="lockpattern_reset_button">Reset pattern</string>
+    <string name="lockpattern_settings_reset_summary">Enter primary email account and associated password to reset pattern lock</string>
+
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">Reset</string>
+    <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
+    <string name="protected_apps">Protected apps</string>
+    <string name="protected_apps_summary">Manage which apps are hidden behind a secure lock</string>
+    <string name="saving_protected_components">Saving component state\u2026</string>
+    <string name="launch_app">Launch app</string>
+
+    <string name="pa_login_username_hint">Username (email)</string>
+    <string name="pa_login_password_hint">Password</string>
+    <string name="pa_login_submit_button">Sign in</string>
+    <string name="pa_login_checking_password">Checking account\u2026</string>
+    <string name="pa_login_incorrect_login">Login was incorrect</string>
+    <string name="pa_pattern_or_fingerprint_header">Must draw pattern or use fingerprint to unlock</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser Indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
+
+    <!-- title for lock screen weather preference -->
+    <string name="lockscreen_weather_enabled_title">Show Weather</string>
+
+    <!-- title for lock screen blur preference -->
+    <string name="lockscreen_blur_enabled_title">Blur lock screen</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to wake-ups triggered by gestures</string>
+
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+    <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Touchscreen hovering</string>
+    <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+    <string name="notification_importance_very_low">No full screen interruption, peeking, sound, or vibration. Show at the bottom of the notification list. Hide from lock screen.</string>
+
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
+    <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
+
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back button</string>
+    
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="show_network_traffic_state">Status bar traffic monitor</string>
+    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
+    <string name="show_network_traffic_unit">Display unit</string>
+    <string name="show_network_traffic_frequency">Update interval</string>
+    <string name="show_network_traffic_disable">Disabled</string>
+    <string name="show_network_traffic_up">Outgoing</string>
+    <string name="show_network_traffic_down">Incoming</string>
+    <string name="show_network_traffic_all">Outgoing and incoming</string>
+    <string name="show_network_traffic_bit">Bits per second</string>
+    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_color_style">Color style</string>
+    <string name="network_traffic_color_reset">Reset color</string>
+    <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
+    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
+
+    <!-- Android debugging -->
+    <string name="enable_adb_cm">Android debugging</string>
+    <string name="enable_adb_summary_cm">Enable the Android Debug Bridge (ADB) interface</string>
+
+    <!-- Android debugging notification -->
+    <string name="adb_notify">Debugging notify</string>
+    <string name="adb_notify_summary">Display a notification when USB or network debugging is enabled</string>
+
+    <!-- Android debugging over network -->
+    <string name="adb_over_network">ADB over network</string>
+    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+
+    <!-- Allow vibration in zen mode -->
+    <string name="zen_mode_vibration">Vibration</string>
+    <string name="zen_mode_vibration_never">Don\'t vibrate</string>
+    <string name="zen_mode_vibration_calls_only">Only vibrate for calls</string>
+    <string name="zen_mode_vibration_calls_and_notifications">Vibrate for calls and notifications</string>
+
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Minimum time between notification sounds</string>
+    <string name="app_notification_sound_timeout_summary_template">Allow sounds or vibration no more than once every <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">No restriction</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 seconds</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 seconds</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+
+    <!-- MSIM SIM status -->
+    <string name="sim_card_status_title">SIM %d status</string>
+    <string name="sim_card_lock_settings_title">SIM %d lock settings</string>
+    <string name="sim_card_summary_empty">SIM not inserted</string>
+    <string name="sim_mobile_network_settings_category_title">Mobile network settings</string>
+    <string name="sim_mobile_network_settings_title">SIM %d settings</string>
+
+    <!-- NFC PreferenceCategory title -->
+    <string name="nfc_title_category">NFC</string>
+
+    <!-- Notification importance -->
+    <string name="tuner_full_importance_settings">Power notification controls</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">Advanced options</string>
+    <string name="sound_title">Sound</string>
+    <string name="attention">Attention</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">Camera Shutter Sound</string>
+    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
+    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="camera_toggle">Advanced Settings</string>
+
+    <!-- Link ringtone and notification volume -->
+    <string name="link_volume_option_title">Link Ringtone &amp; Notification Volumes</string>
+
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
+
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">back</string>
+    <string name="security_settings_fingerprint_sensor_location_front">front</string>
+    <string name="security_settings_fingerprint_sensor_location_left">left side</string>
+    <string name="security_settings_fingerprint_sensor_location_right">right side</string>
+
+    <!-- Tethering & portable hotspot other category -->
+    <string name="tethering_other_category_text">Other</string>
+    <!-- Wi-Fi tethering inactivity timeout -->
+    <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot timeout</string>
+    <string name="hotstpot_inactivity_timeout_never">Never</string>
+    <string name="hotstpot_inactivity_timeout_1_minute">1 minute</string>
+    <string name="hotstpot_inactivity_timeout_5_minutes">5 minutes</string>
+    <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
+    <string name="hotstpot_inactivity_timeout_never_summary_text">Portable Wi\u2011Fi hotspot timeout never</string>
+    <string name="hotstpot_inactivity_timeout_summary_text">Portable Wi\u2011Fi hotspot timeout after <xliff:g id="timeout">%1$s</xliff:g></string>
+
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Wake screen when connecting or disconnecting a power source</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+  
+    <!--Status bar date -->
+    <string name="status_bar_clock_category">Clock</string>
+    <string name="status_bar_date_title">Date</string>
+    <string name="status_bar_date_none">Hidden (default)</string>
+    <string name="status_bar_date_small">Small</string>
+    <string name="status_bar_date_normal">Normal</string>
+    <string name="status_bar_date_format_title">Date format</string>
+    <string name="status_bar_date_style">Date style</string>
+    <string name="status_bar_date_style_normal">Normal</string>
+    <string name="status_bar_date_style_lowercase">Lowercase</string>
+    <string name="status_bar_date_style_uppercase">Uppercase</string>
+    <string name="status_bar_date_format_custom">Custom java format</string>
+    <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Enter string</string>
+
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Heads-up</string>
+    <string name="heads_up_notifications_enabled_summary">Display priority notifications in a small floating window</string>
+
+    <!-- Recents panel -->
+    <string name="recents_settings_title">Recents Settings</string>
+    <string name="recents_panel_category">Recents panel</string>
+    <string name="recents_searchbar_title">Search bar</string>
+    <string name="recents_searchbar_summary">Show Google search bar in the recents screen</string>
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>	
+    <string name="show_clear_all_recents_button_title">Clear all recents button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
+    <string name="recents_clear_all_location_title">Clear all recents location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+    <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
+    <string name="recents_clear_all_dismiss_all_summary">Choose whether to dismiss all tasks or ignore the foreground task</string>
+
+    <!-- OmniSwitch -->
+    <string name="omniswitch_category">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">Use for recents</string>
+    <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of default recents view</string>
+    <string name="omniswitch_start_settings_title">Settings</string>
+    <string name="omniswitch_start_settings_summary">Open OmniSwitch settings</string>
+    <string name="omniswitch_first_time_title">Information</string>
+    <string name="omniswitch_first_time_message">Make sure you have enabled OmniSwitch. You can do this by using \"Settings\" below</string>
+    <string name="omniswitch_settings_title">OmniSwitch</string>
+
+    <!-- Build SDK -->
+    <string name="build_sdk">Android SDK</string>
+    <string name="build_sdk_default">Unknown</string>
+
+    <!-- Encryption password -->
+    <string name="crypt_keeper_change_password_title">Change encryption password</string>
+    <string name="crypt_keeper_change_password_summary">Change the password used for device encryption</string>
+    <string name="crypt_keeper_choose_your_password_header">Set encryption password</string>
+    <string name="crypt_keeper_replace_password_title">Replace encryption password</string>
+    <string name="crypt_keeper_replace_password_summary">Remove the separate encryption password</string>
+
+    <!-- Battery Saver easy toggle -->
+    <string name="qs_battery_easy_toggle_title">Battery tile easy toggle</string>
+    <string name="qs_battery_easy_toggle_summary">Makes it so one click will turn Battery Saver on or off instead of taking you to settings</string>
+
+    <!-- Wifi toggle -->
+    <string name="qs_wifi_easy_toggle_title">WiFi easy toggle</string>
+    <string name="qs_wifi_easy_toggle_summary">Makes it so one click will turn WiFi on or off instead of taking you to settings</string>
+
+    <!-- BT easy toggle -->
+    <string name="qs_bt_easy_toggle_title">Bluetooth easy toggle</string>
+    <string name="qs_bt_easy_toggle_summary">Makes it so one click will turn Bluetooth on or off instead of taking you to settings</string>
+</resources>
