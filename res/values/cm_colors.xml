@@ -55,4 +55,9 @@ limitations under the License.
     <color name="storage_private_3">#fff2a600</color>
     <color name="storage_private_4">#ffec407a</color>
     <color name="storage_private_5">#ffc0ca33</color>
+
+    <!-- Bluetooth pairing pin confirm dialog -->
+    <color name="bluetooth_pairing_caption">@*android:color/secondary_text_material_light</color>
+    <color name="bluetooth_pairing_code_message">@*android:color/secondary_text_material_light</color>
+    <color name="bluetooth_phonebook_sharing_message_confirm_pin">@*android:color/secondary_text_material_light</color>
 </resources>
