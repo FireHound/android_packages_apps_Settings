@@ -189,7 +189,8 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
-	<Preference android:key="build_sdk"
+	<Preference 
+                android:key="build_sdk"
 		style="?android:preferenceInformationStyle"
                 android:title="@string/build_sdk"
                 android:summary="@string/build_sdk_default" />

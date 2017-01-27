@@ -649,9 +649,6 @@
     <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
     <string name="camera_toggle">Advanced Settings</string>
 
-    <!-- Link ringtone and notification volume -->
-    <string name="link_volume_option_title">Link Ringtone &amp; Notification Volumes</string>
-
     <!-- Format string for fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
 
@@ -687,10 +684,6 @@
     <string name="data_usage_app_restrict_all_wifi_title">Disable all Wi\u2011Fi data access</string>
     <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
     <string name="data_usage_app_restrict_all_wifi_summary">Prevent any use of data access via Wi\u2011Fi networks</string>
-
-    <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
-    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
   
     <!--Status bar date -->
     <string name="status_bar_clock_category">Clock</string>
@@ -762,4 +755,11 @@
     <!-- BT easy toggle -->
     <string name="qs_bt_easy_toggle_title">Bluetooth easy toggle</string>
     <string name="qs_bt_easy_toggle_summary">Makes it so one click will turn Bluetooth on or off instead of taking you to settings</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ringtone &amp; notification volumes</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music player</string>
+    <string name="headset_connect_player_summary">Launch the default music player when a headset is connected</string>
 </resources>
