@@ -121,7 +121,7 @@ public class ConfigureWifiSettings extends SettingsPreferenceFragment
 
         mWifiAssistantPreference = (AppListSwitchPreference) findPreference(KEY_WIFI_ASSISTANT);
         Collection<NetworkScorerAppManager.NetworkScorerAppData> scorers =
-                new NetworkScorerAppManager(context).getAllValidScorers();
+                NetworkScorerAppManager.getAllValidScorers(context);
         if (UserManager.get(context).isAdminUser() && !scorers.isEmpty()) {
             mWifiAssistantPreference.setOnPreferenceChangeListener(this);
             initWifiAssistantPreference(scorers);
@@ -200,7 +200,7 @@ public class ConfigureWifiSettings extends SettingsPreferenceFragment
 
         if (KEY_WIFI_ASSISTANT.equals(key)) {
             NetworkScorerAppManager.NetworkScorerAppData wifiAssistant =
-                    new NetworkScorerAppManager(context).getScorer((String) newValue);
+                    NetworkScorerAppManager.getScorer(context, (String) newValue);
             if (wifiAssistant == null) {
                 mNetworkScoreManager.setActiveScorer(null);
                 return true;
