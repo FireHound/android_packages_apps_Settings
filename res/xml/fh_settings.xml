@@ -75,7 +75,7 @@
             android:key="gestures"
             android:title="@string/gestures_settings"
             android:fragment="com.android.settings.fh.GesturesSettings"
-            android:icon="@drawable/settings_gestures" />
+            android:icon="@drawable/fh_settings_gestures" />
 
 	<!-- System App Remover -->
 	<PreferenceScreen
