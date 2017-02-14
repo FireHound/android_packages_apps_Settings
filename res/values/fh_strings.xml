@@ -791,4 +791,7 @@
     <string name="show_emergency_button">Show Emergency Button</string>
     <string name="show_emergency_button_on">Emergency Button is visible on lockscreen</string>
     <string name="show_emergency_button_off">Toggle to show Emergency Button on Lockscreen</string>
+
+    <!-- Pa Battery -->
+    <string name="status_bar_battery_style_solid">Solid</string>
 </resources>
