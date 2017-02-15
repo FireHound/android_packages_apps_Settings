@@ -794,4 +794,8 @@
 
     <!-- Pa Battery -->
     <string name="status_bar_battery_style_solid">Solid</string>
+
+    <!-- Double Tap on LS to sleep -->
+    <string name="double_tap_ls">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_ls_summary">Double tap anywhere on lockscreen to sleep</string>
 </resources>
