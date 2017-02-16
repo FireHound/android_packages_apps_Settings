@@ -827,4 +827,8 @@
     <string name="volume_steps_15" translatable="false">15</string>
     <string name="volume_steps_7" translatable="false">7</string>
     <string name="volume_steps_5" translatable="false">5</string>
+
+    <!-- Hide Lockscreen clock, date & alarm -->
+    <string name="hide_lockscreen_clock_title">Show losckscreen clock</string>
+    <string name="hide_lockscreen_date_title">Show loskscreen date</string>
 </resources>
