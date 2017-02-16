@@ -831,4 +831,8 @@
     <!-- Hide Lockscreen clock, date & alarm -->
     <string name="hide_lockscreen_clock_title">Show losckscreen clock</string>
     <string name="hide_lockscreen_date_title">Show loskscreen date</string>
+
+    <!-- Allow fake signature -->
+    <string name="allow_signature_fake">Allow signature spoofing</string>
+    <string name="allow_signature_fake_summary">Allow apps to bypass security systems by pretending to be a different app.</string>
 </resources>
