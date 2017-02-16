@@ -117,6 +117,12 @@
                 android:persistent="false"
                 android:fragment="com.android.settings.fh.SoundSettings" />
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.fh.VolumeSteps" />
+ 
 	<!-- Force expanded mode -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
         android:key="volume_dialog_force_expanded"
