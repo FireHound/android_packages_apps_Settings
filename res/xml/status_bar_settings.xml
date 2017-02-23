@@ -138,6 +138,12 @@
         android:title="@string/data_wifi_activity_arrows_title"
         android:summary="@string/data_wifi_activity_arrows_summary"
         android:defaultValue="false"/>
+ 
+    <com.android.settings.fh.SecureSettingSwitchPreference
+        android:key="lockscreen_hide_status_bar"
+        android:title="@string/lockscreen_hide_status_bar_title"
+        android:summary="@string/lockscreen_hide_status_bar_summary"
+        android:defaultValue="true" />
 
     <!-- Double tap to sleep -->
     <com.android.settings.fh.SystemSettingSwitchPreference

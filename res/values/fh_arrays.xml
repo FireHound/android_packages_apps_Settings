@@ -238,14 +238,14 @@
     <!-- Status Bar cm -->
     <!-- Status bar -->
     <string-array name="status_bar_clock_position_entries" translatable="false">
-        <item>@string/status_bar_clock_position_right</item>
         <item>@string/status_bar_clock_position_center</item>
+        <item>@string/status_bar_clock_position_right</item>
         <item>@string/status_bar_clock_position_left</item>
     </string-array>
 
     <string-array name="status_bar_clock_position_entries_rtl" translatable="false">
-        <item>@string/status_bar_clock_position_right</item>
         <item>@string/status_bar_clock_position_center</item>
+        <item>@string/status_bar_clock_position_right</item>
         <item>@string/status_bar_clock_position_left</item>
     </string-array>
 

@@ -815,4 +815,8 @@
     <string name="trans_power_menu">Power menu</string>
     <string name="soft_restart_required">Soft Restart required to apply changes</string>
 
+    <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Enable Status bar on lockscreen</string>
+    <string name="lockscreen_hide_status_bar_summary">Display status bar on lockscreen</string>
+
 </resources>

@@ -67,13 +67,6 @@
             android:summary="@string/qs_advanced_data_summary"
             android:defaultValue="false" />
 
-        <!-- Location -->
-        <com.android.settings.fh.SecureSettingSwitchPreference
-            android:key="qs_location_easy_toggle"
-            android:title="@string/qs_location_easy_toggle_title"
-            android:summary="@string/qs_location_easy_toggle_summary"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
