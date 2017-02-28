@@ -1054,7 +1054,7 @@
 
         <activity android:name="SettingsLicenseActivity"
                 android:label="@string/settings_license_activity_title"
-                android:theme="@android:style/Theme.DeviceDefault.Light.Panel"
+                android:theme="@style/Theme.SettingsLicenseActivity"
                 android:configChanges="orientation|screenSize">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.LICENSE" />
