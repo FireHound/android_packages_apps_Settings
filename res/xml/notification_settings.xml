@@ -69,6 +69,13 @@
             android:summary="@string/qs_advanced_data_summary"
             android:defaultValue="false" />
 
+        <!-- Location -->
+        <com.android.settings.fh.SecureSettingSwitchPreference
+            android:key="qs_location_easy_toggle"
+            android:title="@string/qs_location_easy_toggle_title"
+            android:summary="@string/qs_location_easy_toggle_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -121,7 +128,7 @@
             android:defaultValue="false"/>
 
         <!-- QS disabled on lockscreen -->
-        <com.android.settings.fh.SystemSettingSwitchPreference
+        <com.android.settings.fh.SecureSettingSwitchPreference
         android:key="lockscreen_qs_disabled"
         android:title="@string/lockscreen_qs_disabled_title"
         android:summary="@string/lockscreen_qs_disabled_summary"
@@ -169,7 +176,7 @@
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true"/>
 
-    <com.android.settings.fh.SecureSettingSwitchPreference
+    <com.android.settings.fh.SystemSettingSwitchPreference
         android:key="qs_show_brightness_icon"
         android:title="@string/brightness_icon_title"
         android:summary="@string/brightness_icon_summary"
@@ -212,7 +219,7 @@
         android:key="qs_fancy_animation"
         android:title="@string/qs_fancy_animation_title"
         android:summary="@string/qs_fancy_animation_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     </PreferenceCategory>
 
