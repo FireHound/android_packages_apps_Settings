@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 FireHound ROMs
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, FH version -->
+    <string name="fh_mod_version">FireHound Version</string>
+
+    <!-- FHSettings -->
+    <string name="fh_settings_title">FireHound Ashes</string>
+    <string name="fh_section_title">Burnt Extras</string>
+    <string name="fh_title">Fire Scars</string>
+
+    <!-- FireHound Info -->
+    <string name="fh_developer_title">Developers Github</string>
+    <string name="fh_developer_summary">Support the Developer and FireHound Team</string>
+    <string name="maintainers_fh_title">FireHound Official Maintainers</string>
+    <string name="about_developer">About Developer</string>
+    <string name="fh_git_title">Github Source</string>
+    <string name="fh_git_summary">Compile FireHound for your Device</string>
+    <string name="fh_google_plus_title">FireHound Google Plus Community</string>
+    <string name="fh_google_plus_summary">Visit and Join Community for More Information</string>
+    <string name="about_fh">About FireHound</string>
+    <string name="fh_donation_title">Donate to FireHound</string>
+    <string name="fh_donation_summary">Donations are welcome and will be used to keep our build servers alive</string>
+    <string name="fh_maintainers_title">Official Maintainers</string>
+    <string name="fh_maintainers_summary">Official Device Maintainers and Officially Supported Devices</string>
+    <string name="fh_website_title">FireHound Website</string>
+    <string name="fh_website_summary">Visit for more info</string>
+
+    <!-- Burnt ashes summary -->
+    <string name="fh_settings_summary">Burn it here!!</string>
+
+    <!-- FH Settings -->
+    <string name="status_bar_title">Status Bar</string>
+    <string name="notification_settings">Quick Settings</string>
+    <string name="animation_settings_title">Animations</string>
+    <string name="recents_settings">Recents</string>
+    <string name="gestures_settings">Gestures</string>
+    <string name="advanced_gestures">Advanced Gestures</string>
+    <string name="fh_online">About FireHound</string>
+
+    <!-- Maintainers -->
+    <string name="maintainers">Official FireHound Maintainers</string>
+    <string name="yureka">YU YUREKA (tomato)</string>
+    <string name="yureka_summary">Hriday Sharma</string>
+    <string name="yuphoria">YU YUPHORIA (lettuce)</string>
+    <string name="yuphoria_summary">Pranay Narang</string>
+    <string name="yunique">YU YUNIQUE (jalebi)</string>
+    <string name="yunique_summary">Shubhojit Nag</string>
+    <string name="op1">One Plus One (bacon)</string>
+    <string name="op1_summary">PrathameshMS</string>
+    <string name="op2">One Plus Two (oneplus2)</string>
+    <string name="op2_summary">Luy Nagda (Devil2709)</string>
+    <string name="op3">One Plus Three (oneplus3)</string>
+    <string name="op3_summary">PrathameshMS</string>
+    <string name="note3">Redmi Note 3 (kenzo)</string>
+    <string name="note3_summary">Manhar Gupta</string>
+    <string name="dior">Redmi Note 4g (dior)</string>
+    <string name="dior_summary">Luy Nagda (Devil2709)</string>
+    <string name="fortuna3g">Samsung Galaxy Grand (fortuna3g)</string>
+    <string name="fortuna3g_summary">Siddhant Satam</string>
+    <string name="note2">Samsung Note 2 (note2)</string>
+    <string name="note2_summary">Sagar Shah</string>
+    <string name="victara">Mote G (victara)</string>
+    <string name="victara_summary">Anderson Mendes</string>
+    <string name="merlin">Moto G (merlin)</string>
+    <string name="merlin_summary">DerkLord</string>
+    <string name="g3">LG G3 (D855)</string>
+    <string name="g3_summary">Rafael Marchetto</string>
+    <string name="titan">Moto G (titan)</string>
+    <string name="titan_summary">Kranoner</string>
+    <string name="condor">Moto E (condor)</string>
+    <string name="condor_summary">Shubhojit</string>
+    <string name="yu">YU</string>
+    <string name="oneplus">OnePlus</string>
+    <string name="redmi">Xiaomi</string>
+    <string name="samsung">Samsung</string>
+    <string name="moto">Moto</string>
+    <string name="lg">LG</string>
+
+</resources>
