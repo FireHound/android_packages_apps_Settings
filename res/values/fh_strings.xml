@@ -472,4 +472,32 @@
    <string name="three_finger_gesture">Three Finger Gesture</string>
    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
+   <!-- Force expanded notifications -->
+   <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+   <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+   <!-- Disabling immersive mode messages -->
+   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
+   <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+
+   <!-- Battery Saver easy toggle -->
+    <string name="qs_battery_easy_toggle_title">Battery tile easy toggle</string>
+    <string name="qs_battery_easy_toggle_summary">Makes it so one click will turn Battery Saver on or off instead of taking you to settings</string>
+
+    <!-- Wifi toggle -->
+    <string name="qs_wifi_easy_toggle_title">WiFi easy toggle</string>
+    <string name="qs_wifi_easy_toggle_summary">Makes it so one click will turn WiFi on or off instead of taking you to settings</string>
+
+    <!-- BT easy toggle -->
+    <string name="qs_bt_easy_toggle_title">Bluetooth easy toggle</string>
+    <string name="qs_bt_easy_toggle_summary">Makes it so one click will turn Bluetooth on or off instead of taking you to settings</string>
+
+    <!-- Advanced data tile -->
+    <string name="qs_advanced_data_title">Advanced data tile</string>
+    <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string> 
+
 </resources>
