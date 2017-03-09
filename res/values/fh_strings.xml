@@ -571,4 +571,8 @@
     <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
     <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
 
+    <!-- Build SDK -->
+    <string name="build_sdk">Android SDK</string>
+    <string name="build_sdk_default">Unknown</string>
+
 </resources>
