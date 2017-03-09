@@ -28,6 +28,46 @@
             android:summary="@string/unlock_set_unlock_mode_pin"
             settings:keywords="@string/keywords_lockscreen" />
 
+        <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="lockscreen_quick_unlock_control"
+            android:title="@string/unlock_quick_unlock_control_title"
+            android:summary="@string/unlock_quick_unlock_control_summary" />
+
+	<com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:summary="@string/lockscreen_enable_power_menu_summary"
+            android:defaultValue="false" />
+
+         <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary" 
+            android:defaultValue="false" />
+
+        <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="show_emergency_button"
+            android:title="@string/show_emergency_button"
+            android:summaryOn="@string/show_emergency_button_on"
+            android:summaryOff="@string/show_emergency_button_off"
+            android:defaultValue="true" />
+
+        <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:title="@string/double_tap_ls"
+            android:summary="@string/double_tap_ls_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_clock"
+            android:title="@string/hide_lockscreen_clock_title"
+            android:defaultValue="true" />
+
+       <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_date"
+            android:title="@string/hide_lockscreen_date_title"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
