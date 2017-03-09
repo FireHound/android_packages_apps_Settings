@@ -468,4 +468,8 @@
     <string name="toast_SlideLeftRight_animation">Slide left to right</string>
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+   <string name="three_finger_gesture">Three Finger Gesture</string>
+   <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
 </resources>

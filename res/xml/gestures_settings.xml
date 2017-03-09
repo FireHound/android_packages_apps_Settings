@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2016 FireHound ROMs
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -13,14 +13,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     xmlns:lineage="http://schemas.android.com/apk/res/cyanogenmod.platform"
-    android:title="@string/gesture_preference_title"
-    settings:keywords="@string/keywords_gesture">
+    android:title="@string/gestures_settings">
 
-    <org.cyanogenmod.internal.cmparts.CMPartsPreference
+    <PreferenceCategory
+      android:key="advanced_gestures"
+      android:title="@string/advanced_gestures" >
+
+      <org.cyanogenmod.internal.cmparts.CMPartsPreference
         android:key="touchscreen_gesture_settings"
         lineage:requiresFeature="cmhardware:FEATURE_TOUCHSCREEN_GESTURES" />
 
@@ -59,11 +62,13 @@
         settings:animation="@raw/gesture_ambient_lift"
         settings:preview="@drawable/gesture_ambient_lift"/>
 
-    <!-- Double tap to sleep -->
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/status_bar_double_tap_to_sleep_title"
-        android:summary="@string/status_bar_double_tap_to_sleep_summary"
-        android:defaultValue="true" />
+      <!-- Three-fingers-swipe to screenshot -->
+      <com.android.settings.fh.SystemSettingSwitchPreference
+      android:key="three_finger_gesture"
+      android:title="@string/three_finger_gesture"
+      android:summary="@string/three_finger_gesture_summary"
+      android:defaultValue="false" />
+
+    </PreferenceCategory>	
 
 </PreferenceScreen>
