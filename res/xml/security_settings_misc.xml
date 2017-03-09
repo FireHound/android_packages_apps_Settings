@@ -58,6 +58,12 @@
                 android:summaryOn="@string/install_unknown_applications"
                 settings:useAdditionalSummary="true" />
 
+        <com.android.settings.fh.SystemSettingSwitchPreference
+            android:key="allow_signature_fake"
+            android:title="@string/allow_signature_fake"
+            android:summary="@string/allow_signature_fake_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory android:key="credentials_management"
