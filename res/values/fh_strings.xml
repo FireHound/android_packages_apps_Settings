@@ -81,6 +81,7 @@
     <string name="advanced_gestures">Advanced Gestures</string>
     <string name="fh_online">About FireHound</string>
     <string name="category_interface">Interface</string>
+    <string name="qs_animations">Animations</string>
 
     <!-- Maintainers -->
     <string name="maintainers">Official FireHound Maintainers</string>
