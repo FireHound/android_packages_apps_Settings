@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.rr.Preferences;
+package com.android.settings.fh;
 
 import android.content.Context;
 import android.support.v14.preference.SwitchPreference;
