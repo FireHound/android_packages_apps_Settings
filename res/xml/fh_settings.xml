@@ -86,13 +86,6 @@
             android:fragment="com.android.settings.fh.SystemappRemover"
             android:icon="@drawable/fh_system" />
 
-	<!-- System App Remover -->
-	<PreferenceScreen
-            android:key="systemappremover"
-            android:title="@string/sizer_title"
-            android:fragment="com.android.settings.fh.SystemappRemover"
-            android:icon="@drawable/fh_system" />
-
 	<!-- About FireHound -->
         <PreferenceScreen 
 	    android:key="info"
