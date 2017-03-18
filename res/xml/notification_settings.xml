@@ -215,12 +215,6 @@
         android:entryValues="@array/qs_tile_animation_interpolator_values"
         android:persistent="false" />
 
-    <com.android.settings.fh.SystemSettingSwitchPreference
-        android:key="qs_fancy_animation"
-        android:title="@string/qs_fancy_animation_title"
-        android:summary="@string/qs_fancy_animation_summary"
-        android:defaultValue="true" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
