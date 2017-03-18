@@ -127,6 +127,12 @@
         android:summaryOff="@string/su_indicator_summary_off"
         android:defaultValue="true" />
 
+        <com.android.settings.fh.SystemSettingSwitchPreference
+        android:key="qs_fancy_animation"
+        android:title="@string/qs_fancy_animation_title"
+        android:summary="@string/qs_fancy_animation_summary"
+        android:defaultValue="true" />
+
 	<!-- Battery Bar -->
 	<PreferenceScreen
         android:key="battery_bar"

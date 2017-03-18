@@ -4,9 +4,7 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -69,6 +67,13 @@
             android:summary="@string/qs_advanced_data_summary"
             android:defaultValue="false" />
 
+        <!-- Location -->
+        <com.android.settings.fh.SecureSettingSwitchPreference
+            android:key="qs_location_easy_toggle"
+            android:title="@string/qs_location_easy_toggle_title"
+            android:summary="@string/qs_location_easy_toggle_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -121,7 +126,7 @@
             android:defaultValue="false"/>
 
         <!-- QS disabled on lockscreen -->
-        <com.android.settings.fh.SystemSettingSwitchPreference
+        <com.android.settings.fh.SecureSettingSwitchPreference
         android:key="lockscreen_qs_disabled"
         android:title="@string/lockscreen_qs_disabled_title"
         android:summary="@string/lockscreen_qs_disabled_summary"
@@ -133,28 +138,28 @@
             android:title="@string/qs_settings_icon_title"
             android:summary="@string/qs_settings_icon_summary"
             android:disableDependentsState="true"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <!-- Edit icon -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
             android:key="qs_edit_toggle"
             android:title="@string/qs_edit_title"
             android:summary="@string/qs_edit_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <!-- Multiuser icon -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
             android:key="qs_multiuser_switch_toggle"
             android:title="@string/qs_multiuser_switch_title"
             android:summary="@string/qs_multiuser_switch_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <!-- QS Expand icon -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
             android:key="qs_expand_indicator_toggle"
             android:title="@string/qs_expand_indicator_title"
             android:summary="@string/qs_expand_indicator_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <!-- Date position -->
         <com.android.settings.fh.SystemSettingSwitchPreference
@@ -169,7 +174,7 @@
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true"/>
 
-    <com.android.settings.fh.SecureSettingSwitchPreference
+    <com.android.settings.fh.SystemSettingSwitchPreference
         android:key="qs_show_brightness_icon"
         android:title="@string/brightness_icon_title"
         android:summary="@string/brightness_icon_summary"
@@ -207,12 +212,6 @@
         android:entries="@array/qs_tile_animation_interpolator_entries"
         android:entryValues="@array/qs_tile_animation_interpolator_values"
         android:persistent="false" />
-
-    <com.android.settings.fh.SystemSettingSwitchPreference
-        android:key="qs_fancy_animation"
-        android:title="@string/qs_fancy_animation_title"
-        android:summary="@string/qs_fancy_animation_summary"
-        android:defaultValue="false" />
 
     </PreferenceCategory>
 

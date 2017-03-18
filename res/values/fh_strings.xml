@@ -86,7 +86,7 @@
     <!-- Maintainers -->
     <string name="maintainers">Official FireHound Maintainers</string>
     <string name="yureka">YU YUREKA (tomato)</string>
-    <string name="yureka_summary">Hriday Sharma</string>
+    <string name="yureka_summary">Rakesh Batra</string>
     <string name="yuphoria">YU YUPHORIA (lettuce)</string>
     <string name="yuphoria_summary">Pranay Narang</string>
     <string name="yunique">YU YUNIQUE (jalebi)</string>
@@ -94,7 +94,7 @@
     <string name="op1">One Plus One (bacon)</string>
     <string name="op1_summary">PrathameshMS</string>
     <string name="op2">One Plus Two (oneplus2)</string>
-    <string name="op2_summary">Luy Nagda (Devil2709)</string>
+    <string name="op2_summary">Bilal (oldswag)</string>
     <string name="op3">One Plus Three (oneplus3)</string>
     <string name="op3_summary">PrathameshMS</string>
     <string name="note3">Redmi Note 3 (kenzo)</string>
@@ -652,13 +652,13 @@
 
     <!-- QS Header Icons -->
     <string name="qs_settings_icon_title">Settings Shortcut</string>
-    <string name="qs_settings_icon_summary">Disable the settings shortcut in the header</string>
+    <string name="qs_settings_icon_summary">Enable the settings shortcut in the header</string>
     <string name="qs_edit_title">Edit Icon</string>
-    <string name="qs_edit_summary">Disable the tile edit icon in the header</string>
+    <string name="qs_edit_summary">Enable the tile edit icon in the header</string>
     <string name="qs_multiuser_switch_title">Multi-user Switch</string>
-    <string name="qs_multiuser_switch_summary">Disable the multi-user switch in the header</string>
+    <string name="qs_multiuser_switch_summary">Enable the multi-user switch in the header</string>
     <string name="qs_expand_indicator_title">Expand Indicator</string>
-    <string name="qs_expand_indicator_summary">Disable the expand indicator in the header</string>
+    <string name="qs_expand_indicator_summary">Enable the expand indicator in the header</string>
 
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset Stats</string>
