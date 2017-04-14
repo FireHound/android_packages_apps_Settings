@@ -121,6 +121,9 @@
     <string name="samsung">Samsung</string>
     <string name="moto">Moto</string>
     <string name="lg">LG</string>
+    <string name="lenovo">Lenovo</string>
+    <string name="lenovo_k4">Lenovo Vibe K4 Note</string>
+    <string name="lenovo_k4_summary">Mohan Cm</string>
 
    <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
