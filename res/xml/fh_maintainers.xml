@@ -144,4 +144,16 @@
 
 	</PreferenceCategory>
 
+        <PreferenceCategory
+        android:key="Lenovo"
+        android:title="@string/lenovo">
+
+        <!-- Lenovo -->
+        <Preference 
+        android:title="@string/lenovo_k4"
+        android:summary="@string/lenovo_k4_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>
