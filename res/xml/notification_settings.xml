@@ -119,7 +119,7 @@
             android:title="@string/qs_misc">
 
         <!-- Haptic feedback -->
-        <com.android.settings.fh.SecureSettingSwitchPreference
+        <com.android.settings.fh.SystemSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
@@ -127,10 +127,10 @@
 
         <!-- QS disabled on lockscreen -->
         <com.android.settings.fh.SecureSettingSwitchPreference
-        android:key="lockscreen_qs_disabled"
+        android:key="lockscreen_enable_qs"
         android:title="@string/lockscreen_qs_disabled_title"
         android:summary="@string/lockscreen_qs_disabled_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
         <!-- Settings icon -->
         <com.android.settings.fh.SystemSettingSwitchPreference
