@@ -67,8 +67,8 @@
 	</PreferenceCategory>
 
 	<PreferenceCategory
-        android:key="XIAOMI"
-        android:title="@string/xiaomi">
+        android:key="REDMI"
+        android:title="@string/redmi">
 
 	<!-- Redmi Note 3 -->
 	<Preference 
