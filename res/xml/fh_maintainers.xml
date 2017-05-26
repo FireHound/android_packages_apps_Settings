@@ -70,7 +70,7 @@
         android:key="REDMI"
         android:title="@string/redmi">
 
-	<!-- Redmi Note 3 -->
+	<!-- Redmi note 3 -->
 	<Preference 
         android:title="@string/note3"
         android:summary="@string/note3_summary"
