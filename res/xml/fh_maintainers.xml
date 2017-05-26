@@ -81,6 +81,12 @@
         android:title="@string/dior"
         android:summary="@string/dior_summary"
         android:icon="@drawable/ic_settings_multiuser" />
+		
+	<!-- Redmi Note 4 -->
+	<Preference 
+        android:title="@string/note4"
+        android:summary="@string/note4_summary"
+        android:icon="@drawable/ic_settings_multiuser" />	
 	
 	</PreferenceCategory>
 
