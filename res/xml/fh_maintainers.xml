@@ -81,6 +81,12 @@
         android:title="@string/dior"
         android:summary="@string/dior_summary"
         android:icon="@drawable/ic_settings_multiuser" />
+		
+	<!-- Redmi Note 4 -->
+	<Preference 
+        android:title="@string/note4"
+        android:summary="@string/note4_summary"
+        android:icon="@drawable/ic_settings_multiuser" />	
 	
 	</PreferenceCategory>
 
@@ -156,4 +162,22 @@
 
         </PreferenceCategory>
 
+	<PreferenceCategory
+        android:key="Coolpad"
+        android:title="@string/coolpad">
+
+        <!-- Coolpad Note 3 -->
+        <Preference 
+        android:title="@string/coolpad_note3"
+        android:summary="@string/coolpad_note3_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+		
+	<!-- Coolpad Note 3 Lite -->
+        <Preference 
+        android:title="@string/coolpad_note3_lite"
+        android:summary="@string/coolpad_note3_lite_summary"
+        android:icon="@drawable/ic_settings_multiuser" />	
+
+        </PreferenceCategory>
+	
 </PreferenceScreen>
