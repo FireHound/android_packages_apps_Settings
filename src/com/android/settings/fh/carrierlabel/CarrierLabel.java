@@ -183,7 +183,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements
 
             // Set an EditText view to get user input
             final EditText input = new EditText(getActivity());
-            input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
+            input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "#GameOfRoms" : mCustomCarrierLabelText);
             input.setSelection(input.getText().length());
             alert.setView(input);
             alert.setPositiveButton(getString(android.R.string.ok),
