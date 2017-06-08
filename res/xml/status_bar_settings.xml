@@ -4,9 +4,7 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,10 +17,6 @@
     xmlns:lineage="http://schemas.android.com/apk/res/cyanogenmod.platform"
     android:title="@string/status_bar_title">
 
-    <PreferenceCategory
-        android:key="status_bar_icons"
-        android:title="Status Bar Icon Control">
-
 	<PreferenceScreen
         android:key="status_bar_icons"
         android:title="@string/status_bar_icons_title"
@@ -34,12 +28,6 @@
             <extra android:name="tuner" android:value="status_bar" />
         </intent>
     </PreferenceScreen>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="status_bar_clock"
-        android:title="Clock Customizations">
 
     <ListPreference
         android:key="status_bar_clock"
@@ -64,12 +52,7 @@
         android:entries="@array/status_bar_am_pm_entries"
         android:entryValues="@array/status_bar_am_pm_values"
         android:defaultValue="2" />
-    </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="status_bar_date"
-        android:title="Date Customizations">
- 
     <ListPreference
         android:key="status_bar_date"
         android:title="@string/status_bar_date_title"
@@ -90,11 +73,6 @@
         android:dialogTitle="@string/status_bar_date_format_title"
         android:entries="@array/status_bar_date_format_entries_values"
         android:entryValues="@array/status_bar_date_format_entries_values" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="status_bar_battery"
-        android:title="Battery Customizations">
 
     <ListPreference
         android:key="status_bar_battery_style"
@@ -115,6 +93,13 @@
         android:defaultValue="0" />
 
     <ListPreference
+        android:key="qs_quick_pulldown"
+        android:title="@string/status_bar_quick_qs_pulldown_title"
+        android:entries="@array/status_bar_quick_qs_pulldown_entries"
+        android:entryValues="@array/status_bar_quick_qs_pulldown_values"
+        android:defaultValue="1" />
+
+    <ListPreference
         android:key="text_charging_symbol"
         android:title="@string/text_charging_symbol_title"
         android:summary="%s"
@@ -122,18 +107,6 @@
         android:entries="@array/text_charging_symbol_entries"
         android:entryValues="@array/text_charging_symbol_values"
         android:defaultValue="0" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="status_bar_pulldown"
-        android:title="Advanced">
-
-    <ListPreference
-        android:key="qs_quick_pulldown"
-        android:title="@string/status_bar_quick_qs_pulldown_title"
-        android:entries="@array/status_bar_quick_qs_pulldown_entries"
-        android:entryValues="@array/status_bar_quick_qs_pulldown_values"
-        android:defaultValue="1" />
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
             android:key="qs_show_brightness_slider"
@@ -160,31 +133,6 @@
         android:title="@string/status_bar_notif_count_title"
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="true" />
- 
-    <com.android.settings.fh.SecureSettingSwitchPreference
-        android:key="lockscreen_hide_status_bar"
-        android:title="@string/lockscreen_hide_status_bar_title"
-        android:summary="@string/lockscreen_hide_status_bar_summary"
-        android:defaultValue="true" />
-
-    <com.android.settings.fh.SystemSettingSwitchPreference
-        android:key="qs_fancy_animation"
-        android:title="@string/qs_fancy_animation_title"
-        android:summary="@string/qs_fancy_animation_summary"
-        android:defaultValue="true" />
-
-    <!-- Double tap to sleep -->
-    <cyanogenmod.preference.CMSystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/status_bar_double_tap_to_sleep_title"
-        android:summary="@string/status_bar_double_tap_to_sleep_summary"
-        android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="status_bar_pulldown"
-        android:title="StatusBar Indicators">    
 
     <com.android.settings.fh.SystemSettingSwitchPreference
         android:key="roaming_indicator_icon"
@@ -198,6 +146,19 @@
         android:summary="@string/data_wifi_activity_arrows_summary"
         android:defaultValue="false"/>
  
+    <com.android.settings.fh.SecureSettingSwitchPreference
+        android:key="lockscreen_hide_status_bar"
+        android:title="@string/lockscreen_hide_status_bar_title"
+        android:summary="@string/lockscreen_hide_status_bar_summary"
+        android:defaultValue="true" />
+
+    <!-- Double tap to sleep -->
+    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/status_bar_double_tap_to_sleep_title"
+        android:summary="@string/status_bar_double_tap_to_sleep_summary"
+        android:defaultValue="true" />
+
 	<!-- Hide SU Indicator -->
 	<com.android.settings.fh.SystemSettingSwitchPreference
         android:key="show_su_indicator"
@@ -206,11 +167,11 @@
         android:summaryOff="@string/su_indicator_summary_off"
         android:defaultValue="true" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="battery_bar"
-        android:title="@string/battery_bar">
+        <com.android.settings.fh.SystemSettingSwitchPreference
+        android:key="qs_fancy_animation"
+        android:title="@string/qs_fancy_animation_title"
+        android:summary="@string/qs_fancy_animation_summary"
+        android:defaultValue="true" />
 
 	<!-- Battery Bar -->
 	<PreferenceScreen
@@ -218,11 +179,6 @@
         android:title="@string/battery_bar"
 	android:summary="@string/battery_bar_summary"
         android:fragment="com.android.settings.fh.BatteryBar" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="network_traffic"
-        android:title="@string/network_traffic_title">
 
 	<!-- Network Traffic -->
 	<PreferenceScreen
@@ -230,11 +186,6 @@
         android:fragment="com.android.settings.fh.NetworkTraffic"
 	android:summary="@string/network_traffic_summary"
 	android:title="@string/network_traffic_title" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="fh_carrier"
-        android:title="@string/carrier_title">
 
         <!-- Carrier Label -->
         <PreferenceScreen
@@ -242,6 +193,12 @@
         android:fragment="com.android.settings.fh.carrierlabel.CarrierLabel"
         android:title="@string/carrier_title"
         android:summary="@string/carrier_summary" />
-    </PreferenceCategory>
+
+        <!-- Ticker -->
+        <PreferenceScreen
+            android:key="ticker"
+            android:title="@string/ticker_screen_title"
+            android:summary="@string/ticker_screen_summary"
+            android:fragment="com.android.settings.fh.Ticker" />
 
 </PreferenceScreen>
