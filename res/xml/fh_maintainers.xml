@@ -159,6 +159,11 @@
         android:title="@string/lenovo_k4"
         android:summary="@string/lenovo_k4_summary"
         android:icon="@drawable/ic_settings_multiuser" />
+	
+	<Preference
+	android:title="@string/lenovo_k3_note" 
+	android:summary="@string/lenovo_k3_note_summary"
+	android:icon="@drawable/ic_settings_multiuser" />
 
         </PreferenceCategory>
 
