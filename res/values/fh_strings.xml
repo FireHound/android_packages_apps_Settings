@@ -124,6 +124,8 @@
     <string name="lenovo">Lenovo</string>
     <string name="lenovo_k4">Lenovo Vibe K4 Note</string>
     <string name="lenovo_k4_summary">Mohan Cm</string>
+    <string name="lenovo_k3_note">Lenovo K3 Note</string>
+    <string name="lenovo_k3_note_summary">Sandeep Sethi(adev79)</string>
     <string name="coolpad">Coolpad</string>
     <string name="coolpad_note3">Coolpad Note 3</string> 
     <string name="coolpad_note3_summary">Mohan CM</string>
