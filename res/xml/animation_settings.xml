@@ -18,6 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/animation_settings_title">
 
+    <PreferenceCategory
+        android:key="toast_animations"
+        android:title="Toast Animation Settings">
+
     <!-- Toast icon switch -->
     <com.android.settings.fh.SystemSettingSwitchPreference
             android:key="toast_icon"
@@ -33,6 +37,12 @@
         android:entryValues="@array/toast_animation_values"
         android:persistent="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="power_menu_animations"
+        android:title="Power Menu">
+
     <!-- Power Menu Animations -->
     <ListPreference
         android:key="power_menu_animation"
@@ -41,5 +51,33 @@
         android:entries="@array/power_menu_animation_entries"
         android:entryValues="@array/power_menu_animation_values"
         android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/qs_animations">
+
+    <ListPreference
+        android:key="qs_tile_animation_style"
+        android:title="@string/qs_tile_animation_style_title"
+        android:entries="@array/qs_tile_animation_style_entries"
+        android:entryValues="@array/qs_tile_animation_style_values"
+        android:persistent="false" />
+
+    <ListPreference
+        android:key="qs_tile_animation_duration"
+        android:title="@string/qs_tile_animation_duration_title"
+        android:entries="@array/qs_tile_animation_duration_entries"
+        android:entryValues="@array/qs_tile_animation_duration_values"
+        android:persistent="false" />
+
+    <ListPreference
+        android:key="qs_tile_animation_interpolator"
+        android:title="@string/qs_tile_animation_interpolator_title"
+        android:entries="@array/qs_tile_animation_interpolator_entries"
+        android:entryValues="@array/qs_tile_animation_interpolator_values"
+        android:persistent="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
