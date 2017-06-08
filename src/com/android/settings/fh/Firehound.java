@@ -66,7 +66,7 @@ public class Firehound extends SettingsPreferenceFragment {
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/communities/114615598909452601377");
 	} else if (preference == mDonationUrl) {
-	    launchUrl("https://www.paypal.me/AdamLapinski");
+	    launchUrl("https://paypal.me/pms22");
         } else if (preference == mDeveloperUrl) {
             launchUrl("https://github.com/PMS22");
         } else if (preference == mWebsiteUrl) {
