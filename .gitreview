@@ -1,0 +1,5 @@
+[gerrit]
+host=review.firehound.me
+port=29418
+project=android_packages_apps_Settings.git
+defaultbranch=7.1
