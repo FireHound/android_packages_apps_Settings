@@ -893,4 +893,11 @@
     <string name="power_menu_animation_translucent_top">Translucent (top)</string>
     <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
 
+    <!-- Delay -->
+    <string name="smartbar_longpress_delay_title">Button longpress delay</string>
+    <string name="smartbar_longpress_delay_summary">Set how long the system will wait before triggering a longpress action</string>
+    <string name="smartbar_longpress_delay_default">Default Delay (fast)</string>
+    <string name="smartbar_longpress_delay_normal">Normal Delay</string>
+    <string name="smartbar_longpress_delay_long">Long delay</string>
+
 </resources>
