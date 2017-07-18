@@ -130,16 +130,22 @@
         android:summary="@string/titan_summary"
         android:icon="@drawable/ic_settings_multiuser" />
 
-        <!-- Moto condor -->
-        <Preference 
+    <!-- Moto condor -->
+    <Preference 
         android:title="@string/condor"
         android:summary="@string/condor_summary"
         android:icon="@drawable/ic_settings_multiuser" />
 
-        <!-- Moto condor -->
-        <Preference 
+    <!-- Moto potter -->
+    <Preference 
         android:title="@string/potter"
         android:summary="@string/potter_summary"
+        android:icon="@drawable/ic_settings_multiuser" />
+        
+    <!-- Moto athene -->
+    <Preference
+        android:title="@string/athene"
+        android:summary="@string/athene_summary"
         android:icon="@drawable/ic_settings_multiuser" />
 
 	</PreferenceCategory>
