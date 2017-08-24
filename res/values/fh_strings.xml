@@ -156,4 +156,7 @@
     <string name="fh_ota_title">Updates</string>
     <string name="fh_ota_summary">Check for official FireHound updates</string>
 
+    <!-- FireHound version in About phone -->
+    <string name="rom_version_title">FireHound Version</string>
+
 </resources>
