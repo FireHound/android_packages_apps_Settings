@@ -56,6 +56,14 @@
         settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
     <Preference
+        android:key="top_level_fh_settings"
+        android:title="@string/fh_ashes_title"
+        android:summary="@string/fh_ashes_summary"
+        android:icon="@drawable/ic_homepage_ashes"
+        android:order="-85"
+        android:fragment="com.fh.settings.FhAshes"/>
+
+    <Preference
         android:key="top_level_display"
         android:title="@string/display_settings"
         android:summary="@string/summary_placeholder"
