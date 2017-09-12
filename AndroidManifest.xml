@@ -3316,6 +3316,8 @@
                        android:resource="@string/fh_ashes_summary"/>
         </activity>
 
+        <activity android:name="com.nitrogen.settings.fragments.HAFRAppListActivity" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
