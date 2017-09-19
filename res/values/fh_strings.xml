@@ -19,4 +19,7 @@
     <string name="fh_ashes_title">Ashes</string>
     <string name="fh_ashes_summary">Light your weed here🚬</string>
 
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Desktop backup password</string>
+
 </resources>
