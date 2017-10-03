@@ -22,4 +22,7 @@
     <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
     <string name="local_backup_password_title">Desktop backup password</string>
 
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
 </resources>
