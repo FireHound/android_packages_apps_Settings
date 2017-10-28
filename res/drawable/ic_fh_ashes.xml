@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 FireHound ROMs
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:api24="http://schemas.android.com/apk/res/android" 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:height="24dp"
+        android:width="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24"
+        android:tint="?android:attr/colorControlNormal">
+    <group
+        android:translateX="0.315666"
+        android:translateY="-0.43769">
+        <path
+            android:pathData="M8.553 20.559c0 0 -3.688 -0.995 -3.688 -4.822 0 -4.023 1.47 -3.937 2.035 -6.385 0.009 -0.038 0.022 -0.183 0.024 -0.193 0.026 -0.128 0.685 1.345 0.518 2.936 -0.006 0.051 2.791 -3.027 2.514 -7.851 -0.008 -0.142 3.661 2.327 4.923 6.533 0.048 0.158 0.7 -1.033 0.349 -2.791 -0.016 -0.079 7.864 7.448 -0.965 12.647 -0.114 0.067 1.955 -5.995 -2.382 -9.062 -0.029 -0.021 -0.056 -0.045 -0.085 -0.067 -0.065 -0.051 0.567 2.248 -1.382 4.287 -0.029 0.031 0.164 -2.074 -0.345 -2.575 -0.002 -0.001 0.059 0.248 0.055 0.319 0 0.003 0 0.006 0 0.009 -0.009 0.154 -0.01 0.855 -1.425 3.014 -0.565 0.862 -1.132 1.955 -0.146 4.001z"
+            android:fillType="evenOdd"
+            android:fillColor="#000000"
+            android:strokeLineJoin="round"
+            android:strokeMiterLimit="1.41421" />
+        <group
+            android:translateX="6.56516"
+            android:translateY="-1.86302">
+            <path
+                android:pathData="M4.512 18.452c-0.263 -0.053 -0.534 -0.053 -0.797 0L3.633 18.909C3.402 18.98 3.191 19.102 3.014 19.266L2.577 19.108C2.4 19.31 2.264 19.545 2.178 19.799l0.355 0.299c-0.053 0.236 -0.053 0.48 0 0.716l-0.355 0.299c0.086 0.254 0.222 0.489 0.399 0.691l0.437 -0.158c0.177 0.164 0.388 0.286 0.619 0.358l0.082 0.457c0.263 0.052 0.534 0.052 0.797 0L4.594 22.004C4.825 21.932 5.036 21.81 5.213 21.646L5.65 21.804C5.827 21.602 5.963 21.367 6.049 21.113L5.694 20.814c0.053 -0.236 0.053 -0.48 0 -0.716L6.049 19.799C5.963 19.545 5.827 19.31 5.65 19.108L5.213 19.266C5.036 19.102 4.825 18.98 4.594 18.909L4.512 18.452Zm-0.398 1.377c0.346 0 0.627 0.281 0.627 0.627 0 0.346 -0.281 0.628 -0.627 0.628 -0.347 0 -0.628 -0.282 -0.628 -0.628 0 -0.346 0.281 -0.627 0.628 -0.627z"
+                android:fillType="evenOdd"
+                android:fillColor="#000000"
+                android:strokeLineJoin="round"
+                android:strokeMiterLimit="1.41421" />
+        </group>
+        <group
+            android:rotation="-10.65453"
+            android:scaleX="0.6516638"
+            android:scaleY="0.6516638"
+            android:translateX="7.62384"
+            android:translateY="3.11537">
+            <path
+                android:pathData="M4.512 18.452c-0.263 -0.053 -0.534 -0.053 -0.797 0L3.633 18.909C3.402 18.98 3.191 19.102 3.014 19.266L2.577 19.108C2.4 19.31 2.264 19.545 2.178 19.799l0.355 0.299c-0.053 0.236 -0.053 0.48 0 0.716l-0.355 0.299c0.086 0.254 0.222 0.489 0.399 0.691l0.437 -0.158c0.177 0.164 0.388 0.286 0.619 0.358l0.082 0.457c0.263 0.052 0.534 0.052 0.797 0L4.594 22.004C4.825 21.932 5.036 21.81 5.213 21.646L5.65 21.804C5.827 21.602 5.963 21.367 6.049 21.113L5.694 20.814c0.053 -0.236 0.053 -0.48 0 -0.716L6.049 19.799C5.963 19.545 5.827 19.31 5.65 19.108L5.213 19.266C5.036 19.102 4.825 18.98 4.594 18.909L4.512 18.452Zm-0.398 1.377c0.346 0 0.627 0.281 0.627 0.627 0 0.346 -0.281 0.628 -0.627 0.628 -0.347 0 -0.628 -0.282 -0.628 -0.628 0 -0.346 0.281 -0.627 0.628 -0.627z"
+                android:fillType="evenOdd"
+                android:fillColor="#000000"
+                android:strokeLineJoin="round"
+                android:strokeMiterLimit="1.41421" />
+        </group>
+    </group>
+</vector>
