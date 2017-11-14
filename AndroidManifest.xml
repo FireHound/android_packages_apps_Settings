@@ -88,6 +88,8 @@
     <uses-permission android:name="android.permission.READ_PRINT_SERVICES" />
     <uses-permission android:name="android.permission.NETWORK_SETTINGS" />
 
+    <uses-permission android:name="android.permission.NAVIGATION_EDITOR" />
+
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
@@ -3314,7 +3316,93 @@
                        android:resource="@string/fh_ashes_summary"/>
         </activity>
 
-        <activity android:name="com.nitrogen.settings.fragments.HAFRAppListActivity" />
+        <activity android:name="com.fh.settings.fragments.recents.HAFRAppListActivity" />
+
+        <!-- Global navbar settings -->
+        <activity android:name="Settings$NavigationSettingsActivity"
+                android:label="@string/bottom_nav_navigation_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.fh.settings.fragments.navbar.dui.DUI" />
+        </activity>
+
+        <!-- Smartbar settings -->
+        <activity android:name="Settings$SmartbarSettingsActivity"
+                android:label="@string/smartbar_settings_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.fh.settings.fragments.navbar.dui.SmartbarSettings" />
+        </activity>
+
+        <!-- Fling settings -->
+        <activity android:name="Settings$FlingSettingsActivity"
+                android:label="@string/fling_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.fh.settings.fragments.navbar.dui.FlingSettings" />
+        </activity>
+
+        <!-- Pulse settings -->
+        <activity android:name="Settings$PulseSettingsActivity"
+                android:label="@string/pulse_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.fh.settings.fragments.navbar.dui.PulseSettings" />
+        </activity>
+
+        <!-- System action picker -->
+        <activity android:name="com.fh.settings.preferences.ActionPickerDialogActivity"
+                android:theme="@style/Theme.SmartBar.Dialog"
+                android:label="@string/choose_action_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack picker -->
+        <activity android:name="com.fh.settings.preferences.IconPickerActivity"
+                android:theme="@style/Theme.SmartBar.Dialog"
+                android:label="@string/icon_pack_picker_dialog_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon picker proxy for gallery -->
+        <activity android:name="com.fh.settings.preferences.IconPickerGallery"
+            android:theme="@style/Theme.SmartBar.Dialog"
+            android:label="@string/icon_pack_picker_dialog_title"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Icon pack grid -->
+        <activity android:name="com.fh.settings.preferences.IconPackGridActivity"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
