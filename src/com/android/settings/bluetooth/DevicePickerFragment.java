@@ -69,9 +69,7 @@ public final class DevicePickerFragment extends DeviceListPreferenceFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-                .setIcon(com.android.internal.R.drawable.ic_menu_refresh)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-        super.onCreateOptionsMenu(menu, inflater);
+       super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
