@@ -51,8 +51,6 @@ import java.util.List;
 @SearchIndexable
 public class FirmwareVersionSettings extends DashboardFragment {
 
-    private BuildNumberPreferenceController mBuildNumberPreferenceController;
-
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.firmware_version;
@@ -62,8 +60,6 @@ public class FirmwareVersionSettings extends DashboardFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         use(ImeiInfoPreferenceController.class).setHost(this /* parent */);
-        mBuildNumberPreferenceController = use(BuildNumberPreferenceController.class);
-        mBuildNumberPreferenceController.setHost(this /* parent */);
     }
 
     @Override
@@ -90,9 +86,6 @@ public class FirmwareVersionSettings extends DashboardFragment {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (mBuildNumberPreferenceController.onActivityResult(requestCode, resultCode, data)) {
-            return;
-        }
         super.onActivityResult(requestCode, resultCode, data);
     }
 

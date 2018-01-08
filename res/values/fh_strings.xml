@@ -18,7 +18,8 @@
 
     <!-- FireHound Settings -->
     <string name="fh_ashes_title">Ashes</string>
-    <string name="fh_ashes_summary">Light your weed here🚬</string>
+    <string name="fh_ashes_summary">Light your weed here 🚬</string>
+    <string name="rom_version_title">FireHound version</string>
 
     <!-- Battery temp -->
     <string name="battery_temp_title">Battery temperature</string>
