@@ -26,6 +26,15 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
+        <!-- FireHound OTA -->
+        <Preference
+            android:key="fh_ota"
+            android:title="@string/fh_ota_title"
+            android:summary="@string/fh_ota_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="org.firehound.essentials"
+                android:targetClass="org.firehound.essentials.SplashActivity" />
+
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"
