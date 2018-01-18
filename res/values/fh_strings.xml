@@ -152,4 +152,8 @@
     <string name="system_theme_style_light">Light style</string>
     <string name="system_theme_style_dark">Dark style</string>
 
+    <!-- FireHound OTA -->
+    <string name="fh_ota_title">Updates</string>
+    <string name="fh_ota_summary">Check for official FireHound updates</string>
+
 </resources>

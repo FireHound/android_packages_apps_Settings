@@ -158,6 +158,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private int mInitialTitleResId;
 
     private static final String ROOT_MANAGER_FRAGMENT = "com.android.settings.RootManagement";
+    private static final String FH_OTA_FRAGMENT = "com.android.settings.fh.Ota";
 
     private boolean mRootSupport;
     private String mRootPackage;
@@ -729,6 +730,16 @@ public class SettingsActivity extends SettingsDrawerActivity
                 return null;
             }
         }
+        if (FH_OTA_FRAGMENT.equals(fragmentName)) {
+            if (isEssentialsAvailable()) {
+                Intent openEssentials = new Intent();
+                openEssentials.setClassName("org.firehound.essentials", "org.firehound.essentials.SplashActivity");
+                openEssentials.putExtra("open_fragment", 2);
+                startActivity(openEssentials);
+                finish();
+                return null;
+            }
+        }
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -866,6 +877,11 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.RootManagementActivity.class.getName()),
                 isRootAvailable(), isAdmin);
 
+        // FireHound OTA
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.FhOtaActivity.class.getName()),
+                isEssentialsAvailable(), isAdmin);
+
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
             // When on restricted users, disable all extra categories (but only the settings ones).
@@ -932,6 +948,14 @@ public class SettingsActivity extends SettingsDrawerActivity
             }
         }
         return false;
+    }
+
+    private boolean isEssentialsAvailable(){
+        try {
+            return (getPackageManager().getPackageInfo("org.firehound.essentials", 0).versionCode > 0);
+        } catch(NameNotFoundException e){
+           return false;
+        }
     }
 
     /**
