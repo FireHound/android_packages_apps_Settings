@@ -4,7 +4,8 @@
     android:viewportWidth="5410"
     android:viewportHeight="5158"
     android:width="28dp"
-    android:height="28dp">
+    android:height="28dp"
+    android:tint="?android:attr/colorControlNormal"
     <group
         android:scaleX="0.1"
         android:scaleY="-0.1"
