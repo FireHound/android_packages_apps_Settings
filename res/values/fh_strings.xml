@@ -147,12 +147,6 @@
     <string name="app_ops_answer_phone_calls">answer calls</string>
     <string name="app_ops_boot_completed">auto start</string>
 
-    <string name="system_theme_style_title">System theme style</string>
-    <string name="system_theme_style_auto">Wallpaper based</string>
-    <string name="system_theme_style_light">Light style</string>
-    <string name="system_theme_style_dark">Dark style</string>
-    <string name="theme_confirmation">Theme Applied!</string>
-
     <!-- FireHound OTA -->
     <string name="fh_ota_title">Updates</string>
     <string name="fh_ota_summary">Check for official FireHound updates</string>
