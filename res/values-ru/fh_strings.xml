@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- FireHound Settings -->
-  <string name="fh_ashes_title">Пепел</string>
+  <string name="fh_ashes_title">Расширенные настройки</string>
   <string name="fh_ashes_summary">Зажгите свой сорняк здесь</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пароль резервного копирования</string>
@@ -141,5 +141,5 @@
   <!-- FireHound OTA -->
   <string name="fh_ota_title">Обновление</string>
   <string name="fh_ota_summary">Проверить наличие официальных обновлений FireHound</string>
-  <string name="rom_version_title">FireHound version</string>
+  <string name="rom_version_title">FireHound версия</string>
 </resources>
