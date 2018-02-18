@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- FireHound Settings -->
   <string name="fh_ashes_title">Расширенные настройки</string>
-  <string name="fh_ashes_summary">Зажгите свой сорняк здесь</string>
+  <string name="fh_ashes_summary">Попробуйте что-то новое</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пароль резервного копирования</string>
   <!-- Density category -->
@@ -133,11 +133,6 @@
   <string name="app_ops_app_start_foreground">Запускаться на переднем плане</string>
   <string name="app_ops_answer_phone_calls">Ответить на звонок</string>
   <string name="app_ops_boot_completed">Автозапуск</string>
-  <string name="system_theme_style_title">Стиль темы системы</string>
-  <string name="system_theme_style_auto">На основе обоев рабочего стола</string>
-  <string name="system_theme_style_light">Светлый стиль</string>
-  <string name="system_theme_style_dark">Тёмный стиль</string>
-  <string name="theme_confirmation">Тема применена!</string>
   <!-- FireHound OTA -->
   <string name="fh_ota_title">Обновление</string>
   <string name="fh_ota_summary">Проверить наличие официальных обновлений FireHound</string>
