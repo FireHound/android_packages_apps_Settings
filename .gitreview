@@ -1,5 +1,0 @@
-[gerrit]
-host=review.firehound.me
-port=29418
-project=FireHound/android_packages_apps_Settings
-defaultbranch=o8.1
