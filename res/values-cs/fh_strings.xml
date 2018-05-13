@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- FireHound Settings -->
-  <string name="fh_ashes_title">Ashes</string>
-  <string name="fh_ashes_summary">Light your weed here🚬</string>
+  <string name="fh_ashes_title">Popel</string>
+  <string name="fh_ashes_summary">Zde si zapalte trávu🚬</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
-  <string name="local_backup_password_title">Desktop backup password</string>
+  <string name="local_backup_password_title">Heslo pro zálohy v PC</string>
   <!-- Density category -->
   <string name="density_category">Možnosti hustoty zobrazení</string>
   <!-- Unlink notification volume -->
@@ -47,13 +47,13 @@
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
   <string name="supersu_title">SuperSU</string>
   <!-- Ambient category -->
-  <string name="doze_category">Ambient options</string>
+  <string name="doze_category">Možnosti Ambientního displeje</string>
   <!-- Reset battery stats -->
   <string name="ok">Potvrdit</string>
   <string name="menu_stats_reset">Vynulovat statistiky</string>
   <string name="reset_stats_msg">Chystáte se obnovit historii statistiky baterie</string>
   <!-- Vendor version -->
-  <string name="vendor_version">Vendor version</string>
+  <string name="vendor_version">Verze dodavatele</string>
   <string name="vendor_version_default">Nezjištěno</string>
   <!-- Dev Options Enabled by Default -->
   <string name="show_dev_already_enabled">Není třeba, možnosti vývojáře jsou ve výchozím nastavení povolena.</string>
@@ -62,11 +62,11 @@
   <string name="app_ops_cat_location">Poloha</string>
   <string name="app_ops_cat_personal">Osobní</string>
   <string name="app_ops_cat_messaging">Zasílání zpráv</string>
-  <string name="app_ops_cat_media">Media</string>
+  <string name="app_ops_cat_media">Média</string>
   <string name="app_ops_cat_device">Zařízení</string>
-  <string name="app_ops_cat_bootup">Bootup</string>
+  <string name="app_ops_cat_bootup">Při startu</string>
   <!-- [CHAR LIMIT=NONE] App ops labels -->
-  <string name="app_ops_access_camera">camera</string>
+  <string name="app_ops_access_camera">fotoaparát</string>
   <string name="app_ops_access_location">poloha</string>
   <string name="app_ops_access_notifications">notifikace</string>
   <string name="app_ops_activate_vpn">Síť VPN</string>
@@ -75,9 +75,9 @@
   <string name="app_ops_delete_contacts">smazat kontakty</string>
   <string name="app_ops_delete_mms">smazat MMS</string>
   <string name="app_ops_delete_sms">smazat SMS</string>
-  <string name="app_ops_draw_on_top">draw on top</string>
+  <string name="app_ops_draw_on_top">vykreslovat do nejvyšší vrstvy</string>
   <string name="app_ops_get_usage_stats">získat statistiky používání</string>
-  <string name="app_ops_keep_device_awake">keep awake</string>
+  <string name="app_ops_keep_device_awake">udržet probuzené</string>
   <string name="app_ops_make_phone_call">vytočit hovor</string>
   <string name="app_ops_modify_calendar">aktualizovat kalendář</string>
   <string name="app_ops_modify_call_log">aktualizovat seznam hovorů</string>
@@ -86,8 +86,8 @@
   <string name="app_ops_modify_settings">aktualizovat nastavení</string>
   <string name="app_ops_mute_unmute_microphone">ztišit/zesílit mikrofon</string>
   <string name="app_ops_play_audio">přehrávat zvuk</string>
-  <string name="app_ops_post_notification">post notification</string>
-  <string name="app_ops_project_media">project media</string>
+  <string name="app_ops_post_notification">posílat upozornění</string>
+  <string name="app_ops_project_media">promítat média</string>
   <string name="app_ops_read_calendar">číst kalendář</string>
   <string name="app_ops_read_call_log">číst seznam hovorů</string>
   <string name="app_ops_read_clipboard">číst schránku</string>
@@ -100,10 +100,10 @@
   <string name="app_ops_send_sms">poslat SMS</string>
   <string name="app_ops_toast_window">toast zprávy</string>
   <string name="app_ops_use_alarm_volume">hlasitost budíku</string>
-  <string name="app_ops_use_audio_focus">audio focus</string>
+  <string name="app_ops_use_audio_focus">zvukové zdroje</string>
   <string name="app_ops_use_bluetooth_volume">Hlasitost Bluetooth</string>
   <string name="app_ops_use_master_volume">celková hlasitost</string>
-  <string name="app_ops_use_media_buttons">media buttons</string>
+  <string name="app_ops_use_media_buttons">tlačítka médií</string>
   <string name="app_ops_use_media_volume">hlasitost médií</string>
   <string name="app_ops_use_notification_volume">hlasitost notifikací</string>
   <string name="app_ops_use_ring_volume">hlasitost vyzvánění</string>
@@ -113,28 +113,28 @@
   <string name="app_ops_write_sms">vytvořit SMS</string>
   <string name="app_ops_use_fingerprint">otisk prstu</string>
   <string name="app_ops_add_voicemail">hlasová schránka</string>
-  <string name="app_ops_read_phone_state">access phone state</string>
+  <string name="app_ops_read_phone_state">přístup ke stavu telefonu</string>
   <string name="app_ops_scan_wifi">Prohledat WiFi sítě</string>
   <string name="app_ops_change_wallpaper">změnit tapetu</string>
-  <string name="app_ops_assist_structure">assist structure</string>
+  <string name="app_ops_assist_structure">asistenční struktura</string>
   <string name="app_ops_assist_screenshot">snímek obrazovky</string>
   <string name="app_ops_use_body_sensors">tělesné senzory</string>
-  <string name="app_ops_read_cell_broadcasts">cell broadcasts</string>
+  <string name="app_ops_read_cell_broadcasts">vysílání buněk</string>
   <string name="app_ops_mock_location">testovací lokace</string>
   <string name="app_ops_read_external_storage">číst ext. úložiště</string>
   <string name="app_ops_write_external_storage">psát do ext. úložiště</string>
   <string name="app_ops_turn_on_screen">zapnout obrazovku</string>
   <string name="app_ops_get_accounts">účty zařízení</string>
   <string name="app_ops_run_in_background">spustit na pozadí</string>
-  <string name="app_ops_accessibility_volume">accessibility volume</string>
+  <string name="app_ops_accessibility_volume">přístup k hlasitosti</string>
   <string name="app_ops_read_phone_numbers">číst tel. čísla</string>
   <string name="app_ops_request_install_packages">instalovat balíčky</string>
   <string name="app_ops_picture_in_picture">pip</string>
   <string name="app_ops_app_start_foreground">spustit v popředí</string>
-  <string name="app_ops_answer_phone_calls">answer calls</string>
-  <string name="app_ops_boot_completed">auto start</string>
+  <string name="app_ops_answer_phone_calls">odpovědět na hovor</string>
+  <string name="app_ops_boot_completed">spustit při startu</string>
   <!-- FireHound OTA -->
   <string name="fh_ota_title">Aktualizace</string>
-  <string name="fh_ota_summary">Check for official FireHound updates</string>
-  <string name="rom_version_title">FireHound version</string>
+  <string name="fh_ota_summary">Zkontrolovat oficiální aktualizace FireHound</string>
+  <string name="rom_version_title">Verze FireHound</string>
 </resources>
