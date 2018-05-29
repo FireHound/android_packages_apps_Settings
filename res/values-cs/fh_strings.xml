@@ -25,14 +25,14 @@
   <!-- Unlink notification volume -->
   <string name="link_volume_option_title">Spojit hlasitost vyzvánění a notifikací</string>
   <!-- Volume Steps -->
-  <string name="volume_steps_title">Stupně hlasitosti</string>
-  <string name="volume_steps_alarm_title">Stupně hlasitosti: Budík</string>
-  <string name="volume_steps_dtmf_title">Stupně hlasitosti: DTMF</string>
-  <string name="volume_steps_music_title">Stupně hlasitosti: Hudba</string>
-  <string name="volume_steps_notification_title">Stupně hlasitosti: Notifikace</string>
-  <string name="volume_steps_ring_title">Stupně hlasitosti: Vyzvánění</string>
-  <string name="volume_steps_system_title">Stupně hlasitosti: Systém</string>
-  <string name="volume_steps_voice_call_title">Stupně hlasitosti: Hlasové hovory</string>
+  <string name="volume_steps_title">Kroky hlasitosti</string>
+  <string name="volume_steps_alarm_title">Kroky hlasitosti: Budík</string>
+  <string name="volume_steps_dtmf_title">Kroky hlasitosti: DTMF</string>
+  <string name="volume_steps_music_title">Kroky hlasitosti: Hudba</string>
+  <string name="volume_steps_notification_title">Kroky hlasitosti: Oznámení</string>
+  <string name="volume_steps_ring_title">Kroky hlasitosti: Vyzvánění</string>
+  <string name="volume_steps_system_title">Kroky hlasitosti: Systémové zvuky</string>
+  <string name="volume_steps_voice_call_title">Kroky hlasitosti: Hlasové hovory</string>
   <string name="volume_steps_reset">Resetovat</string>
   <string name="volume_steps_60">60</string>
   <string name="volume_steps_45">45</string>
@@ -40,7 +40,6 @@
   <string name="volume_steps_15">15</string>
   <string name="volume_steps_7">7</string>
   <string name="volume_steps_5">5</string>
-  <string name="select_sim_for_sms">Vyberte SIM kartu pro SMS</string>
   <!-- Root Management -->
   <string name="rootmanagement_title">Správa přístupu root</string>
   <string name="rootmanagement_dashboard_summary">Spravovat root přístup</string>
@@ -68,7 +67,7 @@
   <!-- [CHAR LIMIT=NONE] App ops labels -->
   <string name="app_ops_access_camera">fotoaparát</string>
   <string name="app_ops_access_location">poloha</string>
-  <string name="app_ops_access_notifications">notifikace</string>
+  <string name="app_ops_access_notifications">oznámení</string>
   <string name="app_ops_activate_vpn">Síť VPN</string>
   <string name="app_ops_auto_start">automatické spuštění</string>
   <string name="app_ops_delete_call_log">smazat seznam hovorů</string>
@@ -78,7 +77,7 @@
   <string name="app_ops_draw_on_top">vykreslovat do nejvyšší vrstvy</string>
   <string name="app_ops_get_usage_stats">získat statistiky používání</string>
   <string name="app_ops_keep_device_awake">udržet probuzené</string>
-  <string name="app_ops_make_phone_call">vytočit hovor</string>
+  <string name="app_ops_make_phone_call">uskutečnit hovor</string>
   <string name="app_ops_modify_calendar">aktualizovat kalendář</string>
   <string name="app_ops_modify_call_log">aktualizovat seznam hovorů</string>
   <string name="app_ops_modify_clipboard">měnit schránku</string>
@@ -98,16 +97,16 @@
   <string name="app_ops_record_audio">nahrávat zvuk</string>
   <string name="app_ops_send_mms">poslat MMS</string>
   <string name="app_ops_send_sms">poslat SMS</string>
-  <string name="app_ops_toast_window">toast zprávy</string>
+  <string name="app_ops_toast_window">informační text</string>
   <string name="app_ops_use_alarm_volume">hlasitost budíku</string>
   <string name="app_ops_use_audio_focus">zvukové zdroje</string>
   <string name="app_ops_use_bluetooth_volume">Hlasitost Bluetooth</string>
-  <string name="app_ops_use_master_volume">celková hlasitost</string>
+  <string name="app_ops_use_master_volume">hlavní hlasitost</string>
   <string name="app_ops_use_media_buttons">tlačítka médií</string>
   <string name="app_ops_use_media_volume">hlasitost médií</string>
-  <string name="app_ops_use_notification_volume">hlasitost notifikací</string>
+  <string name="app_ops_use_notification_volume">hlasitost oznámení</string>
   <string name="app_ops_use_ring_volume">hlasitost vyzvánění</string>
-  <string name="app_ops_use_vibrate">haptická odezva</string>
+  <string name="app_ops_use_vibrate">hmatová odezva</string>
   <string name="app_ops_use_voice_volume">hlasitost hovoru</string>
   <string name="app_ops_write_mms">vytvořit MMS</string>
   <string name="app_ops_write_sms">vytvořit SMS</string>
@@ -120,7 +119,7 @@
   <string name="app_ops_assist_screenshot">snímek obrazovky</string>
   <string name="app_ops_use_body_sensors">tělesné senzory</string>
   <string name="app_ops_read_cell_broadcasts">vysílání buněk</string>
-  <string name="app_ops_mock_location">testovací lokace</string>
+  <string name="app_ops_mock_location">falšovat polohu</string>
   <string name="app_ops_read_external_storage">číst ext. úložiště</string>
   <string name="app_ops_write_external_storage">psát do ext. úložiště</string>
   <string name="app_ops_turn_on_screen">zapnout obrazovku</string>
