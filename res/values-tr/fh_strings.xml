@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 FireHound ROMs
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- FireHound Settings -->
+    <string name="fh_ashes_title">Eklentiler</string>
+    <string name="fh_ashes_summary">Sigaranı burada yak🚬</string>
+
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Masaüstü yedekleme şifresi</string>
+
+    <!-- Density category -->
+    <string name="density_category">Yoğunluk</string>
+
+    <!-- Unlink notification volume -->
+    <string name="link_volume_option_title">Zil sesi ve bildirim sesini bağla</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Ses seviyeleri</string>
+    <string name="volume_steps_alarm_title">Ses seviyesi: Alarm</string>
+    <string name="volume_steps_dtmf_title">Ses seviyesi: DTMF</string>
+    <string name="volume_steps_music_title">Ses seviyesi: Müzik</string>
+    <string name="volume_steps_notification_title">Ses seviyesi: Bildirim</string>
+    <string name="volume_steps_ring_title">Ses seviyesi: Zil sesi</string>
+    <string name="volume_steps_system_title">Ses seviyesi: Sistem</string>
+    <string name="volume_steps_voice_call_title">Ses seviyesi: Sesli arama</string>
+    <string name="volume_steps_reset">Sıfırla</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Root yönetimi</string>
+    <string name="rootmanagement_dashboard_summary">Root erişimini yönetin</string>
+
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Ambient category -->
+    <string name="doze_category">Ortam ekranı</string>
+
+    <!-- Reset battery stats -->
+    <string name="ok">Tamam</string>
+    <string name="menu_stats_reset">İstatistikleri sıfırla</string>
+    <string name="reset_stats_msg">Pil geçmişi istatistikleri sıfırlanacak</string>
+
+    <!-- Vendor version -->
+    <string name="vendor_version">Vendor sürümü</string>
+    <string name="vendor_version_default">Bilinmiyor</string>
+
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">Geliştirici ayarları zaten etkin!</string>
+
+    <!-- App Ops Settings -->
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Konum</string>
+    <string name="app_ops_cat_personal">Kişisel</string>
+    <string name="app_ops_cat_messaging">Mesajlaşma</string>
+    <string name="app_ops_cat_media">Medya</string>
+    <string name="app_ops_cat_device">Cihaz</string>
+    <string name="app_ops_cat_bootup">Açılış</string>
+
+    <!-- [CHAR LIMIT=NONE] App ops labels -->
+    <string name="app_ops_access_camera">Kamera</string>
+    <string name="app_ops_access_location">Konum</string>
+    <string name="app_ops_access_notifications">Bildirimler</string>
+    <string name="app_ops_activate_vpn">VPN(sanal özel ağ)</string>
+    <string name="app_ops_auto_start">Otomatik başlatma</string>
+    <string name="app_ops_delete_call_log">Arama kaydını sil</string>
+    <string name="app_ops_delete_contacts">Kişileri sil</string>
+    <string name="app_ops_delete_mms">MMS sil</string>
+    <string name="app_ops_delete_sms">SMS sil</string>
+    <string name="app_ops_draw_on_top">Üste taşı</string>
+    <string name="app_ops_get_usage_stats">Kullanım istatistiklerini görüntüle</string>
+    <string name="app_ops_keep_device_awake">Uyanık tut</string>
+    <string name="app_ops_make_phone_call">Arama yap</string>
+    <string name="app_ops_modify_calendar">Takvimi güncelle</string>
+    <string name="app_ops_modify_call_log">Arama kaydını güncelle</string>
+    <string name="app_ops_modify_clipboard">Panoyu düzenle</string>
+    <string name="app_ops_modify_contacts">Kişileri güncelle</string>
+    <string name="app_ops_modify_settings">Ayarları güncelle</string>
+    <string name="app_ops_mute_unmute_microphone">Mikrofonu kapat/aç</string>
+    <string name="app_ops_play_audio">Sesi oynat</string>
+    <string name="app_ops_post_notification">Bildirim gönder</string>
+    <string name="app_ops_project_media">Proje medyası</string>
+    <string name="app_ops_read_calendar">Takvimi oku</string>
+    <string name="app_ops_read_call_log">Arama kaydını oku</string>
+    <string name="app_ops_read_clipboard">Panoyu oku</string>
+    <string name="app_ops_read_contacts">Kişileri oku</string>
+    <string name="app_ops_read_mms">MMS oku</string>
+    <string name="app_ops_read_sms">SMS oku</string>
+    <string name="app_ops_receive_sms">SMS al</string>
+    <string name="app_ops_record_audio">Ses kaydet</string>
+    <string name="app_ops_send_mms">MMS gönder</string>
+    <string name="app_ops_send_sms">SMS gönder</string>
+    <string name="app_ops_toast_window">Toast mesajları</string>
+    <string name="app_ops_use_alarm_volume">Alarm sesi seviyesi</string>
+    <string name="app_ops_use_audio_focus">Ses odağı</string>
+    <string name="app_ops_use_bluetooth_volume">Bluetooth ses seviyesi</string>
+    <string name="app_ops_use_master_volume">Ana ses seviyesi</string>
+    <string name="app_ops_use_media_buttons">Medya tuşları</string>
+    <string name="app_ops_use_media_volume">Medya ses seviyesi</string>
+    <string name="app_ops_use_notification_volume">Bildirim ses seviyesi</string>
+    <string name="app_ops_use_ring_volume">Zil sesi seviyesi</string>
+    <string name="app_ops_use_vibrate">Dokunmatik geri bildirim</string>
+    <string name="app_ops_use_voice_volume">Arama ses seviyesi</string>
+    <string name="app_ops_write_mms">MMS yaz</string>
+    <string name="app_ops_write_sms">SMS yaz</string>
+    <string name="app_ops_use_fingerprint">Parmak izi</string>
+    <string name="app_ops_add_voicemail">Sesli mesaj</string>
+    <string name="app_ops_read_phone_state">Telefon durumuna eriş</string>
+    <string name="app_ops_scan_wifi">WİFİ Ağlarını Tara</string>
+    <string name="app_ops_change_wallpaper">Duvar kağıdını değiştir</string>
+    <string name="app_ops_assist_structure">Yardımcı yapı</string>
+    <string name="app_ops_assist_screenshot">Ekran görüntüsü</string>
+    <string name="app_ops_use_body_sensors">Vücut sensörleri</string>
+    <string name="app_ops_read_cell_broadcasts">Hücre yayınları</string>
+    <string name="app_ops_mock_location">Sahte konum</string>
+    <string name="app_ops_read_external_storage">Harici depolamayı oku</string>
+    <string name="app_ops_write_external_storage">Harici depolamaya yaz</string>
+    <string name="app_ops_turn_on_screen">Ekranı aç</string>
+    <string name="app_ops_get_accounts">Cihaz hesapları</string>
+    <string name="app_ops_run_in_background">Arka planda çalıştır</string>
+    <string name="app_ops_accessibility_volume">Erişebilirlik ses seviyesi</string>
+    <string name="app_ops_read_phone_numbers">Telefon numaralarını oku</string>
+    <string name="app_ops_request_install_packages">Paketler yükle</string>
+    <string name="app_ops_picture_in_picture">PiP</string>
+    <string name="app_ops_app_start_foreground">Ön planda başlat</string>
+    <string name="app_ops_answer_phone_calls">Aramalara cevap ver</string>
+    <string name="app_ops_boot_completed">Otomatik başlat</string>
+
+    <!-- FireHound OTA -->
+    <string name="fh_ota_title">Güncellemeler</string>
+    <string name="fh_ota_summary">FireHound sistem güncellemeleri</string>
+
+    <string name="rom_version_title">FireHound sürümü</string>
+
+</resources>
