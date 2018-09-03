@@ -178,5 +178,5 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class FhAshesActivity extends SettingsActivity {}
-
+    public static class OmniJawsSettingsActivity extends SettingsActivity {}
 }
