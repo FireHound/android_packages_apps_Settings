@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2019 FireHound
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<vector 
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp" 
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
-    android:viewportHeight="20000.0"
-    android:viewportWidth="20000.0">
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
 
     <path
-        android:fillColor="#FFFFFFFF"
-        android:pathData="M2 16h15v3H2zm18.5 0H22v3h-1.5zM18 16h1.5v3H18zm0.85-8.27c0.62-0.61 1-1.45 1-2.38C19.85 3.5 18.35 2 16.5 2v1.5c1.02 0 1.85 0.83 1.85 1.85S17.52 7.2 16.5 7.2v1.5c2.24 0 4 1.83 4 4.07V15H22v-2.24c0-2.22-1.28-4.14-3.15-5.03zm-2.82 2.47H14.5c-1.02 0-1.85-0.98-1.85-2s0.83-1.75 1.85-1.75v-1.5c-1.85 0-3.35 1.5-3.35 3.35s1.5 3.35 3.35 3.35h1.53c1.05 0 1.97 0.74 1.97 2.05V15h1.5v-1.64c0-1.81-1.6-3.16-3.47-3.16z" />
+        android:pathData="M 0 0 H 24 V 24 H 0 V 0 Z" />
     <path
-        android:pathData="M0 0h24v24H0z" />
+        android:fillColor="#ffffff"
+        android:pathData="M2,2v20h20V2H2z M11.86,16.96c0.76-0.24,1.4-1.04,1.53-1.63c0.13-0.56-0.1-1.05-0.2-1.6c-0.08-0.46-0.07-0.85,0.08-1.28 c0.54,1.21,2.15,1.64,1.98,3.18C15.06,17.33,13.14,18.01,11.86,16.96z M20,20h-2v-2h-2.02c0.63-0.84,1.02-1.87,1.02-3 c0-1.89-1.09-2.85-1.85-3.37C12.2,9.61,13,7,13,7c-6.73,3.57-6.02,7.47-6,8c0.03,0.96,0.49,2.07,1.23,3H6v2H4V4h16V20z" />
 </vector>
