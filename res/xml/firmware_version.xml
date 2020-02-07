@@ -22,6 +22,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <PreferenceCategory
+        android:key="system_status"
+        android:title="@string/version_title">
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -30,14 +34,6 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
-    <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
-
     <!-- Lineage API version -->
     <Preference
         android:key="lineage_api_version"
@@ -45,20 +41,6 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageApiVersionPreferenceController"/>
-
-    <!-- Security patch -->
-    <Preference
-        android:key="security_key"
-        android:title="@string/security_patch"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Vendor security patch -->
-    <Preference
-        android:key="vendor_security_key"
-        android:title="@*lineageos.platform:string/lineage_vendor_security_patch"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVendorSecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
     <Preference
@@ -78,31 +60,58 @@
         android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
-    <!-- Kernel -->
-    <Preference
-        android:key="kernel_version"
-        android:title="@string/kernel_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+    </PreferenceCategory>
 
-    <!-- Build date -->
-    <Preference
-        android:key="os_build_date"
-        android:title="@*lineageos.platform:string/build_date"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/>
+    <PreferenceCategory
+        android:key="device_status_settings"
+        android:title="@string/device_status">
 
-    <!-- Build -->
-    <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
+    <!-- Device name -->
+    <com.android.settings.widget.ValidatedEditTextPreference
+        android:key="device_name"
+        android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+        settings:enableCopying="true"/>
+
+    <!-- Phone number -->
+    <Preference
+        android:key="phone_number"
+        android:title="@string/status_number"
+        android:summary="@string/summary_placeholder"
+        android:selectable="true"
+        settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
+        settings:enableCopying="true"/>
+
+    <Preference
+        android:key="emergency_info"
+        android:title="@string/emergency_info_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
+
+    <!-- SIM status -->
+    <Preference
+        android:key="sim_status"
+        android:title="@string/sim_status_title"
+        settings:keywords="@string/keywords_sim_status"
+        android:summary="@string/summary_placeholder" />
+
+    <!-- Model & hardware -->
+    <Preference
+        android:key="device_model"
+        android:title="@string/hardware_info"
+        settings:keywords="@string/keywords_model_and_hardware"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
+
+    <!-- IMEI -->
+    <Preference
+        android:key="imei_info"
+        android:title="@string/status_imei"
+        settings:keywords="@string/keywords_imei_info"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
     <!-- SELinux -->
     <Preference
@@ -112,5 +121,48 @@
         settings:enableCopying="false"
         android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="physical_status"
+        android:title="@string/physical_status_title">
+
+    <!--IP address -->
+    <Preference
+        android:key="wifi_ip_address"
+        android:order="44"
+        android:title="@string/wifi_ip_address"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:enableCopying="true"/>
+
+    <!-- Wi-Fi MAC address -->
+    <Preference
+        android:key="wifi_mac_address"
+        android:order="45"
+        android:title="@string/status_wifi_mac_address"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:enableCopying="true"/>
+
+    <!-- Bluetooth address -->
+    <Preference
+        android:key="bt_address"
+        android:order="46"
+        android:title="@string/status_bt_address"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:enableCopying="true"/>
+
+    <!-- Device up time -->
+    <Preference
+        android:key="up_time"
+        android:order="47"
+        android:title="@string/status_up_time"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
