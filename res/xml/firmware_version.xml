@@ -22,6 +22,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- FireHound Logo -->
+    <PreferenceScreen
+        android:layout="@layout/fh_logo"
+        android:key="fh_logo_settings"
+        android:selectable="false" />
+
     <PreferenceCategory
         android:key="system_status"
         android:title="@string/version_title">
