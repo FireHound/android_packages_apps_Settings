@@ -100,11 +100,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         homepageSpacer = findViewById(R.id.settings_homepage_spacer);
         homepageMainLayout = findViewById(R.id.main_content_scrollable_container);
-
-        if (homepageSpacer != null && homepageMainLayout != null) {
-            homepageSpacer.setVisibility(View.GONE);
-            setMargins(homepageMainLayout, 0,0,0,0);
-        }
     }
 
     private void showFragment(Fragment fragment, int id) {

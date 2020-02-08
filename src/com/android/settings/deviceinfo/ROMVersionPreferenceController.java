@@ -28,7 +28,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 public class ROMVersionPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin {
 
-    private static final String PROPERTY_FH_VERSION = "ro.lineage.version";
+    private static final String PROPERTY_FH_VERSION = "ro.modversion";
     private static final String KEY_FH_VERSION = "modversion";
 
     public ROMVersionPreferenceController(Context context) {
@@ -37,7 +37,7 @@ public class ROMVersionPreferenceController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
-        return true; //!TextUtils.isEmpty(SystemProperties.get(PROPERTY_FH_VERSION));
+        return !TextUtils.isEmpty(SystemProperties.get(PROPERTY_FH_VERSION));
     }
 
     @Override

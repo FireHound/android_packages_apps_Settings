@@ -37,6 +37,7 @@ import com.android.settings.deviceinfo.FeedbackPreferenceController;
 import com.android.settings.deviceinfo.IpAddressPreferenceController;
 import com.android.settings.deviceinfo.ManualPreferenceController;
 import com.android.settings.deviceinfo.RegulatoryInfoPreferenceController;
+import com.android.settings.deviceinfo.ROMVersionPreferenceController;
 import com.android.settings.deviceinfo.SafetyInfoPreferenceController;
 import com.android.settings.deviceinfo.UptimePreferenceController;
 import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
@@ -105,6 +106,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, MyDeviceInfoFragment fragment, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new ROMVersionPreferenceController(context));
         return controllers;
     }
 

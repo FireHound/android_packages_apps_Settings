@@ -663,4 +663,10 @@
         <item name="android:fontFamily">google-sans-medium</item>
     </style>
 
+    <style name="homepage_spacer_summary_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#fc3d03</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
 </resources>
