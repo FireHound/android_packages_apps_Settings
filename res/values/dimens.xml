@@ -425,4 +425,10 @@
     <dimen name="homepage_spacer_title_marginTop">60dp</dimen>
     <dimen name="homepage_spacer_summary_marginTop">85dp</dimen>
 
+    <!-- Header title size of advanced bluetooth device -->
+    <dimen name="advanced_bluetooth_header_title_text_size">16sp</dimen>
+
+    <!-- Battery meter icon size of advanced bluetooth device -->
+    <dimen name="advanced_bluetooth_battery_meter_width">7.8dp</dimen>
+    <dimen name="advanced_bluetooth_battery_meter_height">13dp</dimen>
 </resources>
