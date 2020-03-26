@@ -52,7 +52,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     contextualcards \
     settings-logtags \
     zxing-core-1.7 \
-    org.lineageos.platform.internal
+    org.lineageos.platform.internal \
+    faceunlock_utils
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/Ashes/res
